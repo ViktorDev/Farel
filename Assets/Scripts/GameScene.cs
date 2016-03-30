@@ -39,10 +39,8 @@ public class GameScene : MonoBehaviour
 	void Update () 
 	{
         scoretext.text = "Points: " + points + "\nHealth: " + health;
-        MobileInput();
-        //EditorInput();
-
-        if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
+        
+		UserInput();
     }
 
     IEnumerator SpawnAsteroid() 
@@ -68,7 +66,7 @@ public class GameScene : MonoBehaviour
         health += val;
     }
 
-    void MobileInput() 
+    void UserInput() 
 	{
 		#if UNITY_ANDROID
         if (Input.GetTouch(0).phase == TouchPhase.Began) {
@@ -99,19 +97,4 @@ public class GameScene : MonoBehaviour
 		#endif
 
     }
-   /* void EditorInput()
-    {
-        if (Input.GetMouseButtonDown(0))
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, 100))
-                if (hit.transform.gameObject.tag == "Asteroid")
-                {
-                    Destroy(hit.transform.gameObject);
-                    ChangePoints(1);
-                }
-        }
-    }*/
 }

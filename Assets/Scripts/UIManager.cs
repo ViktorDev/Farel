@@ -71,4 +71,9 @@ public class UIManager : MonoBehaviour
 			funMoon.SetActive (false);
 		}
 	}
+
+	public void Quit()
+	{
+		Application.Quit();
+	}
 }

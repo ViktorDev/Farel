@@ -4,13 +4,14 @@ using UnityEngine.SceneManagement;
 
 public class LoadingScreen : MonoBehaviour {
 
-	public GameObject progress;
+	public RectTransform progress;
 
     private AsyncOperation async = null;
     
 
 	void Start () 
 	{
+		
         StartCoroutine(LoadALevel(1));
 	}
 	
@@ -18,7 +19,7 @@ public class LoadingScreen : MonoBehaviour {
 	{
         if (async != null)
         {
-            progress.GetComponent<RectTransform>().localScale = new Vector3(async.progress, 1,1);
+            progress.localScale = new Vector3(async.progress, 1,1);
         }
 	}
 
