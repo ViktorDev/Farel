@@ -2,10 +2,11 @@
 
 public class Asteroid : MonoBehaviour {
 
+    GameScene gameManager;
 	// Use this for initialization
 	void Start () {
-	
-	}
+        gameManager = GameObject.Find("SceneManager").GetComponent<GameScene>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -14,9 +15,9 @@ public class Asteroid : MonoBehaviour {
 
     void OnCollisionEnter(Collision collision)
     {
-
-        if (collision.gameObject.tag == "Moon") {
-
+        if (collision.collider.gameObject.tag == "Moon") {
+            gameManager.changeHealth(-1);
+            Destroy(gameObject);
         }
         
     }
