@@ -6,35 +6,47 @@ public class GameScene : MonoBehaviour
 
 {
     public static GameScene instance;
-    public GameObject asteroid;
-    bool isGame = true;
-    public float spawnAsteroidTime = 1f;
-    public GameObject moon;
-    public GameObject score;
-    Text scoretext;
-    int points = 0;
-    int health = 100;
-	// Use this for initialization
-	void Start () {
-        if (instance == null) {
-            instance = this;
-        }
-          
-        StartCoroutine(spawnAsteroid());
-        scoretext = score.GetComponent<Text>();
+    
+	public GameObject moon;
+	public GameObject score;
+	public GameObject asteroid;
 
+	public float spawnAsteroidTime = 1f;
+	bool isGame = true;
+    
+	private Text scoretext;
+	private int points = 0;
+	private int health = 100;
+
+	void Start()
+	{
+		if (instance == null) {
+			instance = this;
+		}
+
+		scoretext = score.GetComponent<Text>();
+		score.SetActive (false);
+
+
+	}
+
+	public void StartGame () 
+
+	{   
+        StartCoroutine(SpawnAsteroid());
     }
 	
-	// Update is called once per frame
-	void Update () {
+	void Update () 
+	{
         scoretext.text = "Points: " + points + "\nHealth: " + health;
-        //     mobileInput();
-        editorInput();
+        MobileInput();
+        //EditorInput();
 
         if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
     }
 
-    IEnumerator spawnAsteroid() {
+    IEnumerator SpawnAsteroid() 
+	{
         while (isGame) {
             Vector3 dir = new Vector3(Random.Range(-1f,1f), Random.Range(0.1f,1f), Random.Range(-1f,1f));
             dir.Normalize();
@@ -46,15 +58,19 @@ public class GameScene : MonoBehaviour
 
     }
 
-    public void changePoints(int val) {
+    public void ChangePoints(int val) 
+	{
         points += val;
     }
 
-    public void changeHealth(int val) {
+    public void ChangeHealth(int val) 
+	{
         health += val;
     }
 
-    void mobileInput() {
+    void MobileInput() 
+	{
+		#if UNITY_ANDROID
         if (Input.GetTouch(0).phase == TouchPhase.Began) {
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
             RaycastHit hit;
@@ -63,11 +79,27 @@ public class GameScene : MonoBehaviour
                 if (hit.transform.gameObject.tag == "Asteroid")
                 {
                     Destroy(hit.transform.gameObject);
-                    changePoints(1);
+                    ChangePoints(1);
                 }
         }
+		#endif
+		#if UNITY_EDITOR
+		if (Input.GetMouseButtonDown(0))
+		{
+			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hit;
+
+			if (Physics.Raycast(ray, out hit, 100))
+			if (hit.transform.gameObject.tag == "Asteroid")
+			{
+				Destroy(hit.transform.gameObject);
+				ChangePoints(1);
+			}
+		}
+		#endif
+
     }
-    void editorInput()
+   /* void EditorInput()
     {
         if (Input.GetMouseButtonDown(0))
         {
@@ -78,8 +110,8 @@ public class GameScene : MonoBehaviour
                 if (hit.transform.gameObject.tag == "Asteroid")
                 {
                     Destroy(hit.transform.gameObject);
-                    changePoints(1);
+                    ChangePoints(1);
                 }
         }
-    }
+    }*/
 }

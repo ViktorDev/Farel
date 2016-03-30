@@ -3,7 +3,6 @@ using System.Collections;
 
 public class UIManager : MonoBehaviour 
 {
-	public static UIManager instance;
 
 	public GameObject buisnessMoon;
 	public GameObject educationMoon;
@@ -14,11 +13,6 @@ public class UIManager : MonoBehaviour
 
 	void Start()
 	{
-		if (instance == null) 
-		{
-			instance = this;
-		}
-
 		_curentObject = buisnessMoon;
 	}
 
@@ -28,6 +22,7 @@ public class UIManager : MonoBehaviour
 		{
 			_curentObject = buisnessMoon;
 			_curentObject.SetActive (true);
+
 			educationMoon.SetActive (false);
 			funMoon.SetActive (false);
 			promotionMoon.SetActive (false);
@@ -40,6 +35,7 @@ public class UIManager : MonoBehaviour
 		{
 			_curentObject = educationMoon;
 			_curentObject.SetActive (true);
+
 			buisnessMoon.SetActive (false);
 			funMoon.SetActive (false);
 			promotionMoon.SetActive (false);
@@ -51,8 +47,12 @@ public class UIManager : MonoBehaviour
 	{
 		if (_curentObject != funMoon) 
 		{
+			GameScene.instance.StartGame ();
+			GameScene.instance.score.SetActive (true);
+
 			_curentObject = funMoon;
 			_curentObject.SetActive (true);
+
 			buisnessMoon.SetActive (false);
 			educationMoon.SetActive (false);
 			promotionMoon.SetActive (false);
@@ -65,6 +65,7 @@ public class UIManager : MonoBehaviour
 		{
 			_curentObject = promotionMoon;
 			_curentObject.SetActive (true);
+
 			buisnessMoon.SetActive (false);
 			educationMoon.SetActive (false);
 			funMoon.SetActive (false);

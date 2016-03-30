@@ -16,7 +16,7 @@ public class Asteroid : MonoBehaviour {
     void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.gameObject.tag == "Moon") {
-            gameManager.changeHealth(-1);
+            gameManager.ChangeHealth(-1);
             Destroy(gameObject);
         }
         
