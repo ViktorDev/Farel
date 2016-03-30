@@ -5,7 +5,7 @@ public class Asteroid : MonoBehaviour {
     GameScene gameManager;
 	// Use this for initialization
 	void Start () {
-        gameManager = GameObject.Find("SceneManager").GetComponent<GameScene>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameScene>();
     }
 	
 	// Update is called once per frame
