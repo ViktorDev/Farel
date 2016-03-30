@@ -14,6 +14,8 @@ namespace Vuforia
     public class DefaultTrackableEventHandler : MonoBehaviour,
                                                 ITrackableEventHandler
     {
+
+        public GameObject game;
         #region PRIVATE_MEMBER_VARIABLES
  
         private TrackableBehaviour mTrackableBehaviour;
@@ -82,7 +84,7 @@ namespace Vuforia
             {
                 component.enabled = true;
             }
-
+            game.SetActive(true);
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
         }
 
@@ -103,7 +105,7 @@ namespace Vuforia
             {
                 component.enabled = false;
             }
-
+            game.SetActive(false);
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
         }
 

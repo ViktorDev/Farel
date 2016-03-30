@@ -8,19 +8,24 @@ public class GameScene : MonoBehaviour {
     bool isGame = true;
     public float spawnAsteroidTime = 1f;
     public GameObject moon;
-    public GameObject scoreText;
+    public GameObject score;
+    Text scoretext;
     int points = 0;
     int health = 100;
 	// Use this for initialization
 	void Start () {
         StartCoroutine(spawnAsteroid());
-	}
+        scoretext = score.GetComponent<Text>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        scoreText.GetComponent<Text>().text = "Points: " + points + "\nHealth: " + health;
-        //        mobileInput();
+        scoretext.text = "Points: " + points + "\nHealth: " + health;
+        //     mobileInput();
         editorInput();
+
+        if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
     }
 
     IEnumerator spawnAsteroid() {
