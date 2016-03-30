@@ -2,8 +2,10 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class GameScene : MonoBehaviour {
+public class GameScene : MonoBehaviour
 
+{
+    public static GameScene instance;
     public GameObject asteroid;
     bool isGame = true;
     public float spawnAsteroidTime = 1f;
@@ -14,6 +16,10 @@ public class GameScene : MonoBehaviour {
     int health = 100;
 	// Use this for initialization
 	void Start () {
+        if (instance == null) {
+            instance = this;
+        }
+          
         StartCoroutine(spawnAsteroid());
         scoretext = score.GetComponent<Text>();
 
