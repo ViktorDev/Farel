@@ -1,15 +1,73 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class UIManager : MonoBehaviour {
+public class UIManager : MonoBehaviour 
+{
+	public static UIManager instance;
 
-	// Use this for initialization
-	void Start () {
-	
+	public GameObject buisnessMoon;
+	public GameObject educationMoon;
+	public GameObject funMoon;
+	public GameObject promotionMoon;
+
+	private GameObject _curentObject = null;
+
+	void Start()
+	{
+		if (instance == null) 
+		{
+			instance = this;
+		}
+
+		_curentObject = buisnessMoon;
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
+
+	public void BuisnessButtonClick()
+	{
+		if (_curentObject != buisnessMoon ) 
+		{
+			_curentObject = buisnessMoon;
+			_curentObject.SetActive (true);
+			educationMoon.SetActive (false);
+			funMoon.SetActive (false);
+			promotionMoon.SetActive (false);
+		}
+	}
+
+	public void EducationButtonClick()
+	{
+		if (_curentObject != educationMoon) 
+		{
+			_curentObject = educationMoon;
+			_curentObject.SetActive (true);
+			buisnessMoon.SetActive (false);
+			funMoon.SetActive (false);
+			promotionMoon.SetActive (false);
+		}
+
+	}
+
+	public void FunButtonClick()
+	{
+		if (_curentObject != funMoon) 
+		{
+			_curentObject = funMoon;
+			_curentObject.SetActive (true);
+			buisnessMoon.SetActive (false);
+			educationMoon.SetActive (false);
+			promotionMoon.SetActive (false);
+		}
+	}
+
+	public void PromotionButtonClick()
+	{
+		if (_curentObject != promotionMoon) 
+		{
+			_curentObject = promotionMoon;
+			_curentObject.SetActive (true);
+			buisnessMoon.SetActive (false);
+			educationMoon.SetActive (false);
+			funMoon.SetActive (false);
+		}
 	}
 }
