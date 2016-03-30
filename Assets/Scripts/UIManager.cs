@@ -3,73 +3,35 @@ using System.Collections;
 
 public class UIManager : MonoBehaviour 
 {
+	public Material buis;
+	public Material educ;
+	public Material fun;
+	public Material promo;
 
-	public GameObject buisnessMoon;
-	public GameObject educationMoon;
-	public GameObject funMoon;
-	public GameObject promotionMoon;
-
-	private GameObject _curentObject = null;
-
-	void Start()
-	{
-		_curentObject = buisnessMoon;
-	}
+	public MeshRenderer main;
 
 	public void BuisnessButtonClick()
 	{
-		if (_curentObject != buisnessMoon ) 
-		{
-			_curentObject = buisnessMoon;
-			_curentObject.SetActive (true);
-
-			educationMoon.SetActive (false);
-			funMoon.SetActive (false);
-			promotionMoon.SetActive (false);
-		}
+		main.material = buis;
 	}
 
 	public void EducationButtonClick()
 	{
-		if (_curentObject != educationMoon) 
-		{
-			_curentObject = educationMoon;
-			_curentObject.SetActive (true);
-
-			buisnessMoon.SetActive (false);
-			funMoon.SetActive (false);
-			promotionMoon.SetActive (false);
-		}
-
+		main.material = educ;
 	}
 
 	public void FunButtonClick()
 	{
-		if (_curentObject != funMoon) 
-		{
-			GameScene.instance.StartGame ();
-			GameScene.instance.score.SetActive (true);
+		main.material = fun;
+		GameScene.instance.StartGame ();
+		GameScene.instance.score.SetActive (true);
 
-			_curentObject = funMoon;
-			_curentObject.SetActive (true);
 
-			buisnessMoon.SetActive (false);
-			educationMoon.SetActive (false);
-			promotionMoon.SetActive (false);
-		}
 	}
 
 	public void PromotionButtonClick()
 	{
-		if (_curentObject != promotionMoon) 
-		{
-			_curentObject = promotionMoon;
-			_curentObject.SetActive (true);
-
-			buisnessMoon.SetActive (false);
-			educationMoon.SetActive (false);
-			funMoon.SetActive (false);
-		}
+		main.material = promo;
 	}
 
 	public void Quit()

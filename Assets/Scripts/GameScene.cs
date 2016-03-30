@@ -76,6 +76,7 @@ public class GameScene : MonoBehaviour
             if (Physics.Raycast(ray, out hit, 100))
                 if (hit.transform.gameObject.tag == "Asteroid")
                 {
+				
                     Destroy(hit.transform.gameObject);
                     ChangePoints(1);
                 }
