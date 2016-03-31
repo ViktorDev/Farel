@@ -18,6 +18,11 @@ public class GameScene : MonoBehaviour
 	private int points = 0;
 	private int health = 100;
 
+	void Awake()
+	{
+		StartCoroutine (SpawnAsteroid ());
+	}
+
 	void Start()
 	{
 		if (instance == null) {
@@ -99,4 +104,9 @@ public class GameScene : MonoBehaviour
 		#endif
 
     }
+
+	void OnDisable()
+	{
+		StopAllCoroutines ();
+	}
 }

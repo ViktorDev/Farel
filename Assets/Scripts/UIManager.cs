@@ -3,10 +3,10 @@ using System.Collections;
 
 public class UIManager : MonoBehaviour 
 {
-	public Material buis;
+	/*public Material buis;
 	public Material educ;
 	public Material fun;
-	public Material promo;
+	public Material promo;*/
 
 	public MeshRenderer main;
 
@@ -17,17 +17,17 @@ public class UIManager : MonoBehaviour
 
 	public void BuisnessButtonClick()
 	{
-		main.material = buis;
+		StateManager.instance.ChangeState (0);
 	}
 
 	public void EducationButtonClick()
 	{
-		main.material = educ;
+		StateManager.instance.ChangeState (1);
 	}
 
 	public void FunButtonClick()
 	{
-		main.material = fun;
+		StateManager.instance.ChangeState (2);
 		GameScene.instance.StartGame ();
 		GameScene.instance.score.SetActive (true);
 
@@ -36,7 +36,7 @@ public class UIManager : MonoBehaviour
 
 	public void PromotionButtonClick()
 	{
-		main.material = promo;
+		StateManager.instance.ChangeState (3);
 	}
 
 	public void Quit()
