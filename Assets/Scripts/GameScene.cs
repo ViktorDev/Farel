@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 
 public class GameScene : MonoBehaviour
 
@@ -108,5 +109,9 @@ public class GameScene : MonoBehaviour
 	void OnDisable()
 	{
 		StopAllCoroutines ();
+        
+        foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Asteroid")) {
+            Destroy(obj);
+        }
 	}
 }
