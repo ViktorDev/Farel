@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
 
@@ -10,12 +11,16 @@ public class SceneStateManager : MonoBehaviour
 
 	public GameObject curentManager;
 
+	public List<GameObject> infoPanels;
+
+
 	void Awake () 
 	{
 		if (instance == null) 
 		{
 			instance = this;
 		}
+
 	}
 
 	public void ChangeState(int stateID)

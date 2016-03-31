@@ -1,15 +1,25 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
-public class EducationView : MonoBehaviour {
+public class EducationView : MonoBehaviour 
+{
+	public static EducationView instance1;
 
-	// Use this for initialization
-	void Start () {
+	public GameObject panel;
+
+	void Start () 
+	{
+		if (instance1 == null) {
+			instance1 = this;
+		}
+
+		//panel.SetActive (false);
 	
 	}
 	
-	// Update is called once per frame
-	void Update () {
-	
+	public void Show ()
+	{
+	//	panel.SetActive (true);
 	}
 }

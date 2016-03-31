@@ -3,16 +3,10 @@ using System.Collections;
 
 public class UIManager : MonoBehaviour 
 {
-	/*public Material buis;
-	public Material educ;
-	public Material fun;
-	public Material promo;*/
-
 	public MeshRenderer main;
 
     void Awake() {
 
-      //  main = GameScene.instance.gameObject.transform.FindChild("moon").GetComponent<MeshRenderer>();
     }
 
 	public void BuisnessButtonClick()
@@ -23,6 +17,10 @@ public class UIManager : MonoBehaviour
 	public void EducationButtonClick()
 	{
 		SceneStateManager.instance.ChangeState (1);
+		foreach (var item in SceneStateManager.instance.infoPanels) 
+		{
+			item.SetActive (true);	
+		}
 	}
 
 	public void FunButtonClick()
@@ -30,8 +28,6 @@ public class UIManager : MonoBehaviour
 		SceneStateManager.instance.ChangeState (2);
 		GameScene.instance.StartGame ();
 		GameScene.instance.score.SetActive (true);
-
-
 	}
 
 	public void PromotionButtonClick()
