@@ -10,6 +10,11 @@ public class UIManager : MonoBehaviour
 
 	public MeshRenderer main;
 
+    void Start() {
+
+        main = GameScene.instance.gameObject.transform.FindChild("Moon").GetComponent<MeshRenderer>();
+    }
+
 	public void BuisnessButtonClick()
 	{
 		main.material = buis;
