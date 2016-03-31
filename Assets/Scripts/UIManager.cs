@@ -10,9 +10,9 @@ public class UIManager : MonoBehaviour
 
 	public MeshRenderer main;
 
-    void Start() {
+    void Awake() {
 
-        main = GameScene.instance.gameObject.transform.FindChild("moon").GetComponent<MeshRenderer>();
+      //  main = GameScene.instance.gameObject.transform.FindChild("moon").GetComponent<MeshRenderer>();
     }
 
 	public void BuisnessButtonClick()
