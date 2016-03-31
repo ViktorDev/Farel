@@ -20,7 +20,7 @@ public class GameScene : MonoBehaviour
 
 	void Awake()
 	{
-		StartCoroutine (SpawnAsteroid ());
+		StartCoroutine( SpawnAsteroid ());
 	}
 
 	void Start()

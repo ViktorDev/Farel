@@ -17,17 +17,17 @@ public class UIManager : MonoBehaviour
 
 	public void BuisnessButtonClick()
 	{
-		StateManager.instance.ChangeState (0);
+		SceneStateManager.instance.ChangeState (0);
 	}
 
 	public void EducationButtonClick()
 	{
-		StateManager.instance.ChangeState (1);
+		SceneStateManager.instance.ChangeState (1);
 	}
 
 	public void FunButtonClick()
 	{
-		StateManager.instance.ChangeState (2);
+		SceneStateManager.instance.ChangeState (2);
 		GameScene.instance.StartGame ();
 		GameScene.instance.score.SetActive (true);
 
@@ -36,7 +36,7 @@ public class UIManager : MonoBehaviour
 
 	public void PromotionButtonClick()
 	{
-		StateManager.instance.ChangeState (3);
+		SceneStateManager.instance.ChangeState (3);
 	}
 
 	public void Quit()

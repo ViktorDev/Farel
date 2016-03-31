@@ -2,9 +2,9 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class StateManager : MonoBehaviour 
+public class SceneStateManager : MonoBehaviour 
 {
-	public static StateManager instance;
+	public static SceneStateManager instance;
 
 	public List<GameObject> managers;
 

@@ -5,7 +5,6 @@ Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
 using UnityEngine;
-
 namespace Vuforia
 {
     /// <summary>
@@ -15,7 +14,8 @@ namespace Vuforia
                                                 ITrackableEventHandler
     {
 
-        public GameObject game;
+ //       public GameObject game;
+ //       GameObject obj;
         #region PRIVATE_MEMBER_VARIABLES
  
         private TrackableBehaviour mTrackableBehaviour;
@@ -84,7 +84,9 @@ namespace Vuforia
             {
                 component.enabled = true;
             }
-            game.SetActive(true);
+            SceneStateManager.instance.curentManager.SetActive(true);
+ //           obj = game.GetComponent<StateManager>();
+//            game.GetComponent<StateManager>().cu
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
         }
 
@@ -105,7 +107,8 @@ namespace Vuforia
             {
                 component.enabled = false;
             }
-            game.SetActive(false);
+            SceneStateManager.instance.curentManager.SetActive(false);
+            //           game.SetActive(false);
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
         }
 
