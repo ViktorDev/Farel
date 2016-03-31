@@ -11,7 +11,6 @@ public class SceneStateManager : MonoBehaviour
 
 	public GameObject curentManager;
 
-	public List<GameObject> infoPanels;
 
 
 	void Awake () 
