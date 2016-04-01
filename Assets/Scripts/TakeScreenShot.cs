@@ -39,9 +39,9 @@ public class TakeScreenShot : MonoBehaviour
 			AndroidJavaClass intentClass = new AndroidJavaClass ("android.content.Intent");
 			AndroidJavaObject intentObject = new AndroidJavaObject ("android.content.Intent");
 			intentObject.Call<AndroidJavaObject> ("setAction", intentClass.GetStatic<string> ("ACTION_SEND"));
-			AndroidJavaClass urlClass = new AndroidJavaClass ("android.net.Url");
-			AndroidJavaObject urlObject = urlClass.CallStatic<AndroidJavaObject> ("parse", "file://" + destination);
-			intentObject.Call<AndroidJavaObject> ("putExtra", intentClass.GetStatic<string> ("EXTRA_STREAM"), urlObject);
+			AndroidJavaClass uriClass = new AndroidJavaClass ("android.net.Uri");
+			AndroidJavaObject uriObject = uriClass.CallStatic<AndroidJavaObject> ("parse", "file://" + destination);
+			intentObject.Call<AndroidJavaObject> ("putExtra", intentClass.GetStatic<string> ("EXTRA_STREAM"), uriObject);
 
 			intentObject.Call<AndroidJavaObject> ("setType", "text/plain");
 			intentObject.Call<AndroidJavaObject> ("putExtra", intentClass.CallStatic<string>("EXTRA_TEXT"), "" + message);
