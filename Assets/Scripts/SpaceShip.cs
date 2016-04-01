@@ -3,19 +3,6 @@ using System.Collections;
 
 public class SpaceShip : MovingItem {
 
-    enum ExplosionType { InSpace, MoonContact }
-
-    GameScene gameManager;
-    Vector3 contactPosition;
-	// Use this for initialization
-	void Start () {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameScene>();
-    }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
     void OnCollisionEnter(Collision collision)
     {
@@ -23,10 +10,7 @@ public class SpaceShip : MovingItem {
             gameManager.ChangeHealth(-1);
             contactPosition = collision.contacts[0].point;
             StartCoroutine(makeExplosion(ExplosionType.MoonContact));
-            
- //           Destroy(gameObject);
         }
-        
     }
 
     public override void Crash() {
@@ -52,7 +36,6 @@ public class SpaceShip : MovingItem {
             yield return new WaitForSeconds(0.01f);
             transform.localScale = new Vector3(transform.localScale.x - 0.0003f, transform.localScale.y - 0.0003f, transform.localScale.z - 0.0003f);
         }
-        GetComponent<TrailRenderer>().enabled = false;
         transform.localScale = new Vector3(0, 0, 0);
         Destroy(gameObject, 3f);
     }

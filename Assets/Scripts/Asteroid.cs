@@ -3,29 +3,12 @@ using System.Collections;
 
 public class Asteroid : MovingItem {
 
-    enum ExplosionType { InSpace, MoonContact }
-
-    GameScene gameManager;
-    Vector3 contactPosition;
-    
-	// Use this for initialization
-	void Start () {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameScene>();
-    }
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
-    void OnCollisionEnter(Collision collision)
+   void OnCollisionEnter(Collision collision)
     {
         if (collision.collider.gameObject.tag == "Moon") {
             gameManager.ChangeHealth(-1);
             contactPosition = collision.contacts[0].point;
             StartCoroutine(makeExplosion(ExplosionType.MoonContact));
-            
- //           Destroy(gameObject);
         }
         
     }
