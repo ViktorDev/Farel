@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour 
 {
@@ -37,7 +38,8 @@ public class UIManager : MonoBehaviour
 	{
 		
 		SceneStateManager.instance.ChangeState (3);
-		educ.Hide ();
+///		educ.Hide ();
+//        SceneManager.LoadScene(2);
 	}
 
 	public void Quit()
