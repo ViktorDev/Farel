@@ -10,6 +10,7 @@ public class CapturePhotoScene : MonoBehaviour {
  //   public GameObject background;
  //   public Text info;
 
+
     public void TakeHiResShot()
     {
         takeHiResShot = true;

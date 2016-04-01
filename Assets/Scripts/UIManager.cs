@@ -6,6 +6,8 @@ public class UIManager : MonoBehaviour
 {
 
 	public EducationView educ;
+    public PromoView promo;
+//    public GameObject selfiePanel;
 
     void Awake() {
 
@@ -15,15 +17,16 @@ public class UIManager : MonoBehaviour
 	{
 		SceneStateManager.instance.ChangeState (0);
 		educ.Hide ();
-	}
+        promo.Hide();
+
+    }
 
 	public void EducationButtonClick()
 	{
 		SceneStateManager.instance.ChangeState (1);
 		educ.Show ();
-
-
-	}
+        promo.Hide();
+    }
 
 	public void FunButtonClick()
 	{
@@ -32,15 +35,17 @@ public class UIManager : MonoBehaviour
 		GameScene.instance.StartGame ();
 		GameScene.instance.score.SetActive (true);
 		educ.Hide ();
-	}
+        promo.Hide();
+    }
 
 	public void PromotionButtonClick()
 	{
 		
 		SceneStateManager.instance.ChangeState (3);
-///		educ.Hide ();
-//        SceneManager.LoadScene(2);
-	}
+		educ.Hide ();
+        promo.Show();
+        //        SceneManager.LoadScene(2);
+    }
 
 	public void Quit()
 	{

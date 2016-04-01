@@ -20,18 +20,18 @@ public class GameScene : MonoBehaviour
 	private int points = 0;
 	private int health = 100;
 
-	void Awake()
-	{
-		if (instance == null) {
-			instance = this;
-		}
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+    }
 
-		//StartCoroutine( SpawnAsteroid ());
-	}
-
-	void Start()
+    void Start()
 	{
 		
+
 		scoretext = score.GetComponent<Text>();
 		score.SetActive (false);
 
