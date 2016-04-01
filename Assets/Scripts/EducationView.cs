@@ -5,9 +5,20 @@ using UnityEngine.UI;
 
 public class EducationView : MonoBehaviour 
 {
+	public static EducationView instance;
+
+	public GameObject panel;
 
 	public List<GameObject> infoPanels;
 
+
+	void Awake()
+	{
+		if (instance == null) 
+		{
+			instance = this;
+		}
+	}
 
 	public void Show()
 	{
@@ -39,5 +50,11 @@ public class EducationView : MonoBehaviour
 		{
 			item.SetActive (false);
 		}
+	}
+
+	public void ShowInfo()
+	{
+		panel.SetActive (true);
+		panel.GetComponent<InfoPanels>().OpenPanel();
 	}
 }

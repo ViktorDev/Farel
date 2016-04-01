@@ -3,7 +3,6 @@ using System.Collections;
 
 public class UIManager : MonoBehaviour 
 {
-	public MeshRenderer main;
 
 	public EducationView educ;
 
