@@ -1,13 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Asteroid : MovingItem {
+public class SpaceShip : MovingItem {
 
     enum ExplosionType { InSpace, MoonContact }
 
     GameScene gameManager;
     Vector3 contactPosition;
-    
 	// Use this for initialization
 	void Start () {
         gameManager = GameObject.Find("GameManager").GetComponent<GameScene>();

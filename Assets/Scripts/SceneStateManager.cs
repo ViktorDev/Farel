@@ -12,8 +12,7 @@ public class SceneStateManager : MonoBehaviour
 	public GameObject curentManager;
 
 
-
-	void Awake () 
+    void Awake () 
 	{
 		if (instance == null) 
 		{

@@ -25,20 +25,20 @@ public class BuisnessView : MonoBehaviour
 
     void UserInput()
     {
-/*#if UNITY_ANDROID
-        if (Input.GetTouch(0).phase == TouchPhase.Began)
-        {
-            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
-            RaycastHit hit;
+//#if UNITY_ANDROID
+//        if (Input.GetTouch(0).phase == TouchPhase.Began)
+//        {
+//            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+//            RaycastHit hit;
 
-            if (Physics.Raycast(ray, out hit, 100))
-                if (hit.transform.gameObject.tag == "Lot")
-                {
-                    OpenLotInfo(hit.transform.gameObject);
-                    selectedLot = hit.transform.gameObject;
-                }
-        }
-#endif*/
+//            if (Physics.Raycast(ray, out hit, 100))
+//                if (hit.transform.gameObject.tag == "Lot")
+//                {
+//                    OpenLotInfo(hit.transform.gameObject);
+//                    selectedLot = hit.transform.gameObject;
+//                }
+//        }
+//#endif
 #if UNITY_EDITOR
         if (Input.GetMouseButtonDown(0))
         {
