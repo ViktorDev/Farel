@@ -47,16 +47,16 @@ public class EducationView : MonoBehaviour
 	public void Hide()
 	{
 		foreach (var item in infoPanels) 
-
 		{
 			item.SetActive (false);
 		}
 	}
 
-	public void OpenInfo() {
+	public void OpenInfo(Text panel) 
+	{
 		lotPanel.SetActive(true);
 		lotPanel.GetComponent<InfoPanel>().OpenPanel();
-		lotInfo.GetComponent<Text>().text = "";
+		lotInfo.GetComponent<Text> ().text = panel.text;
 	}
 
 	public void BackTo() 
