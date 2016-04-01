@@ -7,7 +7,8 @@ public class EducationView : MonoBehaviour
 {
 	public static EducationView instance;
 
-	public GameObject panel;
+	public GameObject lotPanel;
+	public GameObject lotInfo;
 
 	public List<GameObject> infoPanels;
 
@@ -52,9 +53,14 @@ public class EducationView : MonoBehaviour
 		}
 	}
 
-	public void ShowInfo()
+	public void OpenInfo() {
+		lotPanel.SetActive(true);
+		lotPanel.GetComponent<InfoPanel>().OpenPanel();
+		lotInfo.GetComponent<Text>().text = "";
+	}
+
+	public void BackTo() 
 	{
-		panel.SetActive (true);
-		panel.GetComponent<InfoPanels>().OpenPanel();
+		lotPanel.GetComponent<InfoPanel>().ClosePanel();
 	}
 }

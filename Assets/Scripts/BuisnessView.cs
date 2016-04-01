@@ -25,7 +25,7 @@ public class BuisnessView : MonoBehaviour
 
     void UserInput()
     {
-#if UNITY_ANDROID
+/*#if UNITY_ANDROID
         if (Input.GetTouch(0).phase == TouchPhase.Began)
         {
             Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
@@ -38,7 +38,7 @@ public class BuisnessView : MonoBehaviour
                     selectedLot = hit.transform.gameObject;
                 }
         }
-#endif
+#endif*/
 #if UNITY_EDITOR
         if (Input.GetMouseButtonDown(0))
         {
