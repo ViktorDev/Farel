@@ -4,13 +4,16 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour 
 {
-
-	public EducationView educ;
+    public static UIManager instance;
+    public EducationView educ;
     public PromoView promo;
 //    public GameObject selfiePanel;
 
     void Awake() {
-
+        if (instance == null)
+        {
+            instance = this;
+        }
     }
 
 	public void BuisnessButtonClick()
