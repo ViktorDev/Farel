@@ -5,15 +5,14 @@ using UnityEngine.UI;
 
 public class TakeScreenShot : MonoBehaviour 
 {
-	private bool _isProcessing = false;
 	public Image buttonShare;
-	public GameObject ui;
 	public string message;
+
+	private bool _isProcessing = false;
 
 	public void ButtonShare()
 	{
 		buttonShare.enabled = false;
-		ui.SetActive (false);
 
 		if (!_isProcessing) 
 		{
@@ -31,32 +30,34 @@ public class TakeScreenShot : MonoBehaviour
 		screenTexture.Apply ();
 
 		byte[] dataToSave = screenTexture.EncodeToPNG ();
-		string destination = Path.Combine (Application.persistentDataPath, System.DateTime.Now.ToString ("yyyy-MM-dd-HHmmss") + ".png");
-		File.WriteAllBytes (destination, dataToSave);
+		string path = Application.persistentDataPath + "/MyImage.png";
+		File.WriteAllBytes (path, dataToSave);
 
-		if (!Application.isEditor) 
-		{
-			AndroidJavaClass intentClass = new AndroidJavaClass ("android.content.Intent");
-			AndroidJavaObject intentObject = new AndroidJavaObject ("android.content.Intent");
-			intentObject.Call<AndroidJavaObject> ("setAction", intentClass.GetStatic<string> ("ACTION_SEND"));
-			AndroidJavaClass uriClass = new AndroidJavaClass ("android.net.Uri");
-			AndroidJavaObject uriObject = uriClass.CallStatic<AndroidJavaObject> ("parse", "file://" + destination);
-			intentObject.Call<AndroidJavaObject> ("putExtra", intentClass.GetStatic<string> ("EXTRA_STREAM"), uriObject);
+		AndroidJavaClass intentClass = new AndroidJavaClass ("android.content.Intent");
 
-			intentObject.Call<AndroidJavaObject> ("setType", "text/plain");
-			intentObject.Call<AndroidJavaObject> ("putExtra", intentClass.CallStatic<string>("EXTRA_TEXT"), "" + message);
-			intentObject.Call<AndroidJavaObject> ("putExtra", intentClass.CallStatic<string> ("EXTRA_SUBJECT"), "SUBJECT");
+		AndroidJavaObject intentObject = new AndroidJavaObject ("android.content.Intent");
 
-			intentObject.Call<AndroidJavaObject> ("setType", "image/jpeg");
-			AndroidJavaClass unity = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
-			AndroidJavaObject currentActivity = unity.GetStatic<AndroidJavaObject> ("currentActivity");
+		intentObject.Call<AndroidJavaObject> ("setAction", intentClass.GetStatic<string> ("ACTION_SEND"));
 
-			currentActivity.Call ("startActivity", intentObject);
-		}
+		AndroidJavaClass uriClass = new AndroidJavaClass ("android.net.Uri");
+
+		AndroidJavaObject uriObject = uriClass.CallStatic<AndroidJavaObject> ("parse", "file://" + path);
+
+		intentObject.Call<AndroidJavaObject> ("putExtra", intentClass.GetStatic<string> ("EXTRA_STREAM"), uriObject);
+
+		intentObject.Call<AndroidJavaObject> ("setType", "image/*");
+
+		AndroidJavaClass unity = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
+
+		AndroidJavaObject currentActivity = unity.GetStatic<AndroidJavaObject> ("currentActivity");
+
+		currentActivity.Call ("startActivity", intentObject);
+
 		_isProcessing = false;
 		buttonShare.enabled = true;
-		ui.SetActive (true);
 
-		Debug.Log (destination.ToString());
+		Debug.Log (path.ToString ());
 	}
+
+
 }
