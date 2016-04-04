@@ -8,19 +8,16 @@ public class PromoView : MonoBehaviour {
     public Texture2D photo;
     public GameObject selfiePanel;
     bool isFront;
+    GameObject moon;
 
     void Awake() {
         if (instance == null)
         {
             instance = this;
         }
-        
+        moon = transform.Find("PromoMoon").gameObject;
     }
 
-    void OnDisable()
-    {
-        
-    }
 
     public void swichCam() {
         CameraDevice.Instance.Stop();
@@ -30,21 +27,22 @@ public class PromoView : MonoBehaviour {
             isFront = true;
             selfiePanel.transform.Find("Face").gameObject.SetActive(true);
             selfiePanel.transform.Find("Takeselfie").gameObject.SetActive(true);
+            moon.SetActive(false);
         }
         else {
             CameraDevice.Instance.Init(CameraDevice.CameraDirection.CAMERA_DEFAULT);
             isFront = false;
             selfiePanel.transform.Find("Face").gameObject.SetActive(false);
             selfiePanel.transform.Find("Takeselfie").gameObject.SetActive(false);
+            moon.SetActive(true);
         }
         CameraDevice.Instance.Start();
     }
-	// Use this for initialization
+
 	public void Show () {
         selfiePanel.SetActive(true);
     }
 	
-	// Update is called once per frame
 	public void Hide () {
         selfiePanel.SetActive(false);
     }

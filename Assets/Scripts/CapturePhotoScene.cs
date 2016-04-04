@@ -44,7 +44,7 @@ public class CapturePhotoScene : MonoBehaviour {
             //System.IO.File.WriteAllBytes(filename, bytes);
             //Debug.Log(string.Format("Took screenshot to: {0}", filename));
             takeHiResShot = false;
-
+            Debug.Log("Selfie Shot");
             SceneManager.LoadScene(2);
         }
     }

@@ -127,7 +127,7 @@ public class GameScene : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 100)) {
                 Debug.Log("ClickRay");
-                if (hit.transform.gameObject.tag == "Asteroid")
+                if (hit.transform.gameObject.tag == "Moving_Item")
                 {
                     
                     hit.transform.gameObject.GetComponent<MovingItem>().Crash();
@@ -144,7 +144,7 @@ public class GameScene : MonoBehaviour
 	{
 		StopAllCoroutines ();
         
-        foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Asteroid")) {
+        foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Moving_Item")) {
             Destroy(obj);
         }
 	}
