@@ -24,6 +24,8 @@ public class EducationView : MonoBehaviour
 
 	public void Show()
 	{
+		GameScene.instance.ScoreImage.enabled = false;
+		GameScene.instance.score.SetActive (false);
 		StartCoroutine (ColorChengerUp ());
 	}
 

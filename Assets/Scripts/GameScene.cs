@@ -8,6 +8,7 @@ public class GameScene : MonoBehaviour
 {
     public static GameScene instance;
     
+	public Image ScoreImage;
 	public GameObject moon;
 	public GameObject score;
 	public GameObject asteroid;
@@ -33,6 +34,7 @@ public class GameScene : MonoBehaviour
 		
 
 		scoretext = score.GetComponent<Text>();
+		ScoreImage.enabled = false;
 		score.SetActive (false);
 
 
@@ -41,12 +43,13 @@ public class GameScene : MonoBehaviour
 	public void StartGame () 
 
 	{   
+		ScoreImage.enabled = true;
         StartCoroutine(SpawnSpaceObject());
     }
 	
 	void Update () 
 	{
-        scoretext.text = "Points: " + points + "\nHealth: " + health;
+        scoretext.text = "" + points;
         
 		UserInput();
     }
