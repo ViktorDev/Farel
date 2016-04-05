@@ -13,6 +13,7 @@ public class GameScene : MonoBehaviour
 	public GameObject score;
 	public GameObject asteroid;
     public GameObject spaceShip;
+    public GameObject[] spaceObjects;
 
     public float spawnSpaceObjectTime = 1f;
 	bool isGame = true;
@@ -68,32 +69,35 @@ public class GameScene : MonoBehaviour
 
             int itemType = Random.Range(0,5);
             GameObject item;
-            switch (itemType) {
-                case 0:
-                    item = (GameObject)Instantiate(asteroid, dir, Quaternion.identity);
-                    break;
-                case 1:
-                    item = (GameObject)Instantiate(spaceShip, dir, Quaternion.identity);
-                    item.transform.localRotation = Quaternion.LookRotation(moon.transform.position - dir);
-                    break;
-                case 2:
-                    item = (GameObject)Instantiate(asteroid, dir, Quaternion.identity);
-                    break;
-                case 3:
-                    item = (GameObject)Instantiate(spaceShip, dir, Quaternion.identity);
-                    break;
-                case 4:
-                    item = (GameObject)Instantiate(asteroid, dir, Quaternion.identity);
-                    break;
-                default:
-                    item = (GameObject)Instantiate(spaceShip, dir, Quaternion.identity);
-                    break;
-            }
+            item = (GameObject)Instantiate(spaceObjects[itemType], dir, Quaternion.identity);
+            if (itemType == 2) item.GetComponent<Rigidbody>().AddTorque(Random.value,0, Random.value, ForceMode.Impulse);
+            if(itemType==3) item.GetComponent<Rigidbody>().AddTorque(0, Random.value, Random.value, ForceMode.Impulse);
+            //switch (itemType) {
+            //    case 0:
+            //        item = (GameObject)Instantiate(asteroid, dir, Quaternion.identity);
+            //        break;
+            //    case 1:
+            //        item = (GameObject)Instantiate(spaceShip, dir, Quaternion.identity);
+            //        item.transform.localRotation = Quaternion.LookRotation(moon.transform.position - dir);
+            //        break;
+            //    case 2:
+            //        item = (GameObject)Instantiate(asteroid, dir, Quaternion.identity);
+            //        break;
+            //    case 3:
+            //        item = (GameObject)Instantiate(spaceShip, dir, Quaternion.identity);
+            //        break;
+            //    case 4:
+            //        item = (GameObject)Instantiate(asteroid, dir, Quaternion.identity);
+            //        break;
+            //    default:
+            //        item = (GameObject)Instantiate(spaceShip, dir, Quaternion.identity);
+            //        break;
+            //}
 
-            
-            item.GetComponent<MovingItem>().dir = moon.transform.position - dir;
- //           item.GetComponent<Rigidbody>().AddForce((moon.transform.position - dir)*0.1f, ForceMode.Impulse);
-            
+
+            //            item.GetComponent<MovingItem>().dir = moon.transform.position - dir;
+            //           item.GetComponent<Rigidbody>().AddForce((moon.transform.position - dir)*0.1f, ForceMode.Impulse);
+
             yield return new WaitForSeconds(spawnSpaceObjectTime);
         }
 

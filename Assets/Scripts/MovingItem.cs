@@ -4,7 +4,7 @@ using System.Collections;
 public class MovingItem : MonoBehaviour {
 
     protected enum ExplosionType { InSpace, MoonContact }
-    public Vector3 dir;
+//    public Vector3 dir;
     GameScene gameManager;
     Rigidbody rig;
     Vector3 contactPosition;
@@ -63,7 +63,7 @@ public class MovingItem : MonoBehaviour {
         bang.transform.parent = null;
         while (transform.localScale.x > 0)
         {
-            yield return new WaitForSeconds(0.01f);
+            yield return new WaitForSeconds(0.005f);
             transform.localScale = new Vector3(transform.localScale.x - 0.001f, transform.localScale.y - 0.001f, transform.localScale.z - 0.001f);
         }
         transform.localScale = new Vector3(0, 0, 0);
