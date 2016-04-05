@@ -15,7 +15,7 @@ public class GameScene : MonoBehaviour
     public GameObject spaceShip;
     public GameObject[] spaceObjects;
 
-    public float spawnSpaceObjectTime = 1f;
+    public float spawnSpaceObjectTime = 2f;
 	bool isGame = true;
     
 	private Text scoretext;
