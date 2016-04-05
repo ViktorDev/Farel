@@ -28,21 +28,24 @@ public class GameScene : MonoBehaviour
         {
             instance = this;
         }
-
+        
 
     }
 
+    void OnEnable() {
+        StartGame();
+    }
+
+
     void Start()
 	{
-		
-		ScoreImage.enabled = false;
-
-		scoretext = score.GetComponent<Text>();
-		ScoreImage.enabled = false;
-		score.SetActive (false);
+        ScoreImage.enabled = false;
+        scoretext = score.GetComponent<Text>();
+        ScoreImage.enabled = false;
+        score.SetActive(false);
 
 
-	}
+    }
 
 	public void StartGame () 
 
@@ -115,40 +118,40 @@ public class GameScene : MonoBehaviour
 
     void UserInput() 
 	{
-        //#if UNITY_ANDROID
-        //        if (Input.GetTouch(0).phase == TouchPhase.Began)
-        //        {
-        //            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
-        //            RaycastHit hit;
+#if UNITY_ANDROID
+        if (Input.GetTouch(0).phase == TouchPhase.Began)
+        {
+            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+            RaycastHit hit;
 
-        //            if (Physics.Raycast(ray, out hit, 100))
-        //                if (hit.transform.gameObject.tag == "Moving_Item"|| hit.transform.gameObject.tag == "SpaceShip")
-        //                {
-        //                    hit.transform.gameObject.GetComponent<Asteroid>().Crash();
-        ////                    Destroy(hit.transform.gameObject);
-        //                    ChangePoints(1);
-        //                }
-        //        }
-        //#endif
-#if UNITY_EDITOR
-        if (Input.GetMouseButtonDown(0))
-		{
-            Debug.Log("Click");
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-			RaycastHit hit;
-
-            if (Physics.Raycast(ray, out hit, 100)) {
-                Debug.Log("ClickRay");
-                if (hit.transform.gameObject.tag == "Moving_Item"|| hit.transform.gameObject.tag == "SpaceShip")
+            if (Physics.Raycast(ray, out hit, 100))
+                if (hit.transform.gameObject.tag == "Moving_Item" || hit.transform.gameObject.tag == "SpaceShip")
                 {
-                    
                     hit.transform.gameObject.GetComponent<MovingItem>().Crash();
+                    //                    Destroy(hit.transform.gameObject);
                     ChangePoints(1);
                 }
-            }
+        }
+#endif
+//#if UNITY_EDITOR
+//        if (Input.GetMouseButtonDown(0))
+//		{
+//            Debug.Log("Click");
+//            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+//			RaycastHit hit;
+
+//            if (Physics.Raycast(ray, out hit, 100)) {
+//                Debug.Log("ClickRay");
+//                if (hit.transform.gameObject.tag == "Moving_Item"|| hit.transform.gameObject.tag == "SpaceShip")
+//                {
+                    
+//                    hit.transform.gameObject.GetComponent<MovingItem>().Crash();
+//                    ChangePoints(1);
+//                }
+//            }
 			
-		}
-		#endif
+//		}
+//		#endif
 
     }
 

@@ -11,14 +11,13 @@ public class SceneStateManager : MonoBehaviour
 
 	public GameObject curentManager;
 
-
     void Awake () 
 	{
 		if (instance == null) 
 		{
 			instance = this;
 		}
-
+       
 	}
 
 	public void ChangeState(int stateID)

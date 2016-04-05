@@ -70,20 +70,20 @@ namespace Vuforia
 
         private void OnTrackingFound()
         {
-            Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
-            Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
+            //Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
+            //Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 
-            // Enable rendering:
-            foreach (Renderer component in rendererComponents)
-            {
-                component.enabled = true;
-            }
+            //// Enable rendering:
+            //foreach (Renderer component in rendererComponents)
+            //{
+            //    component.enabled = true;
+            //}
 
-            // Enable colliders:
-            foreach (Collider component in colliderComponents)
-            {
-                component.enabled = true;
-            }
+            //// Enable colliders:
+            //foreach (Collider component in colliderComponents)
+            //{
+            //    component.enabled = true;
+            //}
             SceneStateManager.instance.curentManager.SetActive(true);
  //           obj = game.GetComponent<StateManager>();
 //            game.GetComponent<StateManager>().cu
@@ -93,20 +93,20 @@ namespace Vuforia
 
         private void OnTrackingLost()
         {
-            Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
-            Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
+            //Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
+            //Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 
-            // Disable rendering:
-            foreach (Renderer component in rendererComponents)
-            {
-                component.enabled = false;
-            }
+            //// Disable rendering:
+            //foreach (Renderer component in rendererComponents)
+            //{
+            //    component.enabled = false;
+            //}
 
-            // Disable colliders:
-            foreach (Collider component in colliderComponents)
-            {
-                component.enabled = false;
-            }
+            //// Disable colliders:
+            //foreach (Collider component in colliderComponents)
+            //{
+            //    component.enabled = false;
+            //}
             SceneStateManager.instance.curentManager.SetActive(false);
             //           game.SetActive(false);
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
