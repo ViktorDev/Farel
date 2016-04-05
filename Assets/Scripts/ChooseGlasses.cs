@@ -17,6 +17,11 @@ public class ChooseGlasses : MonoBehaviour {
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape)) SceneManager.LoadScene(1);
+       
+    }
+
+    public void DradGlasses() {
+
     }
 
     public void OpenBuisnesView() {
