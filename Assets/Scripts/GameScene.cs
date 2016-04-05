@@ -92,7 +92,7 @@ public class GameScene : MonoBehaviour
 
             
             item.GetComponent<MovingItem>().dir = moon.transform.position - dir;
-            item.GetComponent<Rigidbody>().AddForce((moon.transform.position - dir)*0.1f, ForceMode.Impulse);
+ //           item.GetComponent<Rigidbody>().AddForce((moon.transform.position - dir)*0.1f, ForceMode.Impulse);
             
             yield return new WaitForSeconds(spawnSpaceObjectTime);
         }
@@ -111,21 +111,21 @@ public class GameScene : MonoBehaviour
 
     void UserInput() 
 	{
-//#if UNITY_ANDROID
-//        if (Input.GetTouch(0).phase == TouchPhase.Began)
-//        {
-//            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
-//            RaycastHit hit;
+        //#if UNITY_ANDROID
+        //        if (Input.GetTouch(0).phase == TouchPhase.Began)
+        //        {
+        //            Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+        //            RaycastHit hit;
 
-//            if (Physics.Raycast(ray, out hit, 100))
-//                if (hit.transform.gameObject.tag == "Asteroid")
-//                {
-//                    hit.transform.gameObject.GetComponent<Asteroid>().Crash();
-////                    Destroy(hit.transform.gameObject);
-//                    ChangePoints(1);
-//                }
-//        }
-//#endif
+        //            if (Physics.Raycast(ray, out hit, 100))
+        //                if (hit.transform.gameObject.tag == "Moving_Item"|| hit.transform.gameObject.tag == "SpaceShip")
+        //                {
+        //                    hit.transform.gameObject.GetComponent<Asteroid>().Crash();
+        ////                    Destroy(hit.transform.gameObject);
+        //                    ChangePoints(1);
+        //                }
+        //        }
+        //#endif
 #if UNITY_EDITOR
         if (Input.GetMouseButtonDown(0))
 		{
@@ -135,7 +135,7 @@ public class GameScene : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 100)) {
                 Debug.Log("ClickRay");
-                if (hit.transform.gameObject.tag == "Moving_Item")
+                if (hit.transform.gameObject.tag == "Moving_Item"|| hit.transform.gameObject.tag == "SpaceShip")
                 {
                     
                     hit.transform.gameObject.GetComponent<MovingItem>().Crash();
@@ -155,5 +155,9 @@ public class GameScene : MonoBehaviour
         foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Moving_Item")) {
             Destroy(obj);
         }
-	}
+        foreach (GameObject obj in GameObject.FindGameObjectsWithTag("SpaceShip"))
+        {
+            Destroy(obj);
+        }
+    }
 }

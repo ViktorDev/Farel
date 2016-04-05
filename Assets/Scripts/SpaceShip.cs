@@ -1,42 +1,49 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class SpaceShip : MovingItem {
+public class SpaceShip : MonoBehaviour
+{
+    GameScene gameManager;
+    Rigidbody bulletRig;
+    bool makeShot;
+    Rigidbody rig;
+    Vector3 awayDir;
+    float force = 0.15f;
 
-
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.gameObject.tag == "Moon") {
-            gameManager.ChangeHealth(-1);
-            contactPosition = collision.contacts[0].point;
-            StartCoroutine(makeExplosion(ExplosionType.MoonContact));
-        }
+    void Start() {
+        bulletRig = transform.Find("Bullet").gameObject.GetComponent<Rigidbody>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameScene>();
+        rig = GetComponent<Rigidbody>();
     }
 
-    public override void Crash() {
-        StartCoroutine(makeExplosion(ExplosionType.InSpace));
+    void Update() {
+        transform.localRotation = Quaternion.LookRotation(rig.velocity);       
+        if (makeShot) {
+            Vector3 gravity = gameManager.moon.transform.position - transform.position;
+            gravity.Normalize();
+            rig.AddForce(-gravity * force, ForceMode.Impulse);
+            rig.AddForce(awayDir*force, ForceMode.Impulse);
+            force += 0.0001f;
+            //           rig.AddForce(transform.righ)
+        } 
     }
 
-    IEnumerator makeExplosion(ExplosionType type) {
+    public void MakeShot() {
+        StartCoroutine(shot());
+    }
 
-            GetComponent<Rigidbody>().isKinematic = true;
-            if (type == ExplosionType.InSpace) {
-            transform.Find("Explosion").gameObject.SetActive(true);        
-            GetComponent<Collider>().enabled = false;
-            
-        } 
-        else {
-            GameObject bang = transform.Find("MoonExplosion").gameObject;
-            bang.transform.position = contactPosition;
-            bang.transform.rotation = Quaternion.LookRotation(-dir);
-            bang.SetActive(true);
-        } 
-        Debug.Log("expl");
-        while (transform.localScale.x > 0) {
-            yield return new WaitForSeconds(0.01f);
-            transform.localScale = new Vector3(transform.localScale.x - 0.0003f, transform.localScale.y - 0.0003f, transform.localScale.z - 0.0003f);
-        }
-        transform.localScale = new Vector3(0, 0, 0);
-        Destroy(gameObject, 3f);
+    IEnumerator shot() {
+//        gameObject.GetComponent<MovingItem>().enabled = false;
+        makeShot = true;
+        awayDir = transform.right;
+        //        rig.AddForce((transform.position - gameManager.moon.transform.position) *30f, ForceMode.Force);
+        //        rig.AddForce((transform.position + Vector3.right).normalized * 30f, ForceMode.Force);
+        yield return new WaitForSeconds(0.7f);
+        bulletRig.gameObject.SetActive(true);
+        bulletRig.gameObject.transform.parent = null;
+        //        bulletRig.isKinematic = false;
+        bulletRig.AddForce((gameManager.moon.transform.position - transform.position), ForceMode.Impulse);
+        Destroy(gameObject, 4);
+ //       rig.AddForce((transform.position + Vector3.right).normalized * 100f, ForceMode.Force);
     }
 }
