@@ -1,10 +1,13 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using Vuforia;
 
 public class PromoView : MonoBehaviour {
 
     public static PromoView instance;
+
+	public GameObject promoText;
     public Texture2D photo;
     public GameObject selfiePanel;
     bool isFront;
@@ -15,7 +18,9 @@ public class PromoView : MonoBehaviour {
         {
             instance = this;
         }
-        moon = transform.Find("PromoMoon").gameObject;
+        moon = transform.Find("moon_real").gameObject;
+		promoText.GetComponent<Text> ();
+
     }
 
 
@@ -41,9 +46,12 @@ public class PromoView : MonoBehaviour {
 
 	public void Show () {
         selfiePanel.SetActive(true);
+		promoText.SetActive(true);
     }
 	
 	public void Hide () {
         selfiePanel.SetActive(false);
+		promoText.SetActive(false);
+
     }
 }

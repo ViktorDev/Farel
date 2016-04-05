@@ -20,12 +20,16 @@ public class EducationView : MonoBehaviour
 		{
 			instance = this;
 		}
+
+		for (int i = 0; i < infoPanels.Count; i++) 
+		{
+			infoPanels [i].SetActive (true);	
+		}
 	}
 
 	public void Show()
 	{
-		GameScene.instance.ScoreImage.enabled = false;
-		GameScene.instance.score.SetActive (false);
+		//GameScene.instance.score.SetActive (false);
 		StartCoroutine (ColorChengerUp ());
 	}
 

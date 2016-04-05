@@ -27,11 +27,14 @@ public class GameScene : MonoBehaviour
         {
             instance = this;
         }
+
+
     }
 
     void Start()
 	{
 		
+		ScoreImage.enabled = false;
 
 		scoretext = score.GetComponent<Text>();
 		ScoreImage.enabled = false;
@@ -43,8 +46,10 @@ public class GameScene : MonoBehaviour
 	public void StartGame () 
 
 	{   
-		ScoreImage.enabled = true;
+		Debug.Log ("StartGame");
+
         StartCoroutine(SpawnSpaceObject());
+		ScoreImage.enabled = true;
     }
 	
 	void Update () 

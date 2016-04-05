@@ -5,6 +5,16 @@ public class InfoPanel : MonoBehaviour
 {
 	public RectTransform panel;
 
+	void Start()
+	{
+	}
+
+	public void MoviePlay()
+	{
+		((MovieTexture)GetComponent<Renderer>().material.mainTexture).Play();
+	}
+		
+
 	public void OpenPanel() 
 	{
 		StartCoroutine(Open());
@@ -17,7 +27,7 @@ public class InfoPanel : MonoBehaviour
 
 	IEnumerator Open() {
 		while (panel.localScale.y < 0.8f) {
-			panel.localScale = new Vector3(1, panel.localScale.y+0.05f, 1);
+			panel.localScale = new Vector3(1, panel.localScale.y + 0.05f, 1);
 			yield return new WaitForSeconds(0.01f);
 		}
 		panel.localScale = new Vector3(1, 0.8f, 1);
