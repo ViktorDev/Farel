@@ -5,15 +5,6 @@ public class InfoPanel : MonoBehaviour
 {
 	public RectTransform panel;
 
-	void Start()
-	{
-	}
-
-	public void MoviePlay()
-	{
-		((MovieTexture)GetComponent<Renderer>().material.mainTexture).Play();
-	}
-		
 
 	public void OpenPanel() 
 	{
