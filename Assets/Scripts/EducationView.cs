@@ -13,7 +13,6 @@ public class EducationView : MonoBehaviour
 
 	public List<GameObject> infoPanels;
 
-
 	void Awake()
 	{
 		if (instance == null) 

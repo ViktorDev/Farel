@@ -10,14 +10,13 @@ public class BuisnessView : MonoBehaviour
     public Material saled;
     public GameObject selectedLot;
 
-	void Start () 
-	{
+    void Awake()
+    {
         if (instance == null)
         {
             instance = this;
         }
     }
-	
 	void Update () 
 	{
         UserInput();

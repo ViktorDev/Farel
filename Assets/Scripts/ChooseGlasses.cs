@@ -20,29 +20,29 @@ public class ChooseGlasses : MonoBehaviour {
        
     }
 
-    public void DradGlasses() {
-
-    }
-
-    public void OpenBuisnesView() {
+   public void OpenBuisnesView() {
+        SceneStateManager.instance.curentManager = SceneStateManager.instance.managers[2];
         SceneManager.LoadScene(1);
-        UIManager.instance.BuisnessButtonClick();
+       
     }
 
     public void OpenEducationView()
     {
+        SceneStateManager.instance.curentManager = SceneStateManager.instance.managers[0];
         SceneManager.LoadScene(1);
-        UIManager.instance.EducationButtonClick();
+        
     }
     public void OpenGameView()
     {
+        SceneStateManager.instance.curentManager = SceneStateManager.instance.managers[1];
         SceneManager.LoadScene(1);
-        UIManager.instance.FunButtonClick();
+       
     }
     public void OpenAdvertsView()
     {
+        SceneStateManager.instance.curentManager = SceneStateManager.instance.managers[3];
         SceneManager.LoadScene(1);
-        UIManager.instance.PromotionButtonClick();
+        
     }
 
     public void setGlass(Sprite glassIm)

@@ -17,9 +17,12 @@ public class SceneStateManager : MonoBehaviour
 		{
 			instance = this;
 		}
-       
+        DontDestroyOnLoad(this);
 	}
 
+    //void OnEnable() {
+    //    curentManager.SetActive(true);
+    //}
 	public void ChangeState(int stateID)
 	{
 		curentManager.SetActive (false);
@@ -27,6 +30,10 @@ public class SceneStateManager : MonoBehaviour
 		curentManager.SetActive (true);
 	}
 
+    void OnDisable()
+    {
+        curentManager.SetActive(false);
+    }
 	public void Show()
 	{
 		

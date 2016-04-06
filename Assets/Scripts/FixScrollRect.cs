@@ -5,11 +5,11 @@ using UnityEngine.EventSystems;
 public class FixScrollRect : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler, IScrollHandler
 {
     ScrollRect MainScroll;
-    ChooseGlasses sceneController;
+    CapturePhotoScene sceneController;
 //    GameObject [] images;
 
     void Start() {
-        sceneController = GameObject.Find("SceneManager").GetComponent<ChooseGlasses>();
+        sceneController = GameObject.Find("PromoManager").GetComponent<CapturePhotoScene>();
         MainScroll = sceneController.scrollPanel.GetComponent<ScrollRect>();
  //       images = GameObject.FindGameObjectsWithTag("Item");
     }

@@ -7,9 +7,11 @@ public class CapturePhotoScene : MonoBehaviour {
     private bool takeHiResShot = false;
     public GameObject cam;
     string filename;
- //   public GameObject background;
- //   public Text info;
-
+    //   public GameObject background;
+    //   public Text info;
+    public GameObject back;
+    public GameObject glassImage;
+    public GameObject scrollPanel;
 
     public void TakeHiResShot()
     {
@@ -45,7 +47,11 @@ public class CapturePhotoScene : MonoBehaviour {
             //Debug.Log(string.Format("Took screenshot to: {0}", filename));
             takeHiResShot = false;
             Debug.Log("Selfie Shot");
-            SceneManager.LoadScene(2);
+            back.SetActive(true);
+            back.GetComponent<MeshRenderer>().material.mainTexture = PromoView.instance.photo;
+            back.GetComponent<MeshRenderer>().material.shader = Shader.Find("Sprites/Default");
+            scrollPanel.SetActive(true);
+            glassImage.SetActive(true);
         }
     }
 
@@ -55,5 +61,11 @@ public class CapturePhotoScene : MonoBehaviour {
                              Application.persistentDataPath,
                              width, height,
                              System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
+    }
+
+    public void setGlass(Sprite glassIm)
+    {
+        glassImage.SetActive(true);
+        glassImage.GetComponent<Image>().sprite = glassIm;
     }
 }

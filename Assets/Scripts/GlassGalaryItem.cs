@@ -22,7 +22,7 @@ public class GlassGalaryItem : MonoBehaviour {
             if (!isClicked)
             {
                 Sprite im = gameObject.GetComponent<Image>().sprite;
-                GameObject.Find("SceneManager").GetComponent<ChooseGlasses>().setGlass(im);
+                GameObject.Find("PromoManager").GetComponent<CapturePhotoScene>().setGlass(im);
                 isClicked = true;
             }
             else {
