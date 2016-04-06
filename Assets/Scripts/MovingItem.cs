@@ -4,15 +4,17 @@ using System.Collections;
 public class MovingItem : MonoBehaviour {
 
     protected enum ExplosionType { InSpace, MoonContact }
-//    public Vector3 dir;
+
     GameScene gameManager;
     Rigidbody rig;
     Vector3 contactPosition;
+    Vector3 originScale;
 
     void Start()
     {
-        gameManager = GameObject.Find("GameManager").GetComponent<GameScene>();
+        gameManager = GameScene.instance;
         rig = gameObject.GetComponent<Rigidbody>();
+        originScale = transform.localScale;
     }
 
     void Update()
@@ -44,34 +46,30 @@ public class MovingItem : MonoBehaviour {
 
     IEnumerator makeExplosion(ExplosionType type)
     {
-        GetComponent<Rigidbody>().isKinematic = true;
-        GameObject bang;
         if (type == ExplosionType.InSpace)
         {
-            bang = transform.Find("Explosion").gameObject;
-            bang.SetActive(true);
+            GameObject b = (GameObject) Instantiate(gameManager.spaceCrash, transform.position, Quaternion.identity);
+            Destroy(b, 4);
             GetComponent<Collider>().enabled = false;
 
         }
         else {
-            bang = transform.Find("MoonExplosion").gameObject;     
-            bang.transform.position = contactPosition;
-            bang.transform.rotation = Quaternion.LookRotation(gameManager.moon.transform.position - contactPosition);
-            bang.SetActive(true);
+            GameObject b = (GameObject)Instantiate(gameManager.moonCrash, contactPosition, Quaternion.LookRotation(gameManager.moon.transform.position - contactPosition));
+            Destroy(b, 4);
+            GetComponent<Collider>().enabled = false;
         }
         Debug.Log("expl");
-        bang.transform.parent = null;
         while (transform.localScale.x > 0)
         {
             yield return new WaitForSeconds(0.005f);
             transform.localScale = new Vector3(transform.localScale.x - 0.001f, transform.localScale.y - 0.001f, transform.localScale.z - 0.001f);
         }
         transform.localScale = new Vector3(0, 0, 0);
+        yield return new WaitForSeconds(4);
         GameScene.instance.listObjects.Enqueue(gameObject);
-        bang.transform.position = gameObject.transform.position;
-        bang.transform.parent = gameObject.transform;
-        bang.SetActive(false);
         gameObject.SetActive(false);
+        GetComponent<Collider>().enabled = true;
+        transform.localScale = new Vector3(originScale.x, originScale.y, originScale.z);
     }
 
 }

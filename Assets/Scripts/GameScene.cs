@@ -11,8 +11,8 @@ public class GameScene : MonoBehaviour
 	public Image ScoreImage;
 	public GameObject moon;
 	public GameObject score;
-	public GameObject asteroid;
-    public GameObject spaceShip;
+	public GameObject moonCrash;
+    public GameObject spaceCrash;
     public GameObject[] spaceObjects;
 
     public float spawnSpaceObjectTime = 2f;
@@ -27,9 +27,7 @@ public class GameScene : MonoBehaviour
         if (instance == null)
         {
             instance = this;
-        }
-        
-
+        }   
     }
 
     void OnEnable() {
@@ -99,6 +97,7 @@ public class GameScene : MonoBehaviour
 
     void UserInput() 
 	{
+  
 //#if UNITY_ANDROID
 //        if (Input.GetTouch(0).phase == TouchPhase.Began)
 //        {
@@ -143,12 +142,12 @@ public class GameScene : MonoBehaviour
         
         foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Moving_Item")) {
             listObjects.Enqueue(obj);
-//            Destroy(obj);
+            obj.SetActive(false);
         }
         foreach (GameObject obj in GameObject.FindGameObjectsWithTag("SpaceShip"))
         {
             listObjects.Enqueue(obj);
-//            Destroy(obj);
+            obj.SetActive(false);
         }
     }
 }

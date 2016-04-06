@@ -4,16 +4,14 @@ using System.Collections;
 public class SpaceShip : MonoBehaviour
 {
     GameScene gameManager;
-    Rigidbody bulletRig;
-    bool makeShot;
+    public GameObject bullet;
+    public bool makeShot;
     Rigidbody rig;
     Vector3 awayDir;
     float force = 0.15f;
 
     void Start() {
-        bulletRig = transform.Find("Bullet").gameObject.GetComponent<Rigidbody>();
-        gameManager = GameObject.Find("GameManager").GetComponent<GameScene>();
-        rig = GetComponent<Rigidbody>();
+        gameManager = GameScene.instance;
     }
 
     void Update()
@@ -26,32 +24,38 @@ public class SpaceShip : MonoBehaviour
             rig.AddForce(-gravity * force, ForceMode.Impulse);
             rig.AddForce(awayDir * force, ForceMode.Impulse);
             force += 0.0001f;
-            //           rig.AddForce(transform.righ)
         }
     }
+
+    void OnEnable() {    
+        rig = GetComponent<Rigidbody>();
+        Reset();
+    }
+
+    void Reset() {
+        force = 0.15f;
+        makeShot = false;
+        rig.velocity = Vector3.zero;
+    }
+
 
     public void MakeShot() {
         StartCoroutine(shot());
     }
 
     IEnumerator shot() {
-//        gameObject.GetComponent<MovingItem>().enabled = false;
         makeShot = true;
         awayDir = transform.right;
-        //        rig.AddForce((transform.position - gameManager.moon.transform.position) *30f, ForceMode.Force);
-        //        rig.AddForce((transform.position + Vector3.right).normalized * 30f, ForceMode.Force);
         yield return new WaitForSeconds(0.7f);
-        bulletRig.gameObject.SetActive(true);
-//        bulletRig.gameObject.transform.parent = null;
-        //        bulletRig.isKinematic = false;
-        bulletRig.AddForce((gameManager.moon.transform.position - transform.position), ForceMode.Impulse);
+
+        GameObject bul = (GameObject) Instantiate(bullet, new Vector3(transform.position.x, transform.position.y-0.2f, 0), Quaternion.identity);
+        bul.GetComponent<Rigidbody>().AddForce((gameManager.moon.transform.position - transform.position), ForceMode.Impulse);
+
         StartCoroutine(deleteShip());
- //       Destroy(gameObject, 4);
- //       rig.AddForce((transform.position + Vector3.right).normalized * 100f, ForceMode.Force);
     }
 
     IEnumerator deleteShip() {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(4);      
         GameScene.instance.listObjects.Enqueue(gameObject);
         gameObject.SetActive(false);
     }
