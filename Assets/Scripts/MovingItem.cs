@@ -67,7 +67,11 @@ public class MovingItem : MonoBehaviour {
             transform.localScale = new Vector3(transform.localScale.x - 0.001f, transform.localScale.y - 0.001f, transform.localScale.z - 0.001f);
         }
         transform.localScale = new Vector3(0, 0, 0);
-        Destroy(gameObject);
+        GameScene.instance.listObjects.Enqueue(gameObject);
+        bang.transform.position = gameObject.transform.position;
+        bang.transform.parent = gameObject.transform;
+        bang.SetActive(false);
+        gameObject.SetActive(false);
     }
 
 }
