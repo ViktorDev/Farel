@@ -107,7 +107,7 @@ namespace Vuforia
             //{
             //    component.enabled = false;
             //}
-            SceneStateManager.instance.curentManager.SetActive(false);
+            if(!SceneStateManager.instance.isSelfieMode) SceneStateManager.instance.curentManager.SetActive(false);
             //           game.SetActive(false);
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
         }

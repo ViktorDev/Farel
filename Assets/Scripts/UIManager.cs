@@ -37,8 +37,8 @@ public class UIManager : MonoBehaviour
 		
 		SceneStateManager.instance.ChangeState (2);
 //		GameScene.instance.StartGame ();
-		GameScene.instance.score.SetActive (true);
-		GameScene.instance.ScoreImage.enabled = true;
+//		GameScene.instance.score.SetActive (true);
+//		GameScene.instance.ScoreImage.enabled = true;
 
 		promo.Hide();
     }
