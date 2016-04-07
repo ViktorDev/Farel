@@ -3,8 +3,6 @@ using System.Collections;
 
 public class PlayMovie : MonoBehaviour 
 {
-	//public string clipName;
-	
 	public void PlayClip()
 	{
 		StartCoroutine (Start ());
@@ -12,7 +10,6 @@ public class PlayMovie : MonoBehaviour
 
 	IEnumerator Start()
 	{
-
 		Handheld.PlayFullScreenMovie ("Unity 5 Launch Trailer.mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);
 
 		yield return null;

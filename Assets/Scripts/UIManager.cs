@@ -20,7 +20,6 @@ public class UIManager : MonoBehaviour
 	{
 		SceneStateManager.instance.ChangeState (0);
 
-		//educ.Hide ();
 		promo.Hide();
 
     }
@@ -31,7 +30,6 @@ public class UIManager : MonoBehaviour
 
 		SceneStateManager.instance.ChangeState (1);
 
-		//educ.Show ();
     }
 
 	public void FunButtonClick()
@@ -42,7 +40,6 @@ public class UIManager : MonoBehaviour
 		GameScene.instance.score.SetActive (true);
 		GameScene.instance.ScoreImage.enabled = true;
 
-		//educ.Hide ();
 		promo.Hide();
     }
 
@@ -51,7 +48,6 @@ public class UIManager : MonoBehaviour
 		promo.Show();
 
 		SceneStateManager.instance.ChangeState (3);
-		//educ.Hide ();
         //        SceneManager.LoadScene(2);
     }
 
