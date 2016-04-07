@@ -54,5 +54,7 @@ public class EducationView : MonoBehaviour
 	public void BackTo() 
 	{
 		Ipanel.GetComponent<InfoPanel>().ClosePanel();
+		//Ipanel.GetComponent<PlayMovie> ().StopCoroutine ("Start");
+		Ipanel.GetComponent<PlayMovie> ().enabled = false;
 	}
 }
