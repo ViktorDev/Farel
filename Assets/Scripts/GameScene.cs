@@ -97,38 +97,43 @@ public class GameScene : MonoBehaviour
 
     void UserInput() 
 	{
-		if (!Application.isEditor) {  
-			if (Input.GetTouch (0).phase == TouchPhase.Began) {
-				Ray ray = Camera.main.ScreenPointToRay (Input.GetTouch (0).position);
-				RaycastHit hit;
 
-				if (Physics.Raycast (ray, out hit, 100))
-				if (hit.transform.gameObject.tag == "Moving_Item" || hit.transform.gameObject.tag == "SpaceShip") {
-					hit.transform.gameObject.GetComponent<MovingItem> ().Crash ();
-					//                    Destroy(hit.transform.gameObject);
-					ChangePoints (1);
-				}
-			}
-		}
+        if (Application.isEditor)
+        {
+            if (Input.GetMouseButtonDown(0))
+            {
+                Debug.Log("Click");
+                Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                RaycastHit hit;
 
-		if (Application.isEditor) {
-			if (Input.GetMouseButtonDown (0)) {
-				Debug.Log ("Click");
-				Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-				RaycastHit hit;
+                if (Physics.Raycast(ray, out hit, 100))
+                {
+                    Debug.Log("ClickRay");
+                    if (hit.transform.gameObject.tag == "Moving_Item" || hit.transform.gameObject.tag == "SpaceShip")
+                    {
 
-				if (Physics.Raycast (ray, out hit, 100)) {
-					Debug.Log ("ClickRay");
-					if (hit.transform.gameObject.tag == "Moving_Item" || hit.transform.gameObject.tag == "SpaceShip") {
+                        hit.transform.gameObject.GetComponent<MovingItem>().Crash();
+                        ChangePoints(1);
+                    }
+                }
 
-						hit.transform.gameObject.GetComponent<MovingItem> ().Crash ();
-						ChangePoints (1);
-					}
-				}
+            }
+        }
+        else {
+            if (Input.GetTouch(0).phase == TouchPhase.Began)
+            {
+                Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
+                RaycastHit hit;
 
-			}
-		}
-
+                if (Physics.Raycast(ray, out hit, 100))
+                    if (hit.transform.gameObject.tag == "Moving_Item" || hit.transform.gameObject.tag == "SpaceShip")
+                    {
+                        hit.transform.gameObject.GetComponent<MovingItem>().Crash();
+                        //                    Destroy(hit.transform.gameObject);
+                        ChangePoints(1);
+                    }
+            }
+        }
     }
 
     void OnDisable()

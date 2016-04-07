@@ -6,7 +6,7 @@ public class BuisnessView : MonoBehaviour
     public static BuisnessView instance;
     public GameObject lotPanel;
     public GameObject lotInfo;
-    public Material onSale;
+//    public Material onSale;
     public Material saled;
     public GameObject selectedLot;
 
