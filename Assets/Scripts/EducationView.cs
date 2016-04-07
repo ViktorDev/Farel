@@ -8,9 +8,7 @@ public class EducationView : MonoBehaviour
 {
 	public static EducationView instance;
 
-
 	public GameObject Ipanel;
-	public GameObject panelInfo;
 
 
 	void Awake()
@@ -18,6 +16,7 @@ public class EducationView : MonoBehaviour
 		if (instance == null) {
 			instance = this;
 		}
+
 	}
 
 	void Update()
@@ -54,7 +53,6 @@ public class EducationView : MonoBehaviour
 	public void BackTo() 
 	{
 		Ipanel.GetComponent<InfoPanel>().ClosePanel();
-		//Ipanel.GetComponent<PlayMovie> ().StopCoroutine ("Start");
 		Ipanel.GetComponent<PlayMovie> ().enabled = false;
 	}
 }

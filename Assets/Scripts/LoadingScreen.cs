@@ -15,7 +15,7 @@ public class LoadingScreen : MonoBehaviour {
 		loadText.GetComponent<Text> ();
 		loadOp = Application.LoadLevelAsync(1);    
 	}
-	void Update()    
+	void LateUpdate()    
 	{    
 		loadText.text =  "Loading " + (loadOp.progress * 100).ToString() + "%";    
 		counter++;    
