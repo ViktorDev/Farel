@@ -10,7 +10,7 @@ public class FixScrollRect : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 
     void Start() {
         sceneController = GameObject.Find("PromoManager").GetComponent<CapturePhotoScene>();
-        MainScroll = sceneController.scrollPanel.GetComponent<ScrollRect>();
+        MainScroll = sceneController.galaryPanel.GetComponent<ScrollRect>();
  //       images = GameObject.FindGameObjectsWithTag("Item");
     }
 

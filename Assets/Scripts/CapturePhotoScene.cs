@@ -6,12 +6,8 @@ public class CapturePhotoScene : MonoBehaviour {
 
     private bool takeHiResShot = false;
     public GameObject cam;
-    string filename;
-    //   public GameObject background;
-    //   public Text info;
-    public GameObject back;
     public GameObject glassImage;
-    public GameObject scrollPanel;
+    public GameObject galaryPanel;
 
     public void TakeHiResShot()
     {
@@ -20,7 +16,6 @@ public class CapturePhotoScene : MonoBehaviour {
     }
     void LateUpdate()
     {
-//        if (Input.GetKeyDown(KeyCode.Escape)) SceneManager.LoadScene(4);
         if (takeHiResShot)
         {
             RenderTexture rt = new RenderTexture(Screen.width, Screen.height, 24);
@@ -30,37 +25,20 @@ public class CapturePhotoScene : MonoBehaviour {
             RenderTexture.active = rt;
             screenShot.ReadPixels(new Rect(0, 0, Screen.width, Screen.height), 0, 0);
             screenShot.Apply();
-
-            PromoView.instance.photo = screenShot;
- //           background.SetActive(true);
- //           background.GetComponent<MeshRenderer>().material.mainTexture = screenShot;
- //           background.GetComponent<MeshRenderer>().material.shader = Shader.Find("Sprites/Default");
-
             cam.GetComponent<Camera>().targetTexture = null;
             RenderTexture.active = null; // JC: added to avoid errors
             Destroy(rt);
-
- //           info.text = "DONE";
-            //byte[] bytes = screenShot.EncodeToPNG();
-            //filename = ScreenShotName(Screen.width, Screen.height);
-            //System.IO.File.WriteAllBytes(filename, bytes);
-            //Debug.Log(string.Format("Took screenshot to: {0}", filename));
             takeHiResShot = false;
             Debug.Log("Selfie Shot");
-            back.SetActive(true);
-            back.GetComponent<MeshRenderer>().material.mainTexture = PromoView.instance.photo;
-            back.GetComponent<MeshRenderer>().material.shader = Shader.Find("Sprites/Default");
-            scrollPanel.SetActive(true);
-            glassImage.SetActive(true);
+             Sprite sp = new Sprite();
+            sp = Sprite.Create(screenShot, new Rect(0,0, screenShot.width, screenShot.height), new Vector2(screenShot.width/2, screenShot.height/2), 100);
+            galaryPanel.GetComponent<Image>().sprite = sp;
+            galaryPanel.SetActive(true);
         }
     }
 
-    public static string ScreenShotName(int width, int height)
-    {
-        return string.Format("{0}/screen_{1}x{2}_{3}.png",
-                             Application.persistentDataPath,
-                             width, height,
-                             System.DateTime.Now.ToString("yyyy-MM-dd_HH-mm-ss"));
+    public void BackBut() {
+        galaryPanel.SetActive(false);
     }
 
     public void setGlass(Sprite glassIm)
@@ -68,4 +46,6 @@ public class CapturePhotoScene : MonoBehaviour {
         glassImage.SetActive(true);
         glassImage.GetComponent<Image>().sprite = glassIm;
     }
+
+
 }
