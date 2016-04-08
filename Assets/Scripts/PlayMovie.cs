@@ -7,15 +7,16 @@ public class PlayMovie : MonoBehaviour
 	{
 		//StartCoroutine (Start ());
 		Handheld.PlayFullScreenMovie ("Unity 5 Launch Trailer.mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);
-		Debug.Log ("Play");
+
+        Debug.Log ("Play");
 	}
 
-/*	IEnumerator Start()
-	{
-		Handheld.PlayFullScreenMovie ("Unity 5 Launch Trailer.mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);
+    /*	IEnumerator Start()
+        {
+            Handheld.PlayFullScreenMovie ("Unity 5 Launch Trailer.mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);
 
-		yield return null;
+            yield return null;
 
-		print ("Move Scene");
-	}*/
+            print ("Move Scene");
+        }*/
 }

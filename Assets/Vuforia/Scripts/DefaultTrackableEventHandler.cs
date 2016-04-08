@@ -5,6 +5,7 @@ Confidential and Proprietary - Protected under copyright and other laws.
 ==============================================================================*/
 
 using UnityEngine;
+
 namespace Vuforia
 {
     /// <summary>
@@ -13,9 +14,6 @@ namespace Vuforia
     public class DefaultTrackableEventHandler : MonoBehaviour,
                                                 ITrackableEventHandler
     {
-
- //       public GameObject game;
- //       GameObject obj;
         #region PRIVATE_MEMBER_VARIABLES
  
         private TrackableBehaviour mTrackableBehaviour;
@@ -70,45 +68,42 @@ namespace Vuforia
 
         private void OnTrackingFound()
         {
-            //Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
-            //Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
+            Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
+            Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 
-            //// Enable rendering:
-            //foreach (Renderer component in rendererComponents)
-            //{
-            //    component.enabled = true;
-            //}
+            // Enable rendering:
+            foreach (Renderer component in rendererComponents)
+            {
+                component.enabled = true;
+            }
 
-            //// Enable colliders:
-            //foreach (Collider component in colliderComponents)
-            //{
-            //    component.enabled = true;
-            //}
-            SceneStateManager.instance.curentManager.SetActive(true);
- //           obj = game.GetComponent<StateManager>();
-//            game.GetComponent<StateManager>().cu
+            // Enable colliders:
+            foreach (Collider component in colliderComponents)
+            {
+                component.enabled = true;
+            }
+
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
         }
 
 
         private void OnTrackingLost()
         {
-            //Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
-            //Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
+            Renderer[] rendererComponents = GetComponentsInChildren<Renderer>(true);
+            Collider[] colliderComponents = GetComponentsInChildren<Collider>(true);
 
-            //// Disable rendering:
-            //foreach (Renderer component in rendererComponents)
-            //{
-            //    component.enabled = false;
-            //}
+            // Disable rendering:
+            foreach (Renderer component in rendererComponents)
+            {
+                component.enabled = false;
+            }
 
-            //// Disable colliders:
-            //foreach (Collider component in colliderComponents)
-            //{
-            //    component.enabled = false;
-            //}
-            if(!SceneStateManager.instance.isSelfieMode) SceneStateManager.instance.curentManager.SetActive(false);
-            //           game.SetActive(false);
+            // Disable colliders:
+            foreach (Collider component in colliderComponents)
+            {
+                component.enabled = false;
+            }
+
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
         }
 
