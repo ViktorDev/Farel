@@ -42,28 +42,13 @@ public class GameScene : MonoBehaviour
 	{
         scoretext = score.GetComponentInChildren<Text>();
         healthText = healthIm.GetComponentInChildren<Text>();
-        for (int i = 0; i < 15; i++){
-            int itemType = Random.Range(0, 4);
-            GameObject g = (GameObject) Instantiate(spaceObjects[itemType], new Vector3(100, 100,100), Quaternion.identity);
-            g.GetComponent<MovingItem>().type = (MovingItem.ItemType)itemType;
-            listObjects.Enqueue(g);
-            g.SetActive(false);
-        }
+       
     }
 
 	public void StartGame () 
 	{   
-		Debug.Log ("StartGame");
         score.SetActive(true);
         healthIm.SetActive(true);
-        StartCoroutine(SpawnSpaceObject());
-    }
-
-    public void RestartGame() {
-        losePanel.SetActive(false);
-        points = 0;
-        health = 100;
-        listObjects.Clear();
         for (int i = 0; i < 15; i++)
         {
             int itemType = Random.Range(0, 4);
@@ -72,10 +57,15 @@ public class GameScene : MonoBehaviour
             listObjects.Enqueue(g);
             g.SetActive(false);
         }
+        StartCoroutine(SpawnSpaceObject());
+    }
+
+    public void RestartGame() {
+        losePanel.SetActive(false);
+        points = 0;
+        health = 100;
         isGame = true;
-        score.SetActive(true);
-        healthIm.SetActive(true);
-        //       StartCoroutine(SpawnSpaceObject());
+        StartGame();
     }
 
     void LoseGame() {
@@ -84,12 +74,17 @@ public class GameScene : MonoBehaviour
         losePanel.SetActive(true);
         losePanel.transform.Find("GameInfo").GetComponent<Text>().text = "Your score: " + points;
         isGame = false;
-        foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Moving_Item"))
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Moving_Item");
+        foreach (GameObject obj in objs)
         {
-            listObjects.Enqueue(obj);
-            obj.SetActive(false);
+            Destroy(obj);
+//            obj.SetActive(false);
         }
-
+        while (listObjects.Count > 0)
+        {
+            GameObject g = listObjects.Dequeue();
+            Destroy(g);
+        }
     }
 
 	void Update () 
@@ -204,9 +199,17 @@ public class GameScene : MonoBehaviour
         score.SetActive(false);
         healthIm.SetActive(false);
 
-        foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Moving_Item")) {
-            listObjects.Enqueue(obj);
-            obj.SetActive(false);
+
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Moving_Item");
+        foreach (GameObject obj in objs){ 
+            Destroy(obj);
+            
+//            listObjects.Enqueue(obj);
+//            obj.SetActive(false);
+        }
+        while (listObjects.Count > 0) {
+            GameObject g = listObjects.Dequeue();
+            Destroy(g);
         }
     }
 }
