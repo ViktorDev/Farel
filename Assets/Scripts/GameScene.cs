@@ -7,8 +7,9 @@ public class GameScene : MonoBehaviour
 
 {
     public static GameScene instance;
-    public Queue<GameObject> listObjects = new Queue<GameObject>();
-//	public Image ScoreImage;
+    
+	public Queue<GameObject> listObjects = new Queue<GameObject>();
+
 	public GameObject moon;
 	public GameObject score;
     public GameObject healthIm;
@@ -17,11 +18,11 @@ public class GameScene : MonoBehaviour
     public GameObject spaceCrash;
     public GameObject[] spaceObjects;
 
-    public float spawnSpaceObjectTime = 2f;
-	bool isGame = true;
+	private Text healthText;
+	private Text scoretext;
 
-    private Text healthText;
-    private Text scoretext;
+	public float spawnSpaceObjectTime = 2f;
+	private bool isGame = true;
 	private int points = 0;
 	private int health = 100;
 
@@ -47,6 +48,8 @@ public class GameScene : MonoBehaviour
 
 	public void StartGame () 
 	{   
+		PlayerPrefs.GetInt ("points", points);
+		PlayerPrefs.GetInt ("health", health);
         score.SetActive(true);
         healthIm.SetActive(true);
         for (int i = 0; i < 15; i++)
@@ -78,7 +81,6 @@ public class GameScene : MonoBehaviour
         foreach (GameObject obj in objs)
         {
             Destroy(obj);
-//            obj.SetActive(false);
         }
         while (listObjects.Count > 0)
         {
@@ -139,7 +141,6 @@ public class GameScene : MonoBehaviour
 
                 if (Physics.Raycast(ray, out hit, 100))
                 {
-                    Debug.Log("ClickRay");
                     if (hit.transform.gameObject.tag == "Moving_Item")
                     {
                         switch (hit.transform.gameObject.GetComponent<MovingItem>().type) {
@@ -194,6 +195,8 @@ public class GameScene : MonoBehaviour
 
     void OnDisable()
 	{
+		PlayerPrefs.SetInt ("points", points);
+		PlayerPrefs.SetInt ("health",health);
 		StopAllCoroutines ();
         losePanel.SetActive(false);
         score.SetActive(false);
@@ -204,8 +207,6 @@ public class GameScene : MonoBehaviour
         foreach (GameObject obj in objs){ 
             Destroy(obj);
             
-//            listObjects.Enqueue(obj);
-//            obj.SetActive(false);
         }
         while (listObjects.Count > 0) {
             GameObject g = listObjects.Dequeue();

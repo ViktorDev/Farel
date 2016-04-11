@@ -3,12 +3,11 @@
 public class SetBackground : MonoBehaviour {
 
     
-	// Use this for initialization
-	void Start () {
+	void Start () 
+	{
         Resize();
 	}
 	
-	// Update is called once per frame
     void Update()
     {
 

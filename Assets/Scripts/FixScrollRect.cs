@@ -6,21 +6,16 @@ public class FixScrollRect : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
 {
     ScrollRect MainScroll;
     CapturePhotoScene sceneController;
-//    GameObject [] images;
 
     void Start() {
         sceneController = GameObject.Find("PromoManager").GetComponent<CapturePhotoScene>();
         MainScroll = sceneController.galaryPanel.GetComponent<ScrollRect>();
- //       images = GameObject.FindGameObjectsWithTag("Item");
     }
 
     public void OnBeginDrag(PointerEventData eventData)
     {
         MainScroll.OnBeginDrag(eventData);
         GetComponent<GlassGalaryItem>().isButtonClicked = false;
-        //foreach (GameObject g in images) {
-        //    g.GetComponent<GalaryItem>().isButtonClicked = false;
-        //}
     }
 
 
@@ -33,10 +28,6 @@ public class FixScrollRect : MonoBehaviour, IBeginDragHandler, IDragHandler, IEn
     {
         MainScroll.OnEndDrag(eventData);
         GetComponent<GlassGalaryItem>().isButtonClicked = true;
-        //foreach (GameObject g in images)
-        //{
-        //    g.GetComponent<GalaryItem>().isButtonClicked = true;
-        //}
     }
 
 

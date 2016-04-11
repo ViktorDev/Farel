@@ -18,14 +18,4 @@ public class GlassMoving : MonoBehaviour, IDragHandler
         currentPosition.y += eventData.delta.y;
         rect.position = currentPosition;
     }
-
-    // Use this for initialization
-    void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

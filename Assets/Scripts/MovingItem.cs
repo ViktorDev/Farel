@@ -4,13 +4,16 @@ using System.Collections;
 public class MovingItem : MonoBehaviour {
 
     protected enum ExplosionType { InSpace, MoonContact }
-    public enum ItemType {Asteroid, SpaceShip, FuelTank, Satellite }
+    
+	public enum ItemType {Asteroid, SpaceShip, FuelTank, Satellite }
+
+	public ItemType type;
 
     GameScene gameManager;
     Rigidbody rig;
     Vector3 contactPosition;
     Vector3 originScale;
-    public ItemType type;
+    
 
     void Start()
     {

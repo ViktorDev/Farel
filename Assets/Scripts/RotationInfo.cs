@@ -5,10 +5,10 @@ public class RotationInfo : MonoBehaviour
 {
 	
 	public List<GameObject> text;
+
 	public Transform moon;
 
 	LineRenderer line;
-
 
 	GameObject arCam;
 

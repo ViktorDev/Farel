@@ -4,17 +4,19 @@ using UnityEngine.UI;
 
 public class CapturePhotoScene : MonoBehaviour {
 
-    private bool takeHiResShot = false;
+    
     public GameObject cam;
     public GameObject glassImage;
     public GameObject galaryPanel;
 
-    public void TakeHiResShot()
+	private bool takeHiResShot = false;
+    
+	public void TakeHiResShot()
     {
         takeHiResShot = true;
-
     }
-    void LateUpdate()
+    
+	void LateUpdate()
     {
         if (takeHiResShot)
         {
@@ -29,8 +31,7 @@ public class CapturePhotoScene : MonoBehaviour {
             RenderTexture.active = null; // JC: added to avoid errors
             Destroy(rt);
             takeHiResShot = false;
-            Debug.Log("Selfie Shot");
-             Sprite sp = new Sprite();
+            Sprite sp = new Sprite();
             sp = Sprite.Create(screenShot, new Rect(0,0, screenShot.width, screenShot.height), new Vector2(screenShot.width/2, screenShot.height/2), 100);
             galaryPanel.GetComponent<Image>().sprite = sp;
             galaryPanel.SetActive(true);

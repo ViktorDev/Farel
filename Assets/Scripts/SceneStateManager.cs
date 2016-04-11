@@ -8,8 +8,10 @@ public class SceneStateManager : MonoBehaviour
 	public static SceneStateManager instance;
 
 	public List<GameObject> managers;
-    public bool isSelfieMode;
 	public GameObject curentManager;
+
+    public bool isSelfieMode;
+
 
     void Awake () 
 	{
@@ -23,9 +25,7 @@ public class SceneStateManager : MonoBehaviour
     void Update() {
         if (Input.GetKeyDown(KeyCode.Escape)) Application.Quit();
     }
-    //void OnEnable() {
-    //    curentManager.SetActive(true);
-    //}
+
 	public void ChangeState(int stateID)
 	{
 		curentManager.SetActive (false);
@@ -37,13 +37,4 @@ public class SceneStateManager : MonoBehaviour
     {
         curentManager.SetActive(false);
     }
-	public void Show()
-	{
-		
-	}
-
-	public void Hide()
-	{
-		
-	}
 }

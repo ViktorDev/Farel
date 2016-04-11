@@ -5,16 +5,6 @@ public class BuyLotPanel : MonoBehaviour
 {
 
     public RectTransform panel;
-    //   GameObject panel;
-    // Use this for initialization
-    void Start()
-    {
-        //       panel = GetComponentInChildren<RectTransform>();
-    }
-
-    //void Awake() {
-    //    OpenPanel();
-    //}
 
     public void OpenPanel()
     {

@@ -55,8 +55,6 @@ public class TakeScreenShot : MonoBehaviour
 
 		_isProcessing = false;
 		buttonShare.enabled = true;
-
-		Debug.Log (path.ToString ());
 	}
 
 

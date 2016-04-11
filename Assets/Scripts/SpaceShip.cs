@@ -3,12 +3,15 @@ using System.Collections;
 
 public class SpaceShip : MonoBehaviour
 {
-    GameScene gameManager;
+    
     public GameObject bullet;
     public bool makeShot;
-    Rigidbody rig;
+    
+	Rigidbody rig;
     Vector3 awayDir;
-    float force = 0.15f;
+	GameScene gameManager;
+    
+	float force = 0.15f;
 
     void Start() {
         gameManager = GameScene.instance;

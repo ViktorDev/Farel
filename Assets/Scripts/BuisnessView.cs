@@ -4,12 +4,13 @@ using UnityEngine.UI;
 public class BuisnessView : MonoBehaviour 
 {
     public static BuisnessView instance;
-    public GameObject lotPanel;
+
+	public GameObject lotPanel;
     public GameObject lotInfo;
 	public GameObject signboard;
-//    public Material onSale;
-    public Material saled;
     public GameObject selectedLot;
+
+	public Material saled;
 
     void Awake()
     {
@@ -51,7 +52,6 @@ public class BuisnessView : MonoBehaviour
 				if (Physics.Raycast(ray, out hit, 100))
 				if (hit.transform.gameObject.tag == "Lot")
 				{
-					Debug.Log("Select");
 					OpenLotInfo(hit.transform.gameObject);
 					selectedLot = hit.transform.gameObject;
 					signboard = hit.transform.FindChild("for sale").gameObject;

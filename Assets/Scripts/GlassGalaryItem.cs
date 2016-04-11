@@ -4,20 +4,12 @@ using UnityEngine.UI;
 
 public class GlassGalaryItem : MonoBehaviour {
 
-
-    bool isClicked;
+    
     public bool isButtonClicked;
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
-    public void setGlass() {
+	private bool isClicked;
+    
+	public void SetGlass() {
          if (isButtonClicked) {
             if (!isClicked)
             {
