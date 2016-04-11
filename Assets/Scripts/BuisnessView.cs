@@ -6,6 +6,7 @@ public class BuisnessView : MonoBehaviour
     public static BuisnessView instance;
     public GameObject lotPanel;
     public GameObject lotInfo;
+	public GameObject signboard;
 //    public Material onSale;
     public Material saled;
     public GameObject selectedLot;
@@ -53,6 +54,8 @@ public class BuisnessView : MonoBehaviour
 					Debug.Log("Select");
 					OpenLotInfo(hit.transform.gameObject);
 					selectedLot = hit.transform.gameObject;
+					signboard = hit.transform.FindChild("for sale").gameObject;
+					signboard.SetActive (false);
 				}
 			}
 		}
