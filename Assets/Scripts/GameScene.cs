@@ -82,6 +82,7 @@ public class GameScene : MonoBehaviour
         score.SetActive(false);
         healthIm.SetActive(false);
         losePanel.SetActive(true);
+        losePanel.transform.Find("GameInfo").GetComponent<Text>().text = "Your score: " + points;
         isGame = false;
         foreach (GameObject obj in GameObject.FindGameObjectsWithTag("Moving_Item"))
         {
