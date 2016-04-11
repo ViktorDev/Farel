@@ -85,33 +85,6 @@ namespace Vuforia
 
             SceneStateManager.instance.curentManager.SetActive(true);
 
-            //VideoPlaybackBehaviour video = GetComponentInChildren<VideoPlaybackBehaviour>();
-            //if (video != null && video.AutoPlay)
-            //{
-            //    if (video.VideoPlayer.IsPlayableOnTexture())
-            //    {
-            //        VideoPlayerHelper.MediaState state = video.VideoPlayer.GetStatus();
-            //        if (state == VideoPlayerHelper.MediaState.PAUSED ||
-            //            state == VideoPlayerHelper.MediaState.READY ||
-            //            state == VideoPlayerHelper.MediaState.STOPPED)
-            //        {
-            //            // Pause other videos before playing this one
-            //            PauseOtherVideos(video);
-
-            //            // Play this video on texture where it left off
-            //            video.VideoPlayer.Play(false, video.VideoPlayer.GetCurrentPosition());
-            //        }
-            //        else if (state == VideoPlayerHelper.MediaState.REACHED_END)
-            //        {
-            //            // Pause other videos before playing this one
-            //            PauseOtherVideos(video);
-
-            //            // Play this video from the beginning
-            //            video.VideoPlayer.Play(false, 0);
-            //        }
-            //    }
-            //}
-
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
         }
 
@@ -136,23 +109,6 @@ namespace Vuforia
             SceneStateManager.instance.curentManager.SetActive(false);
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
         }
-
-        //private void PauseOtherVideos(VideoPlaybackBehaviour currentVideo)
-        //{
-        //    VideoPlaybackBehaviour[] videos = (VideoPlaybackBehaviour[])
-        //            FindObjectsOfType(typeof(VideoPlaybackBehaviour));
-
-        //    foreach (VideoPlaybackBehaviour video in videos)
-        //    {
-        //        if (video != currentVideo)
-        //        {
-        //            if (video.CurrentState == VideoPlayerHelper.MediaState.PLAYING)
-        //            {
-        //                video.VideoPlayer.Pause();
-        //            }
-        //        }
-        //    }
-        //}
         #endregion // PRIVATE_METHODS
     }
    
