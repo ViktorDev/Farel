@@ -9,14 +9,23 @@ public class EducationView : MonoBehaviour
 	public static EducationView instance;
 
 	public GameObject Ipanel;
+	public Text info;
 
+	string info1 = "jdfnvkjdnflvjbslbvrfkbvfjsbvjk" +
+		"jvnsdfkjvbndfkjvbndfkjbvnkjdnfv" +
+		"fdvkljdfsbnkdgfjbnkjdgfbnkjdgnfbkj" +
+		"dfnkjsbvdbnfsvkjdfbnkbjdgfkjbvjdfsb" +
+		"nkidfjbvkdfjbvnkdfjbvnkdfjbvnkdfjbnkjsbdf" +
+		"dnbfjdgfbnkjdgfnbkjdgfnbkjdgnfbkjndgfkjbngfnb" +
+		"kbjdsfbkdgfbkjdkjbskjndfkjbkjdgfbjdgfkjbnldkjsnfb" +
+		"sdfkjbndgfkjbkdjsnbkjsdbnkjnkdfjbnldfksnb" +
+		"dfkljbvkdfjsbnkjdfbvkjdfsbkjdfkjbvdfkjsbv";
 
 	void Awake()
 	{
 		if (instance == null) {
 			instance = this;
 		}
-
 	}
 
 	void Update()
@@ -35,7 +44,12 @@ public class EducationView : MonoBehaviour
 
 			if (Physics.Raycast (ray, out hit, 100)) {
 				if (hit.transform.gameObject.tag == "Information") {
-					Debug.Log (hit.transform.gameObject.tag);
+					Debug.Log (hit.transform.name);
+					if (hit.transform.name == "Info_footnote") 
+					{
+						info.text = "" + info1;
+					}
+						
 					OpenLotInfo ();
 
 				}
@@ -54,5 +68,6 @@ public class EducationView : MonoBehaviour
 	{
 		Ipanel.GetComponent<InfoPanel>().ClosePanel();
 		Ipanel.GetComponent<PlayMovie> ().enabled = false;
+		info.text = "";
 	}
 }
