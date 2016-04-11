@@ -40,6 +40,7 @@ ModelImporter:
     2300016: Cylinder001
     2300018: Cylinder002
     2300020: Line001
+    2300022: //RootNode
     3300000: Box001
     3300002: Box002
     3300004: Box003
@@ -51,6 +52,7 @@ ModelImporter:
     3300016: Cylinder001
     3300018: Cylinder002
     3300020: Line001
+    3300022: //RootNode
     4300000: Box001
     4300002: Cylinder001
     4300004: Box002
