@@ -11,18 +11,18 @@ public class PromoView : MonoBehaviour {
     GameObject moon;
     GameObject promoText;
     GameObject openSelfieBut;
-    GameObject target;
+   // GameObject target;
     
     void Awake() {
         if (instance == null)
         {
             instance = this;          
         }
-        moon = transform.Find("moon_real").gameObject;
+		moon = transform.Find("moon_real_hd_atlas").gameObject;
         promoText = promoPanel.transform.Find("PromoText").gameObject;
         openSelfieBut = promoPanel.transform.Find("OpenSelfiePanel").gameObject;
         selfiePanel = promoPanel.transform.Find("SelfiePanel").gameObject;
-        target = GameObject.Find("ImageTarget");
+       // target = GameObject.Find("ImageTarget");
     }
 
     public void OpenSelfiePanel() {
