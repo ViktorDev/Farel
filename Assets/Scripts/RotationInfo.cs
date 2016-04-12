@@ -5,6 +5,7 @@ public class RotationInfo : MonoBehaviour
 {
 	
 	public List<GameObject> text;
+	public List<LineRenderer> lines;
 
 	public Transform moon;
 
@@ -19,11 +20,14 @@ public class RotationInfo : MonoBehaviour
 		foreach (var item in text) 
 		{
 			line = item.gameObject.AddComponent<LineRenderer>();
-			line.material = Resources.Load("Buisness") as Material;
 			line.SetWidth (0.1f, 0.1f);
 			line.SetVertexCount (3);
-
+			lines.Add (line);
 		}
+		lines [0].material = Resources.Load ("Buisness") as Material;
+		lines [1].material = Resources.Load ("Education") as Material;
+		lines [2].material = Resources.Load ("Fun") as Material;
+		lines [3].material = Resources.Load ("Promotion") as Material;
 	}
 	
 	void Update () 
