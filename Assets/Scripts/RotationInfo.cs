@@ -21,7 +21,7 @@ public class RotationInfo : MonoBehaviour
 			line = item.gameObject.AddComponent<LineRenderer>();
 			line.material = Resources.Load("Buisness") as Material;
 			line.SetWidth (0.1f, 0.1f);
-			line.SetVertexCount (2);
+			line.SetVertexCount (3);
 
 		}
 	}
@@ -33,6 +33,8 @@ public class RotationInfo : MonoBehaviour
 			line = item.gameObject.GetComponent<LineRenderer> ();
 			line.SetPosition (0, moon.transform.position);
 			line.SetPosition (1, item.transform.GetChild(1).position);
+			line.SetPosition (2, item.transform.GetChild(2).position);
+
 		}
 		transform.rotation = moon.transform.rotation;
 	}
