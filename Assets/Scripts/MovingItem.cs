@@ -49,9 +49,9 @@ public class MovingItem : MonoBehaviour {
         StartCoroutine(makeExplosion(ExplosionType.MoonContact));
     }
 
-    IEnumerator makeExplosion(ExplosionType type)
+    IEnumerator makeExplosion(ExplosionType explType)
     {
-        if (type == ExplosionType.InSpace)
+        if (explType == ExplosionType.InSpace)
         {
             GameObject b = (GameObject) Instantiate(gameManager.spaceCrash, transform.position, Quaternion.identity);
             Destroy(b, 4);
@@ -62,6 +62,9 @@ public class MovingItem : MonoBehaviour {
             GameObject b = (GameObject)Instantiate(gameManager.moonCrash, contactPosition, Quaternion.LookRotation(gameManager.moon.transform.position - contactPosition));
             Destroy(b, 4);
             GetComponent<Collider>().enabled = false;
+            if (type == ItemType.Asteroid) {
+                gameObject.GetComponent<TrailRenderer>().enabled = false;
+            }
         }
         Debug.Log("expl");
         while (transform.localScale.x > 0)
