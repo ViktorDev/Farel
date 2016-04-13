@@ -65,7 +65,7 @@ public class MovingItem : MonoBehaviour {
             Destroy(b, 4);
             GetComponent<Collider>().enabled = false;
 
-            GameObject cr = (GameObject) Instantiate(gameManager.crator, contactPosition, Quaternion.LookRotation(gameManager.moon.transform.position - contactPosition));
+            GameObject cr = (GameObject) Instantiate(gameManager.crator, gameManager.moon.transform.position, Quaternion.LookRotation(gameManager.moon.transform.position - contactPosition));
             cr.transform.parent = gameManager.moon.transform;
             if (type == ItemType.Asteroid) {
                 gameObject.GetComponent<TrailRenderer>().enabled = false;

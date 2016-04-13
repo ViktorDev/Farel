@@ -51,9 +51,11 @@ public class SpaceShip : MonoBehaviour
         awayDir = transform.right;
         yield return new WaitForSeconds(0.7f);
 
-        GameObject bul = (GameObject) Instantiate(bullet, new Vector3(transform.position.x, transform.position.y-0.2f, 0), Quaternion.identity);
-        bul.GetComponent<Rigidbody>().AddForce((gameManager.moon.transform.position - transform.position), ForceMode.Impulse);
-
+        if (gameObject.GetComponent<Collider>().enabled) {
+            GameObject bul = (GameObject)Instantiate(bullet, new Vector3(transform.position.x, transform.position.y, transform.position.z), Quaternion.identity);
+            bul.GetComponent<Rigidbody>().AddForce((gameManager.moon.transform.position - transform.position), ForceMode.Impulse);
+        }
+       
         StartCoroutine(deleteShip());
     }
 
