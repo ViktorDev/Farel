@@ -29,7 +29,7 @@ public class InfoPanel : MonoBehaviour
 
 	IEnumerator Close()
 	{
-        while (panel.localScale.y>0)
+        while (panel.localScale.y > 0)
 		{
 			panel.localScale = new Vector3(1, panel.localScale.y - 0.05f, 1);
 			yield return new WaitForSeconds(0.01f);
