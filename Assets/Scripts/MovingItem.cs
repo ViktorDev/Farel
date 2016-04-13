@@ -5,7 +5,7 @@ public class MovingItem : MonoBehaviour {
 
     protected enum ExplosionType { InSpace, MoonContact }
     
-	public enum ItemType {Asteroid, SpaceShip, FuelTank, Satellite }
+	public enum ItemType {Asteroid, SpaceShip, FuelTank, Satellite, Bullet }
 
 	public ItemType type;
 
@@ -51,11 +51,13 @@ public class MovingItem : MonoBehaviour {
 
     IEnumerator makeExplosion(ExplosionType explType)
     {
-        if (explType == ExplosionType.InSpace)
+		if (explType == ExplosionType.InSpace )
         {
             GameObject b = (GameObject) Instantiate(gameManager.spaceCrash, transform.position, Quaternion.identity);
             Destroy(b, 4);
             GetComponent<Collider>().enabled = false;
+			if(type == ItemType.Asteroid)
+			gameObject.GetComponent<TrailRenderer>().enabled = false;
 
         }
         else {
