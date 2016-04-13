@@ -6,7 +6,7 @@ using System.Collections.Generic;
 public class SceneStateManager : MonoBehaviour 
 {
 	public static SceneStateManager instance;
-
+    public bool targetFind;
 	public List<GameObject> managers;
 	public GameObject curentManager;
 
@@ -28,9 +28,12 @@ public class SceneStateManager : MonoBehaviour
 
 	public void ChangeState(int stateID)
 	{
-		curentManager.SetActive (false);
-		curentManager = managers [stateID];
-		curentManager.SetActive (true);
+        if (targetFind) {
+            curentManager.SetActive(false);
+            curentManager = managers[stateID];
+            curentManager.SetActive(true);
+        }
+		
 	}
 
     void OnDisable()

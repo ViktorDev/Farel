@@ -84,6 +84,7 @@ namespace Vuforia
             //}
 
             SceneStateManager.instance.curentManager.SetActive(true);
+            SceneStateManager.instance.targetFind = true;
 
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
         }
@@ -105,8 +106,10 @@ namespace Vuforia
             //{
             //    component.enabled = false;
             //}
-            if(!SceneStateManager.instance.isSelfieMode)
-            SceneStateManager.instance.curentManager.SetActive(false);
+            if (!SceneStateManager.instance.isSelfieMode) {
+                SceneStateManager.instance.curentManager.SetActive(false);
+                SceneStateManager.instance.targetFind = false;
+            }
             Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
         }
         #endregion // PRIVATE_METHODS
