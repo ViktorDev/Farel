@@ -17,8 +17,9 @@ public class GameScene : MonoBehaviour
 	public GameObject moonCrash;
     public GameObject spaceCrash;
     public GameObject[] spaceObjects;
+    public GameObject crator;
 
-	private Text healthText;
+    private Text healthText;
 	private Text scoretext;
 
 	public float spawnSpaceObjectTime = 2f;

@@ -13,7 +13,7 @@ public class MovingItem : MonoBehaviour {
     Rigidbody rig;
     Vector3 contactPosition;
     Vector3 originScale;
-    
+   
 
     void Start()
     {
@@ -61,9 +61,12 @@ public class MovingItem : MonoBehaviour {
 
         }
         else {
-            GameObject b = (GameObject)Instantiate(gameManager.moonCrash, contactPosition, Quaternion.LookRotation(gameManager.moon.transform.position - contactPosition));
+            GameObject b = (GameObject)Instantiate(gameManager.moonCrash, contactPosition, Quaternion.LookRotation(gameManager.moon.transform.position - contactPosition, Vector3.left));
             Destroy(b, 4);
             GetComponent<Collider>().enabled = false;
+
+            GameObject cr = (GameObject) Instantiate(gameManager.crator, contactPosition, Quaternion.LookRotation(gameManager.moon.transform.position - contactPosition));
+            cr.transform.parent = gameManager.moon.transform;
             if (type == ItemType.Asteroid) {
                 gameObject.GetComponent<TrailRenderer>().enabled = false;
             }
