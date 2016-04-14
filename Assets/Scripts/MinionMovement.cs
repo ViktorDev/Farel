@@ -2,11 +2,11 @@
 using System.Collections;
 using System.Collections.Generic;
 
-public class MoonMovement : MonoBehaviour 
+public class MinionMovement : MonoBehaviour 
 {
     
 	GameObject arCam;
-    GameObject shadow;
+//    GameObject shadow;
  
     Vector2 startSwipePos;
     
@@ -17,7 +17,7 @@ public class MoonMovement : MonoBehaviour
     void Start () 
 	{
         arCam = GameObject.Find("ARCamera");
-        shadow = transform.Find("Shadow").gameObject;
+///        shadow = transform.Find("Shadow").gameObject;
         rig = GetComponent<Rigidbody>();
 
     }
@@ -25,7 +25,7 @@ public class MoonMovement : MonoBehaviour
 	void Update () 
 	{
         rig.AddTorque(arCam.transform.up * Time.deltaTime * 50, ForceMode.Impulse);
-        shadow.transform.rotation = Quaternion.LookRotation(transform.position - arCam.transform.position);
+ //       shadow.transform.rotation = Quaternion.LookRotation(transform.position - arCam.transform.position);
 
        UserInput();
       }
@@ -39,7 +39,7 @@ public class MoonMovement : MonoBehaviour
 
 				if (Physics.Raycast (ray, out hit, 100))
 				{
-					if (hit.transform.gameObject.tag == "Moon") {
+					if (hit.transform.gameObject.tag == "Minion") {
 						isChecked = true;
 					}
 				}
@@ -48,7 +48,7 @@ public class MoonMovement : MonoBehaviour
 
 			if (Input.GetTouch (0).phase == TouchPhase.Moved && isChecked) {
 				rig.AddTorque (-arCam.transform.up * 10 * Input.GetTouch (0).deltaPosition.x, ForceMode.Impulse);
-				rig.AddTorque (arCam.transform.right * 10 * Input.GetTouch (0).deltaPosition.y, ForceMode.Impulse);
+//				rig.AddTorque (arCam.transform.right * 10 * Input.GetTouch (0).deltaPosition.y, ForceMode.Impulse);
 
 			}
 			if (Input.GetTouch (0).phase == TouchPhase.Ended) {
@@ -62,7 +62,7 @@ public class MoonMovement : MonoBehaviour
 				RaycastHit hit;
 
 				if (Physics.Raycast (ray, out hit, 100)) {
-					if (hit.transform.gameObject.tag == "Moon") {
+					if (hit.transform.gameObject.tag == "Minion") {
 						isChecked = true;
 						startSwipePos = Input.mousePosition;
 					}
@@ -72,7 +72,7 @@ public class MoonMovement : MonoBehaviour
 
 			if (Input.GetMouseButton (0) && isChecked) {
 				rig.AddTorque (arCam.transform.up * 10 * (startSwipePos.x - Input.mousePosition.x), ForceMode.Impulse);
-				rig.AddTorque (-arCam.transform.right * 10 * (startSwipePos.y - Input.mousePosition.y), ForceMode.Impulse);
+//				rig.AddTorque (-arCam.transform.right * 10 * (startSwipePos.y - Input.mousePosition.y), ForceMode.Impulse);
 
 				startSwipePos = Input.mousePosition;
 			}

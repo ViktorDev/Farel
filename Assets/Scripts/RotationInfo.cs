@@ -16,7 +16,7 @@ public class RotationInfo : MonoBehaviour
 	void Start () 
 	{
 		arCam = GameObject.Find("ARCamera");
-        if (SceneStateManager.instance.curentManager.name == "EducationManager")
+        if (SceneStateManager.instance.curentManager.name == "InfoManager")
         {
             foreach (var item in text)
             {
@@ -35,7 +35,7 @@ public class RotationInfo : MonoBehaviour
 	
 	void Update () 
 	{
-        if (SceneStateManager.instance.curentManager.name == "EducationManager") {
+        if (SceneStateManager.instance.curentManager.name == "InfoManager") {
             foreach (var item in text)
             {
                 item.transform.rotation = Quaternion.LookRotation(transform.position - arCam.transform.position);
