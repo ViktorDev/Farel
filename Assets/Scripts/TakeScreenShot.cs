@@ -13,7 +13,6 @@ public class TakeScreenShot : MonoBehaviour
 	public void ButtonShare()
 	{
 		buttonShare.enabled = false;
-
 		if (!_isProcessing) 
 		{
 			StartCoroutine (ShareScreenshot());
@@ -33,25 +32,33 @@ public class TakeScreenShot : MonoBehaviour
 		string path = Application.persistentDataPath + "/MyImage.png";
 		File.WriteAllBytes (path, dataToSave);
 
-		AndroidJavaClass intentClass = new AndroidJavaClass ("android.content.Intent");
+        if (SceneStateManager.instance.isSelfieMode)
+        {
+            SceneStateManager.instance.isSelfieMode = false;
+            GameObject.Find("CanvasNew").GetComponent<UInewManager>().OpenGalaryscene();
 
-		AndroidJavaObject intentObject = new AndroidJavaObject ("android.content.Intent");
+        }
+        else {
+            AndroidJavaClass intentClass = new AndroidJavaClass("android.content.Intent");
 
-		intentObject.Call<AndroidJavaObject> ("setAction", intentClass.GetStatic<string> ("ACTION_SEND"));
+            AndroidJavaObject intentObject = new AndroidJavaObject("android.content.Intent");
 
-		AndroidJavaClass uriClass = new AndroidJavaClass ("android.net.Uri");
+            intentObject.Call<AndroidJavaObject>("setAction", intentClass.GetStatic<string>("ACTION_SEND"));
 
-		AndroidJavaObject uriObject = uriClass.CallStatic<AndroidJavaObject> ("parse", "file://" + path);
+            AndroidJavaClass uriClass = new AndroidJavaClass("android.net.Uri");
 
-		intentObject.Call<AndroidJavaObject> ("putExtra", intentClass.GetStatic<string> ("EXTRA_STREAM"), uriObject);
+            AndroidJavaObject uriObject = uriClass.CallStatic<AndroidJavaObject>("parse", "file://" + path);
 
-		intentObject.Call<AndroidJavaObject> ("setType", "image/*");
+            intentObject.Call<AndroidJavaObject>("putExtra", intentClass.GetStatic<string>("EXTRA_STREAM"), uriObject);
 
-		AndroidJavaClass unity = new AndroidJavaClass ("com.unity3d.player.UnityPlayer");
+            intentObject.Call<AndroidJavaObject>("setType", "image/*");
 
-		AndroidJavaObject currentActivity = unity.GetStatic<AndroidJavaObject> ("currentActivity");
+            AndroidJavaClass unity = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
 
-		currentActivity.Call ("startActivity", intentObject);
+            AndroidJavaObject currentActivity = unity.GetStatic<AndroidJavaObject>("currentActivity");
+
+            currentActivity.Call("startActivity", intentObject);
+        }
 
 		_isProcessing = false;
 		buttonShare.enabled = true;

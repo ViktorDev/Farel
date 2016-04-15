@@ -28,13 +28,20 @@ public class SceneStateManager : MonoBehaviour
 
 	public void ChangeState(int stateID)
 	{
-        if (targetFind) {
+        StartCoroutine(ChangeAfterMenuClose(stateID));
+		
+	}
+
+    IEnumerator ChangeAfterMenuClose(int stateID) {
+
+        yield return new WaitForSeconds(1f);
+        if (targetFind)
+        {
             curentManager.SetActive(false);
             curentManager = managers[stateID];
             curentManager.SetActive(true);
         }
-		
-	}
+    }
 
     void OnDisable()
     {

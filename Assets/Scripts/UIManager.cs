@@ -6,8 +6,8 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
 
-	public EducationView educ;
-    public PromoView promo;
+//	public EducationView educ;
+///    public PromoView promo;
 
     void Awake() {
         if (instance == null)
@@ -20,13 +20,13 @@ public class UIManager : MonoBehaviour
 	{
 		SceneStateManager.instance.ChangeState (0);
 
-		promo.Hide();
+//		promo.Hide();
 
     }
 
 	public void EducationButtonClick()
 	{
-		promo.Hide();
+//		promo.Hide();
 
 		SceneStateManager.instance.ChangeState (1);
 
@@ -37,12 +37,12 @@ public class UIManager : MonoBehaviour
 		
 		SceneStateManager.instance.ChangeState (2);
 
-		promo.Hide();
+//		promo.Hide();
     }
 
 	public void PromotionButtonClick()
 	{
-		promo.Show();
+//		promo.Show();
 
 		SceneStateManager.instance.ChangeState (3);
     }
