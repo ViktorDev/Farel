@@ -41,9 +41,10 @@ public class EducationView : MonoBehaviour
 		{
 			Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
+            
 
-			if (Physics.Raycast (ray, out hit, 100)) {
-				if (hit.transform.gameObject.tag == "Information") {
+            if (Physics.Raycast (ray, out hit, 100)) {
+				if (hit.transform.gameObject.tag == "Information"&& !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject()) {
 					Debug.Log (hit.transform.name);
 					if (hit.transform.name == "Info_footnote") 
 					{

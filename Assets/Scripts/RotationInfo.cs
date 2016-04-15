@@ -8,7 +8,7 @@ public class RotationInfo : MonoBehaviour
 	public List<LineRenderer> lines;
 
 	public Transform moon;
-
+    public Material lineMaterial;
 	LineRenderer line;
 
 	GameObject arCam;
@@ -25,12 +25,12 @@ public class RotationInfo : MonoBehaviour
                 line.SetVertexCount(2);
                 lines.Add(line);
             }
+            lineMaterial = Resources.Load("Education") as Material;
 
-
-//            lines[0].material = Resources.Load("Buisness") as Material;
- //           lines[1].material = Resources.Load("Education") as Material;
-//            lines[2].material = Resources.Load("Fun") as Material;
- //           lines[3].material = Resources.Load("Promotion") as Material;
+            //            lines[0].material = Resources.Load("Buisness") as Material;
+            //           lines[1].material = Resources.Load("Education") as Material;
+            //            lines[2].material = Resources.Load("Fun") as Material;
+            //           lines[3].material = Resources.Load("Promotion") as Material;
         }
            
 	}
@@ -44,7 +44,7 @@ public class RotationInfo : MonoBehaviour
                 line = item.gameObject.GetComponent<LineRenderer>();
                 line.SetPosition(0, moon.transform.position);
                 line.SetPosition(1, item.transform.GetChild(1).position);
-                line.material = Resources.Load("Education") as Material;
+                line.material = lineMaterial;
                
             }
         }

@@ -28,22 +28,22 @@ public class UInewManager : MonoBehaviour {
     }
 
     public void OpenInfoScene() {
-        SceneStateManager.instance.ChangeState(0);
-        CloseButtons();
-    }
-
-    public void OpenGameScene() {
         SceneStateManager.instance.ChangeState(1);
         CloseButtons();
     }
 
-    public void OpenShopScene() {
+    public void OpenGameScene() {
         SceneStateManager.instance.ChangeState(2);
         CloseButtons();
     }
 
-    public void OpenSelfieScene() {
+    public void OpenShopScene() {
         SceneStateManager.instance.ChangeState(3);
+        CloseButtons();
+    }
+
+    public void OpenSelfieScene() {
+        SceneStateManager.instance.ChangeState(4);
         CloseButtons();
     }
 

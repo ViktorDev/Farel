@@ -5,6 +5,7 @@ public class ShopScene : MonoBehaviour
 {
     public static ShopScene instance;
 
+
     //public GameObject lotPanel;
     //   public GameObject lotInfo;
     //public GameObject signboard;
@@ -12,7 +13,7 @@ public class ShopScene : MonoBehaviour
 
     public GameObject shopPanel;
 
-	public Material saled;
+//	public Material saled;
 
     void Awake()
     {
