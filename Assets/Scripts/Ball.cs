@@ -18,7 +18,7 @@ public class Ball : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (transform.position.z < -15) Destroy(gameObject);     
+        if (transform.position.y < -15&& !isStay) Destroy(gameObject);     
         if (isStay ) shotListener();       
     }
 
@@ -66,11 +66,11 @@ public class Ball : MonoBehaviour {
         gameObject.GetComponent<Rigidbody>().useGravity = true;
 
         ballDir = cam.transform.Find("Camera").forward;
-        ballDir.z = ballDir.z + 0.5f;
+        ballDir.y = ballDir.y + 0.5f;
         gameObject.transform.parent = null;
         gameObject.GetComponent<Rigidbody>().AddForce(ballDir * dir.y / 12, ForceMode.Impulse);
-        gameObject.GetComponent<Rigidbody>().AddTorque(cam.transform.Find("Camera").right * dir.y / 4);
-        gameObject.GetComponent<Rigidbody>().AddTorque(-cam.transform.Find("Camera").up * dir.x / 4);
+        gameObject.GetComponent<Rigidbody>().AddTorque(cam.transform.Find("Camera").up * dir.y / 4);
+        gameObject.GetComponent<Rigidbody>().AddTorque(-cam.transform.Find("Camera").right * dir.x / 4);
         manager.createNewBall();
     }
 }

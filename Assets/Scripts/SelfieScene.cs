@@ -8,6 +8,7 @@ public class SelfieScene : MonoBehaviour {
 //	public GameObject promoPanel;
 
 	public GameObject selfiePanel;
+    public GameObject galaryPanel;
 //    GameObject moon;
  //   GameObject promoText;
 //    GameObject openSelfieBut;
@@ -67,6 +68,7 @@ public class SelfieScene : MonoBehaviour {
         SceneStateManager.instance.isSelfieMode = false;
  //       openSelfieBut.SetActive(true);
         selfiePanel.SetActive(false);
+        galaryPanel.SetActive(false);
 //        moon.SetActive(true);
 //        promoText.SetActive(true);
     }

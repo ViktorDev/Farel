@@ -6,7 +6,7 @@ public class RotationInfo : MonoBehaviour
 	
 	public List<GameObject> text;
 	public List<LineRenderer> lines;
-
+    public Vector3 [] beginPoints;
 	public Transform moon;
     public Material lineMaterial;
 	LineRenderer line;
@@ -38,14 +38,15 @@ public class RotationInfo : MonoBehaviour
 	void Update () 
 	{
         if (SceneStateManager.instance.curentManager.name == "InfoManager") {
+            int count = 0;
             foreach (var item in text)
             {
                 item.transform.rotation = Quaternion.LookRotation(transform.position - arCam.transform.position);
                 line = item.gameObject.GetComponent<LineRenderer>();
-                line.SetPosition(0, moon.transform.position);
+                line.SetPosition(0, beginPoints[count]);
                 line.SetPosition(1, item.transform.GetChild(1).position);
                 line.material = lineMaterial;
-               
+                count++;
             }
         }
 		transform.rotation = moon.transform.rotation;

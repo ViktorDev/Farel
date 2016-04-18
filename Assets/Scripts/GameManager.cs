@@ -13,26 +13,32 @@ public class GameManager : MonoBehaviour
     int goalShots = 0;
     int points;
     public GameObject arCam;
-//    bool isShared;
-//    bool isLoginned;
+    public GameObject score;
+    Text scoretext;
+    public GameObject gamePanel;
+    //    bool isShared;
+    //    bool isLoginned;
     public bool isFinishGame;
     public float timeToFinish;
     public GameObject ball;
     // Use this for initialization
     void Start () {
+        scoretext = score.GetComponentInChildren<Text>();
     }
 
     void OnEnable() {
         createNewBall();
+        gamePanel.SetActive(true);
     }
 
     void Update () {
-       
+
+        scoretext.text = "" + goalShots;
         if (timeToFinish < 0) {
             timeToFinish = 0;           
             isFinishGame = true;
-           
-            int perc = (int)(((float) goalShots / totalShots) * 100);
+            
+//            int perc = (int)(((float) goalShots / totalShots) * 100);
         }
     }
 
@@ -69,5 +75,9 @@ public class GameManager : MonoBehaviour
         totalShots = 0;
         timeToFinish = 60;
         isFinishGame = false;
+    }
+
+    void OnDisable() {
+        gamePanel.SetActive(false);
     }
 }

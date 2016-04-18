@@ -8,11 +8,11 @@ public class InfoPanel : MonoBehaviour
 
     void Start() {
         manager = GameObject.Find("InfoManager").GetComponent<EducationView>();
+
     }
 
    public void OpenPanel() 
 	{
-        
         StartCoroutine(Open());
     }
 
@@ -26,24 +26,33 @@ public class InfoPanel : MonoBehaviour
     }
 
 	IEnumerator Open() {
-        
-        while (transform.localScale.y < 1f) {
-            transform.localScale = new Vector3(1, transform.localScale.y + 0.05f, 1);
-			yield return new WaitForSeconds(0.01f);
+
+        float alpha = 0;
+        while (alpha < 1f) {
+            alpha += 0.1f;
+ //           transform.localScale = new Vector3(transform.localScale.x + 0.05f, transform.localScale.y + 0.05f, 1);
+            GetComponent<CanvasGroup>().alpha = alpha;
+            yield return new WaitForSeconds(0.01f);
+
 		}
-        transform.localScale = new Vector3(1, 1f, 1);
+        alpha = 1;
+//        transform.localScale = new Vector3(1, 1f, 1);
 
         
     }
 
 	IEnumerator Close(bool video)
 	{
-        while (transform.localScale.y > 0)
-		{
-            transform.localScale = new Vector3(1, transform.localScale.y - 0.05f, 1);
-			yield return new WaitForSeconds(0.01f);
-		}
-        transform.localScale = new Vector3(1, 0, 1);       
+        float alpha = 1;
+        while (alpha > 0f)
+        {
+            alpha -= 0.1f;
+            //           transform.localScale = new Vector3(transform.localScale.x + 0.05f, transform.localScale.y + 0.05f, 1);
+            GetComponent<CanvasGroup>().alpha = alpha;
+            yield return new WaitForSeconds(0.01f);
+
+        }
+        alpha = 0;
         gameObject.SetActive(false);
         manager.tv.SetActive(true);
 
