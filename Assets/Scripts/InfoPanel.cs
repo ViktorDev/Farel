@@ -3,7 +3,12 @@ using System.Collections;
 
 public class InfoPanel : MonoBehaviour 
 {
-//	public RectTransform panel;
+    //	public RectTransform panel;
+    EducationView manager;
+
+    void Start() {
+        manager = GameObject.Find("InfoManager").GetComponent<EducationView>();
+    }
 
    public void OpenPanel() 
 	{
@@ -13,7 +18,11 @@ public class InfoPanel : MonoBehaviour
 
 	public void ClosePanel() 
 	{
-        StartCoroutine(Close());      
+        StartCoroutine(Close(false));      
+    }
+
+    public void ShowVideo() {
+        StartCoroutine(Close(true));
     }
 
 	IEnumerator Open() {
@@ -27,7 +36,7 @@ public class InfoPanel : MonoBehaviour
         
     }
 
-	IEnumerator Close()
+	IEnumerator Close(bool video)
 	{
         while (transform.localScale.y > 0)
 		{
@@ -36,5 +45,9 @@ public class InfoPanel : MonoBehaviour
 		}
         transform.localScale = new Vector3(1, 0, 1);       
         gameObject.SetActive(false);
-	}
+        manager.tv.SetActive(true);
+
+        if (video) manager.tv.GetComponent<TV>().ShowTv();
+        else manager.infoPanels.SetActive(true);
+    }
 }

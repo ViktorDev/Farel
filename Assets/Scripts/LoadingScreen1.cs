@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LoadingScreen1 : MonoBehaviour {
 
@@ -13,11 +14,11 @@ public class LoadingScreen1 : MonoBehaviour {
 	void Start()    
 	{   
 		loadText.GetComponent<Text> ();
-		loadOp = Application.LoadLevelAsync(1);    
+        loadOp = SceneManager.LoadSceneAsync(1);
 	}
 	void LateUpdate()    
 	{    
-		loadText.text =  "Loading " + (loadOp.progress * 100).ToString() + "%";    
+		loadText.text =  "Loading " + (int) (loadOp.progress * 100) + "%";    
 		counter++;    
 	}    
 }

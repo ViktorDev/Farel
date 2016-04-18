@@ -93,15 +93,14 @@ public class UInewManager : MonoBehaviour {
     IEnumerator Open() {
         buttonsPanel.SetActive(true);
         menuButton.GetComponent<Button>().interactable = false;
-//        buttons[0].GetComponent<Button>().interactable = false;
-        foreach (GameObject g in buttons)
-        {
-            
-            g.SetActive(true);
-            g.GetComponent<UIButton>().OpenButton();
-            yield return new WaitForSeconds(0.1f);
+        //        buttons[0].GetComponent<Button>().interactable = false;
+        for (int i = 1; i < buttons.Length; i++) { 
+
+                buttons[i].SetActive(true);
+                buttons[i].GetComponent<UIButton>().OpenButton();
+            yield return new WaitForSeconds(0.08f);
         }
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
         menuButton.GetComponent<Button>().interactable = true;
         buttons[0].GetComponent<Button>().interactable = true;
     }
@@ -109,13 +108,20 @@ public class UInewManager : MonoBehaviour {
     IEnumerator Close() {
         menuButton.GetComponent<Button>().interactable = false;
         buttons[0].GetComponent<Button>().interactable = false;
-        foreach (GameObject g in buttons)
-        {   
-            g.GetComponent<UIButton>().CloseButton();
-            yield return new WaitForSeconds(0.1f);
+
+        for (int i = 1; i < buttons.Length; i++) {
+            buttons[i].GetComponent<UIButton>().CloseButton();
+            yield return new WaitForSeconds(0.08f);
         }
+
+//        buttons[0].GetComponent<UIButton>().CloseButton();
+        //foreach (GameObject g in buttons)
+        //{   
+        //    g.GetComponent<UIButton>().CloseButton();
+        //    yield return new WaitForSeconds(0.1f);
+        //}
         
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.2f);
 
         buttonsPanel.SetActive(false);
         menuButton.GetComponent<Button>().interactable = true;

@@ -10,7 +10,8 @@ public class EducationView : MonoBehaviour
 
 	public GameObject Ipanel;
 	public Text info;
-
+    public GameObject tv;
+    public GameObject infoPanels;
 	string info1 = "jdfnvkjdnflvjbslbvrfkbvfjsbvjk" +
 		"jvnsdfkjvbndfkjvbndfkjbvnkjdnfv" +
 		"fdvkljdfsbnkdgfjbnkjdgfbnkjdgnfbkj" +
@@ -34,8 +35,7 @@ public class EducationView : MonoBehaviour
 
 	}
 
-
-	public void UserInput()
+    public void UserInput()
 	{
 		if (Input.GetMouseButtonDown(0))
 		{
@@ -62,13 +62,15 @@ public class EducationView : MonoBehaviour
 	{
 		Ipanel.SetActive(true);
 		Ipanel.GetComponent<InfoPanel>().OpenPanel();
-	}
+        infoPanels.SetActive(false);
+
+    }
 
 
-	public void BackTo() 
-	{
-		Ipanel.GetComponent<InfoPanel>().ClosePanel();
-		Ipanel.GetComponent<PlayMovie> ().enabled = false;
-		info.text = "";
-	}
+	//public void BackTo() 
+	//{
+	//	Ipanel.GetComponent<InfoPanel>().ClosePanel(false);
+	//	Ipanel.GetComponent<PlayMovie> ().enabled = false;
+	//	info.text = "";
+	//}
 }
