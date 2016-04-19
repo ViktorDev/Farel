@@ -60,24 +60,30 @@ public class GameManager : MonoBehaviour
             newBall.GetComponent<Rigidbody>().useGravity = false;
     }
 
-    public void startNewGame() {
-        StartCoroutine(startgame());        
-    }
+    //public void startNewGame() {
+    //    StartCoroutine(startgame());        
+    //}
 
-    public void startGame() {
-        createNewBall();
-    }
+    //public void startGame() {
+    //    createNewBall();
+    //}
 
-    IEnumerator startgame() {
-        yield return new WaitForSeconds(0.3f);
-        goalShots = 0;
-        points = 0;
-        totalShots = 0;
-        timeToFinish = 60;
-        isFinishGame = false;
-    }
+    //IEnumerator startgame() {
+    //    yield return new WaitForSeconds(0.3f);
+    //    goalShots = 0;
+    //    points = 0;
+    //    totalShots = 0;
+    //    timeToFinish = 60;
+    //    isFinishGame = false;
+    //}
 
     void OnDisable() {
         gamePanel.SetActive(false);
+        GameObject[] objs = GameObject.FindGameObjectsWithTag("Banana");
+        foreach (GameObject obj in objs)
+        {
+            Destroy(obj);
+
+        }
     }
 }
