@@ -22,7 +22,7 @@ public class TV : MonoBehaviour {
 
         // fullscreen
         Handheld.PlayFullScreenMovie("Unity 5 Launch Trailer.mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);
-
+        manager.infoPanels.SetActive(true);
         // TV
         //       gameObject.SetActive(true);
         //        StartCoroutine(moveDown());

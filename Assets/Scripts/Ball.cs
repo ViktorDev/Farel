@@ -22,6 +22,15 @@ public class Ball : MonoBehaviour {
         if (isStay ) shotListener();       
     }
 
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.gameObject.tag == "winDetector")
+        {
+            manager.addPoints();
+        }
+
+    }
+
     void OnTriggerEnter(Collider otherCollider)
     {
         if (otherCollider.gameObject.tag == "winDetector")

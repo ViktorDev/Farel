@@ -69,7 +69,6 @@ public class MinionStateChanger : MonoBehaviour {
             g.SetActive(false);
         }
 
-
         foreach (GameObject g in currCloth)
         {
             g.SetActive(true);
@@ -199,7 +198,7 @@ public class MinionStateChanger : MonoBehaviour {
                 Ray ray = Camera.main.ScreenPointToRay(Input.GetTouch(0).position);
                 RaycastHit hit;
 
-                if (Physics.Raycast(ray, out hit, 1000))
+                if (Physics.Raycast(ray, out hit, 1000) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
                 {
                     if (hit.transform.gameObject.tag == "Minion")
                     {
@@ -218,7 +217,7 @@ public class MinionStateChanger : MonoBehaviour {
                 Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
                 RaycastHit hit;
 
-                if (Physics.Raycast(ray, out hit, 1000))
+                if (Physics.Raycast(ray, out hit, 1000) && !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject())
                 {
                     if (hit.transform.gameObject.tag == "Minion")
                     {

@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class EducationView : MonoBehaviour  
 {
 	public static EducationView instance;
-    Animator minion;
+
     public GameObject Ipanel;
 	public Text info;
     public GameObject tv;
@@ -27,7 +27,7 @@ public class EducationView : MonoBehaviour
 		if (instance == null) {
 			instance = this;
 		}
-        minion = GameObject.Find("minion_full").GetComponent<Animator>();
+        
     }
 
 	void Update()
@@ -67,10 +67,7 @@ public class EducationView : MonoBehaviour
 
     }
 
-    void OnDisable()
-    {
-//        minion.SetTrigger("Idle1Stop");
-    }
+   
         //public void BackTo() 
         //{
         //	Ipanel.GetComponent<InfoPanel>().ClosePanel(false);
