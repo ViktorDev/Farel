@@ -33,6 +33,8 @@ public class MinionStateChanger : MonoBehaviour {
     void Start () {
         curr = defaultClothes;
         anim = GetComponent<Animator>();
+        currHat = girlHat;
+        currCloth = girlClothes;
     }
 	
 	// Update is called once per frame
@@ -89,8 +91,7 @@ public class MinionStateChanger : MonoBehaviour {
         {
             g.SetActive(false);
         }
-        currHat = girlHat;
-        currCloth = girlClothes;
+        
 
         foreach (GameObject g in currCloth)
         {

@@ -14,6 +14,7 @@ public class TrackableEventHandler : MonoBehaviour, ITrackableEventHandler
     private bool mHasBeenFound = false;
     private bool mLostTracking;
     private float mSecondsSinceLost;
+    public GameObject minion;
     #endregion // PRIVATE_MEMBERS
 
 
@@ -81,22 +82,22 @@ public class TrackableEventHandler : MonoBehaviour, ITrackableEventHandler
     #region PRIVATE_METHODS
     private void OnTrackingFound()
     {
-        Renderer[] rendererComponents = GetComponentsInChildren<Renderer>();
-        Collider[] colliderComponents = GetComponentsInChildren<Collider>();
+        //Renderer[] rendererComponents = GetComponentsInChildren<Renderer>();
+        //Collider[] colliderComponents = GetComponentsInChildren<Collider>();
 
-        // Enable rendering:
-        foreach (Renderer component in rendererComponents)
-        {
-            component.enabled = true;
-        }
+        //// Enable rendering:
+        //foreach (Renderer component in rendererComponents)
+        //{
+        //    component.enabled = true;
+        //}
 
-        // Enable colliders:
-        foreach (Collider component in colliderComponents)
-        {
-            component.enabled = true;
-        }
+        //// Enable colliders:
+        //foreach (Collider component in colliderComponents)
+        //{
+        //    component.enabled = true;
+        //}
 
-        Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
+        //Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " found");
 
         // Optionally play the video automatically when the target is found
 
@@ -132,30 +133,33 @@ public class TrackableEventHandler : MonoBehaviour, ITrackableEventHandler
 
         SceneStateManager.instance.curentManager.SetActive(true);
         SceneStateManager.instance.targetFind = true;
+        minion.SetActive(true);
+
     }
 
     private void OnTrackingLost()
     {
-        Renderer[] rendererComponents = GetComponentsInChildren<Renderer>();
-        Collider[] colliderComponents = GetComponentsInChildren<Collider>();
+        //Renderer[] rendererComponents = GetComponentsInChildren<Renderer>();
+        //Collider[] colliderComponents = GetComponentsInChildren<Collider>();
 
-        // Disable rendering:
-        foreach (Renderer component in rendererComponents)
-        {
-            component.enabled = false;
-        }
+        //// Disable rendering:
+        //foreach (Renderer component in rendererComponents)
+        //{
+        //    component.enabled = false;
+        //}
 
-        // Disable colliders:
-        foreach (Collider component in colliderComponents)
-        {
-            component.enabled = false;
-        }
+        //// Disable colliders:
+        //foreach (Collider component in colliderComponents)
+        //{
+        //    component.enabled = false;
+        //}
 
-        Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
+        //Debug.Log("Trackable " + mTrackableBehaviour.TrackableName + " lost");
 
         mLostTracking = true;
         mSecondsSinceLost = 0;
 
+        minion.SetActive(false);
         if (!SceneStateManager.instance.isSelfieMode)
         {
             SceneStateManager.instance.curentManager.SetActive(false);
