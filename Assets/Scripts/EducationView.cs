@@ -7,8 +7,8 @@ using UnityEngine.UI;
 public class EducationView : MonoBehaviour  
 {
 	public static EducationView instance;
-
-	public GameObject Ipanel;
+    Animator minion;
+    public GameObject Ipanel;
 	public Text info;
     public GameObject tv;
     public GameObject infoPanels;
@@ -27,7 +27,8 @@ public class EducationView : MonoBehaviour
 		if (instance == null) {
 			instance = this;
 		}
-	}
+        minion = GameObject.Find("minion_full").GetComponent<Animator>();
+    }
 
 	void Update()
 	{
@@ -66,11 +67,14 @@ public class EducationView : MonoBehaviour
 
     }
 
-
-	//public void BackTo() 
-	//{
-	//	Ipanel.GetComponent<InfoPanel>().ClosePanel(false);
-	//	Ipanel.GetComponent<PlayMovie> ().enabled = false;
-	//	info.text = "";
-	//}
-}
+    void OnDisable()
+    {
+//        minion.SetTrigger("Idle1Stop");
+    }
+        //public void BackTo() 
+        //{
+        //	Ipanel.GetComponent<InfoPanel>().ClosePanel(false);
+        //	Ipanel.GetComponent<PlayMovie> ().enabled = false;
+        //	info.text = "";
+        //}
+    }

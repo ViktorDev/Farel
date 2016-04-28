@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using System.Collections;
 
 public class MinionStateChanger : MonoBehaviour {
 
@@ -43,27 +44,44 @@ public class MinionStateChanger : MonoBehaviour {
     }
 
     public void SetDefaultClothes() {
+        anim.SetTrigger("Null");
         anim.SetTrigger("Idle2");
-        foreach (GameObject g in curr) {
-            g.SetActive(false);
-        }
-        foreach (GameObject g in currHat)
+        StartCoroutine(DefaultClothe());
+    }
+
+    public void SetGameClothes() {
+        anim.SetTrigger("Null");
+        anim.SetTrigger("GameStart");
+        StartCoroutine(GameState());
+    }
+
+    public void SetShopState() {
+        anim.SetTrigger("Null");
+        anim.SetTrigger("Idle1Start");
+        StartCoroutine(ShopState());
+    }
+
+    IEnumerator ShopState() {
+        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("Start Idle1"));
+        currentShopState = ClothesState.Nothing;
+        foreach (GameObject g in curr)
         {
             g.SetActive(false);
         }
+
+
         foreach (GameObject g in currCloth)
         {
-            g.SetActive(false);
+            g.SetActive(true);
         }
-        curr = defaultClothes;
-        foreach (GameObject g in curr)
+        foreach (GameObject g in currHat)
         {
             g.SetActive(true);
         }
     }
 
-    public void SetGameClothes() {
-        anim.SetTrigger("Game");
+    IEnumerator GameState() {
+        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("StartGame"));
         foreach (GameObject g in curr)
         {
             g.SetActive(false);
@@ -83,21 +101,22 @@ public class MinionStateChanger : MonoBehaviour {
         }
     }
 
-    public void SetShopState() {
-
-        anim.SetTrigger("Idle");
-        currentShopState = ClothesState.Nothing;
+    IEnumerator DefaultClothe() {
+        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("Idle2"));
         foreach (GameObject g in curr)
         {
             g.SetActive(false);
         }
-        
-
+        foreach (GameObject g in currHat)
+        {
+            g.SetActive(false);
+        }
         foreach (GameObject g in currCloth)
         {
-            g.SetActive(true);
+            g.SetActive(false);
         }
-        foreach (GameObject g in currHat)
+        curr = defaultClothes;
+        foreach (GameObject g in curr)
         {
             g.SetActive(true);
         }

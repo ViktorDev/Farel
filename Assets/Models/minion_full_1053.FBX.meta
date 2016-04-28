@@ -218,6 +218,77 @@ ModelImporter:
     100420: minion_shadow
     100422: eye_bg
     100424: position_control
+    100426: LLegPrint 0
+    100428: LLegPrint 1
+    100430: LLegPrint 2
+    100432: LLegPrint 3
+    100434: LLegPrint 4
+    100436: LLegPrint 5
+    100438: LLegPrint 6
+    100440: LLegPrint 7
+    100442: LLegPrint 8
+    100444: LLegPrint 9
+    100446: LLegPrint10
+    100448: LLegPrint11
+    100450: LLegPrint12
+    100452: LLegPrint13
+    100454: LLegPrint14
+    100456: LLegPrint15
+    100458: LLegPrint16
+    100460: LLegPrint17
+    100462: LLegPrint18
+    100464: LLegPrint19
+    100466: LLegPrint20
+    100468: LLegPrint21
+    100470: LLegPrint22
+    100472: LLegPrint23
+    100474: LLegPrint24
+    100476: LLegPrint25
+    100478: LLegPrint26
+    100480: LLegPrint27
+    100482: LLegPrint28
+    100484: LLegPrint29
+    100486: LLegPrint30
+    100488: LLegPrint31
+    100490: LLegPrint32
+    100492: LLegPrint33
+    100494: LLegPrint34
+    100496: RLegPrint 1
+    100498: RLegPrint 2
+    100500: RLegPrint 3
+    100502: RLegPrint 4
+    100504: RLegPrint 5
+    100506: RLegPrint 6
+    100508: RLegPrint 7
+    100510: RLegPrint 8
+    100512: RLegPrint 9
+    100514: RLegPrint10
+    100516: RLegPrint11
+    100518: RLegPrint12
+    100520: RLegPrint13
+    100522: RLegPrint14
+    100524: RLegPrint15
+    100526: RLegPrint16
+    100528: RLegPrint17
+    100530: RLegPrint18
+    100532: RLegPrint19
+    100534: RLegPrint20
+    100536: RLegPrint21
+    100538: RLegPrint22
+    100540: RLegPrint23
+    100542: RLegPrint24
+    100544: RLegPrint25
+    100546: RLegPrint26
+    100548: RLegPrint27
+    100550: RLegPrint28
+    100552: RLegPrint29
+    100554: RLegPrint30
+    100556: RLegPrint31
+    100558: RLegPrint32
+    100560: RLegPrint33
+    100562: RLegPrint34
+    100564: run_control_dummy
+    100566: run_path
     400000: banana
     400002: Body_base
     400004: CATRig_Veki_niz
@@ -431,6 +502,77 @@ ModelImporter:
     400420: minion_shadow
     400422: eye_bg
     400424: position_control
+    400426: LLegPrint 0
+    400428: LLegPrint 1
+    400430: LLegPrint 2
+    400432: LLegPrint 3
+    400434: LLegPrint 4
+    400436: LLegPrint 5
+    400438: LLegPrint 6
+    400440: LLegPrint 7
+    400442: LLegPrint 8
+    400444: LLegPrint 9
+    400446: LLegPrint10
+    400448: LLegPrint11
+    400450: LLegPrint12
+    400452: LLegPrint13
+    400454: LLegPrint14
+    400456: LLegPrint15
+    400458: LLegPrint16
+    400460: LLegPrint17
+    400462: LLegPrint18
+    400464: LLegPrint19
+    400466: LLegPrint20
+    400468: LLegPrint21
+    400470: LLegPrint22
+    400472: LLegPrint23
+    400474: LLegPrint24
+    400476: LLegPrint25
+    400478: LLegPrint26
+    400480: LLegPrint27
+    400482: LLegPrint28
+    400484: LLegPrint29
+    400486: LLegPrint30
+    400488: LLegPrint31
+    400490: LLegPrint32
+    400492: LLegPrint33
+    400494: LLegPrint34
+    400496: RLegPrint 1
+    400498: RLegPrint 2
+    400500: RLegPrint 3
+    400502: RLegPrint 4
+    400504: RLegPrint 5
+    400506: RLegPrint 6
+    400508: RLegPrint 7
+    400510: RLegPrint 8
+    400512: RLegPrint 9
+    400514: RLegPrint10
+    400516: RLegPrint11
+    400518: RLegPrint12
+    400520: RLegPrint13
+    400522: RLegPrint14
+    400524: RLegPrint15
+    400526: RLegPrint16
+    400528: RLegPrint17
+    400530: RLegPrint18
+    400532: RLegPrint19
+    400534: RLegPrint20
+    400536: RLegPrint21
+    400538: RLegPrint22
+    400540: RLegPrint23
+    400542: RLegPrint24
+    400544: RLegPrint25
+    400546: RLegPrint26
+    400548: RLegPrint27
+    400550: RLegPrint28
+    400552: RLegPrint29
+    400554: RLegPrint30
+    400556: RLegPrint31
+    400558: RLegPrint32
+    400560: RLegPrint33
+    400562: RLegPrint34
+    400564: run_control_dummy
+    400566: run_path
     2300000: banana
     2300002: cloth_deer_nose
     2300004: cloth_deer_nose2
@@ -861,8 +1003,14 @@ ModelImporter:
     7400002: korzina_mover
     7400004: banana!
     7400006: bello
-    7400008: idler2
+    7400008: idle2
     7400010: Take 001
+    7400012: Idle1_start
+    7400014: Idle1_end
+    7400016: Take 0010
+    7400018: korzina_start
+    7400020: korzina_end
+    7400022: idle3
     9500000: //RootNode
     13700000: Body_base
     13700002: cloth_base_jeans
@@ -894,8 +1042,8 @@ ModelImporter:
     - serializedVersion: 16
       name: idle1
       takeName: Take 001
-      firstFrame: 0
-      lastFrame: 170
+      firstFrame: 15
+      lastFrame: 155
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -1100,9 +1248,13 @@ ModelImporter:
         weight: 1
       - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_49/cloth_hawaii_41
         weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/eye_bg
+        weight: 1
       - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/kepka101
         weight: 1
       - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/kepka201
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/sombrero_part_00
         weight: 1
       - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/sombrero_part_02
         weight: 1
@@ -1151,8 +1303,6 @@ ModelImporter:
       - path: cloth_gadya_06/cloth_gadya_13/cloth_gadya_05
         weight: 1
       - path: cloth_gadya_06/cloth_gadya_head_shadow
-        weight: 1
-      - path: cloth_gadya_06/sombrero_part_00
         weight: 1
       - path: cloth_hawaii_11
         weight: 1
@@ -1328,7 +1478,151 @@ ModelImporter:
         weight: 1
       - path: korzina_mover_transfer/korzina_control/korzina_top
         weight: 1
+      - path: LLegPrint 0
+        weight: 1
+      - path: LLegPrint 1
+        weight: 1
+      - path: LLegPrint 2
+        weight: 1
+      - path: LLegPrint 3
+        weight: 1
+      - path: LLegPrint 4
+        weight: 1
+      - path: LLegPrint 5
+        weight: 1
+      - path: LLegPrint 6
+        weight: 1
+      - path: LLegPrint 7
+        weight: 1
+      - path: LLegPrint 8
+        weight: 1
+      - path: LLegPrint 9
+        weight: 1
+      - path: LLegPrint10
+        weight: 1
+      - path: LLegPrint11
+        weight: 1
+      - path: LLegPrint12
+        weight: 1
+      - path: LLegPrint13
+        weight: 1
+      - path: LLegPrint14
+        weight: 1
+      - path: LLegPrint15
+        weight: 1
+      - path: LLegPrint16
+        weight: 1
+      - path: LLegPrint17
+        weight: 1
+      - path: LLegPrint18
+        weight: 1
+      - path: LLegPrint19
+        weight: 1
+      - path: LLegPrint20
+        weight: 1
+      - path: LLegPrint21
+        weight: 1
+      - path: LLegPrint22
+        weight: 1
+      - path: LLegPrint23
+        weight: 1
+      - path: LLegPrint24
+        weight: 1
+      - path: LLegPrint25
+        weight: 1
+      - path: LLegPrint26
+        weight: 1
+      - path: LLegPrint27
+        weight: 1
+      - path: LLegPrint28
+        weight: 1
+      - path: LLegPrint29
+        weight: 1
+      - path: LLegPrint30
+        weight: 1
+      - path: LLegPrint31
+        weight: 1
+      - path: LLegPrint32
+        weight: 1
+      - path: LLegPrint33
+        weight: 1
+      - path: LLegPrint34
+        weight: 1
       - path: Mouth_1
+        weight: 1
+      - path: position_control
+        weight: 1
+      - path: RLegPrint 1
+        weight: 1
+      - path: RLegPrint 2
+        weight: 1
+      - path: RLegPrint 3
+        weight: 1
+      - path: RLegPrint 4
+        weight: 1
+      - path: RLegPrint 5
+        weight: 1
+      - path: RLegPrint 6
+        weight: 1
+      - path: RLegPrint 7
+        weight: 1
+      - path: RLegPrint 8
+        weight: 1
+      - path: RLegPrint 9
+        weight: 1
+      - path: RLegPrint10
+        weight: 1
+      - path: RLegPrint11
+        weight: 1
+      - path: RLegPrint12
+        weight: 1
+      - path: RLegPrint13
+        weight: 1
+      - path: RLegPrint14
+        weight: 1
+      - path: RLegPrint15
+        weight: 1
+      - path: RLegPrint16
+        weight: 1
+      - path: RLegPrint17
+        weight: 1
+      - path: RLegPrint18
+        weight: 1
+      - path: RLegPrint19
+        weight: 1
+      - path: RLegPrint20
+        weight: 1
+      - path: RLegPrint21
+        weight: 1
+      - path: RLegPrint22
+        weight: 1
+      - path: RLegPrint23
+        weight: 1
+      - path: RLegPrint24
+        weight: 1
+      - path: RLegPrint25
+        weight: 1
+      - path: RLegPrint26
+        weight: 1
+      - path: RLegPrint27
+        weight: 1
+      - path: RLegPrint28
+        weight: 1
+      - path: RLegPrint29
+        weight: 1
+      - path: RLegPrint30
+        weight: 1
+      - path: RLegPrint31
+        weight: 1
+      - path: RLegPrint32
+        weight: 1
+      - path: RLegPrint33
+        weight: 1
+      - path: RLegPrint34
+        weight: 1
+      - path: run_control_dummy
+        weight: 1
+      - path: run_path
         weight: 1
       - path: Tongue_2
         weight: 1
@@ -1340,8 +1634,8 @@ ModelImporter:
     - serializedVersion: 16
       name: korzina_mover
       takeName: Take 001
-      firstFrame: 171
-      lastFrame: 340
+      firstFrame: 200
+      lastFrame: 305
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -2676,10 +2970,10 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: idler2
+      name: idle2
       takeName: Take 001
-      firstFrame: 510
-      lastFrame: 700
+      firstFrame: 503
+      lastFrame: 654
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
@@ -3567,6 +3861,3558 @@ ModelImporter:
       - path: position_control
         weight: 1
       - path: position_control/minion_shadow
+        weight: 1
+      - path: Tongue_2
+        weight: 1
+      - path: veki
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle1_start
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 10
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: banana
+        weight: 1
+      - path: Body_base
+        weight: 1
+      - path: CATRigHub001_torso
+        weight: 1
+      - path: CATRigHub001_torso/CATRig_yazik
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_LT
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_niz
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_RT
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_zubi_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone001_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone002_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone003_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1/CATRigLLeg2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone001
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone002
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone003
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1/CATRigRLeg2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/CATRig_Veki_niz
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/CATRigVeki_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/ExposeTransform001
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/ExposeTransform001/eye_drilled
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_deer_nose
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_deer_nose2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_reed_head
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/deer_roga
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_00
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01/cloth_hawaii_12
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01/cloth_hawaii_24
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02/cloth_hawaii_13
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02/cloth_hawaii_25
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03/cloth_hawaii_14
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03/cloth_hawaii_26
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04/cloth_hawaii_15
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04/cloth_hawaii_27
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05/cloth_hawaii_16
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05/cloth_hawaii_28
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06/cloth_hawaii_17
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06/cloth_hawaii_29
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07/cloth_hawaii_18
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07/cloth_hawaii_30
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08/cloth_hawaii_19
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08/cloth_hawaii_31
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09/cloth_hawaii_20
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09/cloth_hawaii_32
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10/cloth_hawaii_21
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10/cloth_hawaii_33
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_42
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_42/cloth_hawaii_37
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_43
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_43/cloth_hawaii_35
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_44
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_44/cloth_hawaii_36
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_45
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_45/cloth_hawaii_34
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_46
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_46/cloth_hawaii_38
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_47
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_47/cloth_hawaii_39
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_48
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_48/cloth_hawaii_40
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_49
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_49/cloth_hawaii_41
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/eye_bg
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/kepka101
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/kepka201
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/sombrero_part_00
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/sombrero_part_02
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/elastic_1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/elastic_2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/lens
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/volosiki
+        weight: 1
+      - path: CATRigHub001_torso/cloth_gadya_04
+        weight: 1
+      - path: CATRigHub001_torso/cloth_hawaii_23
+        weight: 1
+      - path: CATRigHub001_torso/sombrero_part_01
+        weight: 1
+      - path: cloth_base_jeans
+        weight: 1
+      - path: cloth_gadya_06
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_02
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_07
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_08
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_11
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_03
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_09
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_10
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_12
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_13
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_13/cloth_gadya_05
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_head_shadow
+        weight: 1
+      - path: cloth_hawaii_11
+        weight: 1
+      - path: cloth_homeworker_import_zbr_00
+        weight: 1
+      - path: cloth_homeworker_import_zbr_01
+        weight: 1
+      - path: cloth_homeworker_import_zbr_38
+        weight: 1
+      - path: cloth_homeworker_import_zbr_39
+        weight: 1
+      - path: cloth_homeworker_import_zbr_40
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_02
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_03
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_04
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_05
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_06
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_07
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_08
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_09
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_10
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_11
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_12
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_13
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_14
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_15
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_16
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_17
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_18
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_19
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_20
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_21
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_22
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_23
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_24
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_25
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_26
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_27
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_28
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_29
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_30
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_31
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_32
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_33
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_34
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_35
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_36
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_37
+        weight: 1
+      - path: cloth_homeworker_part_00
+        weight: 1
+      - path: cloth_homeworker_part_01
+        weight: 1
+      - path: cloth_homeworker_part_02
+        weight: 1
+      - path: cloth_homeworker_part_03
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_09
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_10
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_11
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_12
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_13
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_14
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_15
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_16
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_17
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_18
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_19
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_20
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_21
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_22
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_23
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_24
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_25
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_26
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_27
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_28
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_29
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_30
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_31
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_32
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_33
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_34
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_35
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_36
+        weight: 1
+      - path: cloth_homeworker_part_37
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_04
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_05
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_06
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_07
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_08
+        weight: 1
+      - path: korzina_mover_transfer
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_bt
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_left
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_rt
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_top
+        weight: 1
+      - path: LLegPrint 0
+        weight: 1
+      - path: LLegPrint 1
+        weight: 1
+      - path: LLegPrint 2
+        weight: 1
+      - path: LLegPrint 3
+        weight: 1
+      - path: LLegPrint 4
+        weight: 1
+      - path: LLegPrint 5
+        weight: 1
+      - path: LLegPrint 6
+        weight: 1
+      - path: LLegPrint 7
+        weight: 1
+      - path: LLegPrint 8
+        weight: 1
+      - path: LLegPrint 9
+        weight: 1
+      - path: LLegPrint10
+        weight: 1
+      - path: LLegPrint11
+        weight: 1
+      - path: LLegPrint12
+        weight: 1
+      - path: LLegPrint13
+        weight: 1
+      - path: LLegPrint14
+        weight: 1
+      - path: LLegPrint15
+        weight: 1
+      - path: LLegPrint16
+        weight: 1
+      - path: LLegPrint17
+        weight: 1
+      - path: LLegPrint18
+        weight: 1
+      - path: LLegPrint19
+        weight: 1
+      - path: LLegPrint20
+        weight: 1
+      - path: LLegPrint21
+        weight: 1
+      - path: LLegPrint22
+        weight: 1
+      - path: LLegPrint23
+        weight: 1
+      - path: LLegPrint24
+        weight: 1
+      - path: LLegPrint25
+        weight: 1
+      - path: LLegPrint26
+        weight: 1
+      - path: LLegPrint27
+        weight: 1
+      - path: LLegPrint28
+        weight: 1
+      - path: LLegPrint29
+        weight: 1
+      - path: LLegPrint30
+        weight: 1
+      - path: LLegPrint31
+        weight: 1
+      - path: LLegPrint32
+        weight: 1
+      - path: LLegPrint33
+        weight: 1
+      - path: LLegPrint34
+        weight: 1
+      - path: Mouth_1
+        weight: 1
+      - path: position_control
+        weight: 1
+      - path: RLegPrint 1
+        weight: 1
+      - path: RLegPrint 2
+        weight: 1
+      - path: RLegPrint 3
+        weight: 1
+      - path: RLegPrint 4
+        weight: 1
+      - path: RLegPrint 5
+        weight: 1
+      - path: RLegPrint 6
+        weight: 1
+      - path: RLegPrint 7
+        weight: 1
+      - path: RLegPrint 8
+        weight: 1
+      - path: RLegPrint 9
+        weight: 1
+      - path: RLegPrint10
+        weight: 1
+      - path: RLegPrint11
+        weight: 1
+      - path: RLegPrint12
+        weight: 1
+      - path: RLegPrint13
+        weight: 1
+      - path: RLegPrint14
+        weight: 1
+      - path: RLegPrint15
+        weight: 1
+      - path: RLegPrint16
+        weight: 1
+      - path: RLegPrint17
+        weight: 1
+      - path: RLegPrint18
+        weight: 1
+      - path: RLegPrint19
+        weight: 1
+      - path: RLegPrint20
+        weight: 1
+      - path: RLegPrint21
+        weight: 1
+      - path: RLegPrint22
+        weight: 1
+      - path: RLegPrint23
+        weight: 1
+      - path: RLegPrint24
+        weight: 1
+      - path: RLegPrint25
+        weight: 1
+      - path: RLegPrint26
+        weight: 1
+      - path: RLegPrint27
+        weight: 1
+      - path: RLegPrint28
+        weight: 1
+      - path: RLegPrint29
+        weight: 1
+      - path: RLegPrint30
+        weight: 1
+      - path: RLegPrint31
+        weight: 1
+      - path: RLegPrint32
+        weight: 1
+      - path: RLegPrint33
+        weight: 1
+      - path: RLegPrint34
+        weight: 1
+      - path: run_control_dummy
+        weight: 1
+      - path: run_path
+        weight: 1
+      - path: Tongue_2
+        weight: 1
+      - path: veki
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Idle1_end
+      takeName: Take 001
+      firstFrame: 150
+      lastFrame: 170
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: banana
+        weight: 1
+      - path: Body_base
+        weight: 1
+      - path: CATRigHub001_torso
+        weight: 1
+      - path: CATRigHub001_torso/CATRig_yazik
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_LT
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_niz
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_RT
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_zubi_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone001_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone002_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone003_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1/CATRigLLeg2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone001
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone002
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone003
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1/CATRigRLeg2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/CATRig_Veki_niz
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/CATRigVeki_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/ExposeTransform001
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/ExposeTransform001/eye_drilled
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_deer_nose
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_deer_nose2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_reed_head
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/deer_roga
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_00
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01/cloth_hawaii_12
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01/cloth_hawaii_24
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02/cloth_hawaii_13
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02/cloth_hawaii_25
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03/cloth_hawaii_14
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03/cloth_hawaii_26
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04/cloth_hawaii_15
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04/cloth_hawaii_27
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05/cloth_hawaii_16
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05/cloth_hawaii_28
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06/cloth_hawaii_17
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06/cloth_hawaii_29
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07/cloth_hawaii_18
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07/cloth_hawaii_30
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08/cloth_hawaii_19
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08/cloth_hawaii_31
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09/cloth_hawaii_20
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09/cloth_hawaii_32
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10/cloth_hawaii_21
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10/cloth_hawaii_33
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_42
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_42/cloth_hawaii_37
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_43
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_43/cloth_hawaii_35
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_44
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_44/cloth_hawaii_36
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_45
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_45/cloth_hawaii_34
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_46
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_46/cloth_hawaii_38
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_47
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_47/cloth_hawaii_39
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_48
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_48/cloth_hawaii_40
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_49
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_49/cloth_hawaii_41
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/eye_bg
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/kepka101
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/kepka201
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/sombrero_part_00
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/sombrero_part_02
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/elastic_1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/elastic_2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/lens
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/volosiki
+        weight: 1
+      - path: CATRigHub001_torso/cloth_gadya_04
+        weight: 1
+      - path: CATRigHub001_torso/cloth_hawaii_23
+        weight: 1
+      - path: CATRigHub001_torso/sombrero_part_01
+        weight: 1
+      - path: cloth_base_jeans
+        weight: 1
+      - path: cloth_gadya_06
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_02
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_07
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_08
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_11
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_03
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_09
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_10
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_12
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_13
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_13/cloth_gadya_05
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_head_shadow
+        weight: 1
+      - path: cloth_hawaii_11
+        weight: 1
+      - path: cloth_homeworker_import_zbr_00
+        weight: 1
+      - path: cloth_homeworker_import_zbr_01
+        weight: 1
+      - path: cloth_homeworker_import_zbr_38
+        weight: 1
+      - path: cloth_homeworker_import_zbr_39
+        weight: 1
+      - path: cloth_homeworker_import_zbr_40
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_02
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_03
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_04
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_05
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_06
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_07
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_08
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_09
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_10
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_11
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_12
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_13
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_14
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_15
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_16
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_17
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_18
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_19
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_20
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_21
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_22
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_23
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_24
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_25
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_26
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_27
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_28
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_29
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_30
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_31
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_32
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_33
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_34
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_35
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_36
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_37
+        weight: 1
+      - path: cloth_homeworker_part_00
+        weight: 1
+      - path: cloth_homeworker_part_01
+        weight: 1
+      - path: cloth_homeworker_part_02
+        weight: 1
+      - path: cloth_homeworker_part_03
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_09
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_10
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_11
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_12
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_13
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_14
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_15
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_16
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_17
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_18
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_19
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_20
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_21
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_22
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_23
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_24
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_25
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_26
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_27
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_28
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_29
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_30
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_31
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_32
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_33
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_34
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_35
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_36
+        weight: 1
+      - path: cloth_homeworker_part_37
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_04
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_05
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_06
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_07
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_08
+        weight: 1
+      - path: korzina_mover_transfer
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_bt
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_left
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_rt
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_top
+        weight: 1
+      - path: LLegPrint 0
+        weight: 1
+      - path: LLegPrint 1
+        weight: 1
+      - path: LLegPrint 2
+        weight: 1
+      - path: LLegPrint 3
+        weight: 1
+      - path: LLegPrint 4
+        weight: 1
+      - path: LLegPrint 5
+        weight: 1
+      - path: LLegPrint 6
+        weight: 1
+      - path: LLegPrint 7
+        weight: 1
+      - path: LLegPrint 8
+        weight: 1
+      - path: LLegPrint 9
+        weight: 1
+      - path: LLegPrint10
+        weight: 1
+      - path: LLegPrint11
+        weight: 1
+      - path: LLegPrint12
+        weight: 1
+      - path: LLegPrint13
+        weight: 1
+      - path: LLegPrint14
+        weight: 1
+      - path: LLegPrint15
+        weight: 1
+      - path: LLegPrint16
+        weight: 1
+      - path: LLegPrint17
+        weight: 1
+      - path: LLegPrint18
+        weight: 1
+      - path: LLegPrint19
+        weight: 1
+      - path: LLegPrint20
+        weight: 1
+      - path: LLegPrint21
+        weight: 1
+      - path: LLegPrint22
+        weight: 1
+      - path: LLegPrint23
+        weight: 1
+      - path: LLegPrint24
+        weight: 1
+      - path: LLegPrint25
+        weight: 1
+      - path: LLegPrint26
+        weight: 1
+      - path: LLegPrint27
+        weight: 1
+      - path: LLegPrint28
+        weight: 1
+      - path: LLegPrint29
+        weight: 1
+      - path: LLegPrint30
+        weight: 1
+      - path: LLegPrint31
+        weight: 1
+      - path: LLegPrint32
+        weight: 1
+      - path: LLegPrint33
+        weight: 1
+      - path: LLegPrint34
+        weight: 1
+      - path: Mouth_1
+        weight: 1
+      - path: position_control
+        weight: 1
+      - path: RLegPrint 1
+        weight: 1
+      - path: RLegPrint 2
+        weight: 1
+      - path: RLegPrint 3
+        weight: 1
+      - path: RLegPrint 4
+        weight: 1
+      - path: RLegPrint 5
+        weight: 1
+      - path: RLegPrint 6
+        weight: 1
+      - path: RLegPrint 7
+        weight: 1
+      - path: RLegPrint 8
+        weight: 1
+      - path: RLegPrint 9
+        weight: 1
+      - path: RLegPrint10
+        weight: 1
+      - path: RLegPrint11
+        weight: 1
+      - path: RLegPrint12
+        weight: 1
+      - path: RLegPrint13
+        weight: 1
+      - path: RLegPrint14
+        weight: 1
+      - path: RLegPrint15
+        weight: 1
+      - path: RLegPrint16
+        weight: 1
+      - path: RLegPrint17
+        weight: 1
+      - path: RLegPrint18
+        weight: 1
+      - path: RLegPrint19
+        weight: 1
+      - path: RLegPrint20
+        weight: 1
+      - path: RLegPrint21
+        weight: 1
+      - path: RLegPrint22
+        weight: 1
+      - path: RLegPrint23
+        weight: 1
+      - path: RLegPrint24
+        weight: 1
+      - path: RLegPrint25
+        weight: 1
+      - path: RLegPrint26
+        weight: 1
+      - path: RLegPrint27
+        weight: 1
+      - path: RLegPrint28
+        weight: 1
+      - path: RLegPrint29
+        weight: 1
+      - path: RLegPrint30
+        weight: 1
+      - path: RLegPrint31
+        weight: 1
+      - path: RLegPrint32
+        weight: 1
+      - path: RLegPrint33
+        weight: 1
+      - path: RLegPrint34
+        weight: 1
+      - path: run_control_dummy
+        weight: 1
+      - path: run_path
+        weight: 1
+      - path: Tongue_2
+        weight: 1
+      - path: veki
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Take 0010
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: banana
+        weight: 1
+      - path: Body_base
+        weight: 1
+      - path: CATRigHub001_torso
+        weight: 1
+      - path: CATRigHub001_torso/CATRig_yazik
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_LT
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_niz
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_RT
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_zubi_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone001_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone002_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone003_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1/CATRigLLeg2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone001
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone002
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone003
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1/CATRigRLeg2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/CATRig_Veki_niz
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/CATRigVeki_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/ExposeTransform001
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/ExposeTransform001/eye_drilled
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_deer_nose
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_deer_nose2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_reed_head
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/deer_roga
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_00
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01/cloth_hawaii_12
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01/cloth_hawaii_24
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02/cloth_hawaii_13
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02/cloth_hawaii_25
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03/cloth_hawaii_14
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03/cloth_hawaii_26
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04/cloth_hawaii_15
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04/cloth_hawaii_27
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05/cloth_hawaii_16
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05/cloth_hawaii_28
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06/cloth_hawaii_17
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06/cloth_hawaii_29
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07/cloth_hawaii_18
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07/cloth_hawaii_30
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08/cloth_hawaii_19
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08/cloth_hawaii_31
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09/cloth_hawaii_20
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09/cloth_hawaii_32
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10/cloth_hawaii_21
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10/cloth_hawaii_33
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_42
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_42/cloth_hawaii_37
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_43
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_43/cloth_hawaii_35
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_44
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_44/cloth_hawaii_36
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_45
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_45/cloth_hawaii_34
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_46
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_46/cloth_hawaii_38
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_47
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_47/cloth_hawaii_39
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_48
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_48/cloth_hawaii_40
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_49
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_49/cloth_hawaii_41
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/eye_bg
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/kepka101
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/kepka201
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/sombrero_part_00
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/sombrero_part_02
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/elastic_1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/elastic_2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/lens
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/volosiki
+        weight: 1
+      - path: CATRigHub001_torso/cloth_gadya_04
+        weight: 1
+      - path: CATRigHub001_torso/cloth_hawaii_23
+        weight: 1
+      - path: CATRigHub001_torso/sombrero_part_01
+        weight: 1
+      - path: cloth_base_jeans
+        weight: 1
+      - path: cloth_gadya_06
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_02
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_07
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_08
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_11
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_03
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_09
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_10
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_12
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_13
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_13/cloth_gadya_05
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_head_shadow
+        weight: 1
+      - path: cloth_hawaii_11
+        weight: 1
+      - path: cloth_homeworker_import_zbr_00
+        weight: 1
+      - path: cloth_homeworker_import_zbr_01
+        weight: 1
+      - path: cloth_homeworker_import_zbr_38
+        weight: 1
+      - path: cloth_homeworker_import_zbr_39
+        weight: 1
+      - path: cloth_homeworker_import_zbr_40
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_02
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_03
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_04
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_05
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_06
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_07
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_08
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_09
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_10
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_11
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_12
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_13
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_14
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_15
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_16
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_17
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_18
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_19
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_20
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_21
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_22
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_23
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_24
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_25
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_26
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_27
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_28
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_29
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_30
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_31
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_32
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_33
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_34
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_35
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_36
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_37
+        weight: 1
+      - path: cloth_homeworker_part_00
+        weight: 1
+      - path: cloth_homeworker_part_01
+        weight: 1
+      - path: cloth_homeworker_part_02
+        weight: 1
+      - path: cloth_homeworker_part_03
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_09
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_10
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_11
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_12
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_13
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_14
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_15
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_16
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_17
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_18
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_19
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_20
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_21
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_22
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_23
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_24
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_25
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_26
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_27
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_28
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_29
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_30
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_31
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_32
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_33
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_34
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_35
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_36
+        weight: 1
+      - path: cloth_homeworker_part_37
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_04
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_05
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_06
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_07
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_08
+        weight: 1
+      - path: korzina_mover_transfer
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_bt
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_left
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_rt
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_top
+        weight: 1
+      - path: LLegPrint 0
+        weight: 1
+      - path: LLegPrint 1
+        weight: 1
+      - path: LLegPrint 2
+        weight: 1
+      - path: LLegPrint 3
+        weight: 1
+      - path: LLegPrint 4
+        weight: 1
+      - path: LLegPrint 5
+        weight: 1
+      - path: LLegPrint 6
+        weight: 1
+      - path: LLegPrint 7
+        weight: 1
+      - path: LLegPrint 8
+        weight: 1
+      - path: LLegPrint 9
+        weight: 1
+      - path: LLegPrint10
+        weight: 1
+      - path: LLegPrint11
+        weight: 1
+      - path: LLegPrint12
+        weight: 1
+      - path: LLegPrint13
+        weight: 1
+      - path: LLegPrint14
+        weight: 1
+      - path: LLegPrint15
+        weight: 1
+      - path: LLegPrint16
+        weight: 1
+      - path: LLegPrint17
+        weight: 1
+      - path: LLegPrint18
+        weight: 1
+      - path: LLegPrint19
+        weight: 1
+      - path: LLegPrint20
+        weight: 1
+      - path: LLegPrint21
+        weight: 1
+      - path: LLegPrint22
+        weight: 1
+      - path: LLegPrint23
+        weight: 1
+      - path: LLegPrint24
+        weight: 1
+      - path: LLegPrint25
+        weight: 1
+      - path: LLegPrint26
+        weight: 1
+      - path: LLegPrint27
+        weight: 1
+      - path: LLegPrint28
+        weight: 1
+      - path: LLegPrint29
+        weight: 1
+      - path: LLegPrint30
+        weight: 1
+      - path: LLegPrint31
+        weight: 1
+      - path: LLegPrint32
+        weight: 1
+      - path: LLegPrint33
+        weight: 1
+      - path: LLegPrint34
+        weight: 1
+      - path: Mouth_1
+        weight: 1
+      - path: position_control
+        weight: 1
+      - path: RLegPrint 1
+        weight: 1
+      - path: RLegPrint 2
+        weight: 1
+      - path: RLegPrint 3
+        weight: 1
+      - path: RLegPrint 4
+        weight: 1
+      - path: RLegPrint 5
+        weight: 1
+      - path: RLegPrint 6
+        weight: 1
+      - path: RLegPrint 7
+        weight: 1
+      - path: RLegPrint 8
+        weight: 1
+      - path: RLegPrint 9
+        weight: 1
+      - path: RLegPrint10
+        weight: 1
+      - path: RLegPrint11
+        weight: 1
+      - path: RLegPrint12
+        weight: 1
+      - path: RLegPrint13
+        weight: 1
+      - path: RLegPrint14
+        weight: 1
+      - path: RLegPrint15
+        weight: 1
+      - path: RLegPrint16
+        weight: 1
+      - path: RLegPrint17
+        weight: 1
+      - path: RLegPrint18
+        weight: 1
+      - path: RLegPrint19
+        weight: 1
+      - path: RLegPrint20
+        weight: 1
+      - path: RLegPrint21
+        weight: 1
+      - path: RLegPrint22
+        weight: 1
+      - path: RLegPrint23
+        weight: 1
+      - path: RLegPrint24
+        weight: 1
+      - path: RLegPrint25
+        weight: 1
+      - path: RLegPrint26
+        weight: 1
+      - path: RLegPrint27
+        weight: 1
+      - path: RLegPrint28
+        weight: 1
+      - path: RLegPrint29
+        weight: 1
+      - path: RLegPrint30
+        weight: 1
+      - path: RLegPrint31
+        weight: 1
+      - path: RLegPrint32
+        weight: 1
+      - path: RLegPrint33
+        weight: 1
+      - path: RLegPrint34
+        weight: 1
+      - path: run_control_dummy
+        weight: 1
+      - path: run_path
+        weight: 1
+      - path: Tongue_2
+        weight: 1
+      - path: veki
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: korzina_start
+      takeName: Take 001
+      firstFrame: 171
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: banana
+        weight: 1
+      - path: Body_base
+        weight: 1
+      - path: CATRigHub001_torso
+        weight: 1
+      - path: CATRigHub001_torso/CATRig_yazik
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_LT
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_niz
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_RT
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_zubi_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone001_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone002_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone003_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1/CATRigLLeg2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone001
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone002
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone003
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1/CATRigRLeg2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/CATRig_Veki_niz
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/CATRigVeki_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/ExposeTransform001
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/ExposeTransform001/eye_drilled
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_deer_nose
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_deer_nose2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_reed_head
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/deer_roga
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_00
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01/cloth_hawaii_12
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01/cloth_hawaii_24
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02/cloth_hawaii_13
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02/cloth_hawaii_25
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03/cloth_hawaii_14
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03/cloth_hawaii_26
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04/cloth_hawaii_15
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04/cloth_hawaii_27
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05/cloth_hawaii_16
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05/cloth_hawaii_28
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06/cloth_hawaii_17
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06/cloth_hawaii_29
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07/cloth_hawaii_18
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07/cloth_hawaii_30
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08/cloth_hawaii_19
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08/cloth_hawaii_31
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09/cloth_hawaii_20
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09/cloth_hawaii_32
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10/cloth_hawaii_21
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10/cloth_hawaii_33
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_42
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_42/cloth_hawaii_37
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_43
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_43/cloth_hawaii_35
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_44
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_44/cloth_hawaii_36
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_45
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_45/cloth_hawaii_34
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_46
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_46/cloth_hawaii_38
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_47
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_47/cloth_hawaii_39
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_48
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_48/cloth_hawaii_40
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_49
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_49/cloth_hawaii_41
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/eye_bg
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/kepka101
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/kepka201
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/sombrero_part_00
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/sombrero_part_02
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/elastic_1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/elastic_2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/lens
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/volosiki
+        weight: 1
+      - path: CATRigHub001_torso/cloth_gadya_04
+        weight: 1
+      - path: CATRigHub001_torso/cloth_hawaii_23
+        weight: 1
+      - path: CATRigHub001_torso/sombrero_part_01
+        weight: 1
+      - path: cloth_base_jeans
+        weight: 1
+      - path: cloth_gadya_06
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_02
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_07
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_08
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_11
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_03
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_09
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_10
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_12
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_13
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_13/cloth_gadya_05
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_head_shadow
+        weight: 1
+      - path: cloth_hawaii_11
+        weight: 1
+      - path: cloth_homeworker_import_zbr_00
+        weight: 1
+      - path: cloth_homeworker_import_zbr_01
+        weight: 1
+      - path: cloth_homeworker_import_zbr_38
+        weight: 1
+      - path: cloth_homeworker_import_zbr_39
+        weight: 1
+      - path: cloth_homeworker_import_zbr_40
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_02
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_03
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_04
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_05
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_06
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_07
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_08
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_09
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_10
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_11
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_12
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_13
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_14
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_15
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_16
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_17
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_18
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_19
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_20
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_21
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_22
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_23
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_24
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_25
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_26
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_27
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_28
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_29
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_30
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_31
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_32
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_33
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_34
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_35
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_36
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_37
+        weight: 1
+      - path: cloth_homeworker_part_00
+        weight: 1
+      - path: cloth_homeworker_part_01
+        weight: 1
+      - path: cloth_homeworker_part_02
+        weight: 1
+      - path: cloth_homeworker_part_03
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_09
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_10
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_11
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_12
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_13
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_14
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_15
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_16
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_17
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_18
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_19
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_20
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_21
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_22
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_23
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_24
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_25
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_26
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_27
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_28
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_29
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_30
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_31
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_32
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_33
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_34
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_35
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_36
+        weight: 1
+      - path: cloth_homeworker_part_37
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_04
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_05
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_06
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_07
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_08
+        weight: 1
+      - path: korzina_mover_transfer
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_bt
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_left
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_rt
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_top
+        weight: 1
+      - path: LLegPrint 0
+        weight: 1
+      - path: LLegPrint 1
+        weight: 1
+      - path: LLegPrint 2
+        weight: 1
+      - path: LLegPrint 3
+        weight: 1
+      - path: LLegPrint 4
+        weight: 1
+      - path: LLegPrint 5
+        weight: 1
+      - path: LLegPrint 6
+        weight: 1
+      - path: LLegPrint 7
+        weight: 1
+      - path: LLegPrint 8
+        weight: 1
+      - path: LLegPrint 9
+        weight: 1
+      - path: LLegPrint10
+        weight: 1
+      - path: LLegPrint11
+        weight: 1
+      - path: LLegPrint12
+        weight: 1
+      - path: LLegPrint13
+        weight: 1
+      - path: LLegPrint14
+        weight: 1
+      - path: LLegPrint15
+        weight: 1
+      - path: LLegPrint16
+        weight: 1
+      - path: LLegPrint17
+        weight: 1
+      - path: LLegPrint18
+        weight: 1
+      - path: LLegPrint19
+        weight: 1
+      - path: LLegPrint20
+        weight: 1
+      - path: LLegPrint21
+        weight: 1
+      - path: LLegPrint22
+        weight: 1
+      - path: LLegPrint23
+        weight: 1
+      - path: LLegPrint24
+        weight: 1
+      - path: LLegPrint25
+        weight: 1
+      - path: LLegPrint26
+        weight: 1
+      - path: LLegPrint27
+        weight: 1
+      - path: LLegPrint28
+        weight: 1
+      - path: LLegPrint29
+        weight: 1
+      - path: LLegPrint30
+        weight: 1
+      - path: LLegPrint31
+        weight: 1
+      - path: LLegPrint32
+        weight: 1
+      - path: LLegPrint33
+        weight: 1
+      - path: LLegPrint34
+        weight: 1
+      - path: Mouth_1
+        weight: 1
+      - path: position_control
+        weight: 1
+      - path: RLegPrint 1
+        weight: 1
+      - path: RLegPrint 2
+        weight: 1
+      - path: RLegPrint 3
+        weight: 1
+      - path: RLegPrint 4
+        weight: 1
+      - path: RLegPrint 5
+        weight: 1
+      - path: RLegPrint 6
+        weight: 1
+      - path: RLegPrint 7
+        weight: 1
+      - path: RLegPrint 8
+        weight: 1
+      - path: RLegPrint 9
+        weight: 1
+      - path: RLegPrint10
+        weight: 1
+      - path: RLegPrint11
+        weight: 1
+      - path: RLegPrint12
+        weight: 1
+      - path: RLegPrint13
+        weight: 1
+      - path: RLegPrint14
+        weight: 1
+      - path: RLegPrint15
+        weight: 1
+      - path: RLegPrint16
+        weight: 1
+      - path: RLegPrint17
+        weight: 1
+      - path: RLegPrint18
+        weight: 1
+      - path: RLegPrint19
+        weight: 1
+      - path: RLegPrint20
+        weight: 1
+      - path: RLegPrint21
+        weight: 1
+      - path: RLegPrint22
+        weight: 1
+      - path: RLegPrint23
+        weight: 1
+      - path: RLegPrint24
+        weight: 1
+      - path: RLegPrint25
+        weight: 1
+      - path: RLegPrint26
+        weight: 1
+      - path: RLegPrint27
+        weight: 1
+      - path: RLegPrint28
+        weight: 1
+      - path: RLegPrint29
+        weight: 1
+      - path: RLegPrint30
+        weight: 1
+      - path: RLegPrint31
+        weight: 1
+      - path: RLegPrint32
+        weight: 1
+      - path: RLegPrint33
+        weight: 1
+      - path: RLegPrint34
+        weight: 1
+      - path: run_control_dummy
+        weight: 1
+      - path: run_path
+        weight: 1
+      - path: Tongue_2
+        weight: 1
+      - path: veki
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: korzina_end
+      takeName: Take 001
+      firstFrame: 306
+      lastFrame: 341
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: banana
+        weight: 1
+      - path: Body_base
+        weight: 1
+      - path: CATRigHub001_torso
+        weight: 1
+      - path: CATRigHub001_torso/CATRig_yazik
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_LT
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_niz
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_RT
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_zubi_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone001_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone002_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone003_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1/CATRigLLeg2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone001
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone002
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone003
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1/CATRigRLeg2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/CATRig_Veki_niz
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/CATRigVeki_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/ExposeTransform001
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/ExposeTransform001/eye_drilled
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_deer_nose
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_deer_nose2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_reed_head
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/deer_roga
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_00
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01/cloth_hawaii_12
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01/cloth_hawaii_24
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02/cloth_hawaii_13
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02/cloth_hawaii_25
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03/cloth_hawaii_14
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03/cloth_hawaii_26
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04/cloth_hawaii_15
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04/cloth_hawaii_27
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05/cloth_hawaii_16
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05/cloth_hawaii_28
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06/cloth_hawaii_17
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06/cloth_hawaii_29
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07/cloth_hawaii_18
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07/cloth_hawaii_30
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08/cloth_hawaii_19
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08/cloth_hawaii_31
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09/cloth_hawaii_20
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09/cloth_hawaii_32
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10/cloth_hawaii_21
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10/cloth_hawaii_33
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_42
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_42/cloth_hawaii_37
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_43
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_43/cloth_hawaii_35
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_44
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_44/cloth_hawaii_36
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_45
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_45/cloth_hawaii_34
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_46
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_46/cloth_hawaii_38
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_47
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_47/cloth_hawaii_39
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_48
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_48/cloth_hawaii_40
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_49
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_49/cloth_hawaii_41
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/eye_bg
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/kepka101
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/kepka201
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/sombrero_part_00
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/sombrero_part_02
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/elastic_1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/elastic_2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/lens
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/volosiki
+        weight: 1
+      - path: CATRigHub001_torso/cloth_gadya_04
+        weight: 1
+      - path: CATRigHub001_torso/cloth_hawaii_23
+        weight: 1
+      - path: CATRigHub001_torso/sombrero_part_01
+        weight: 1
+      - path: cloth_base_jeans
+        weight: 1
+      - path: cloth_gadya_06
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_02
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_07
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_08
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_11
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_03
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_09
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_10
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_12
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_13
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_13/cloth_gadya_05
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_head_shadow
+        weight: 1
+      - path: cloth_hawaii_11
+        weight: 1
+      - path: cloth_homeworker_import_zbr_00
+        weight: 1
+      - path: cloth_homeworker_import_zbr_01
+        weight: 1
+      - path: cloth_homeworker_import_zbr_38
+        weight: 1
+      - path: cloth_homeworker_import_zbr_39
+        weight: 1
+      - path: cloth_homeworker_import_zbr_40
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_02
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_03
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_04
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_05
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_06
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_07
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_08
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_09
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_10
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_11
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_12
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_13
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_14
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_15
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_16
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_17
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_18
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_19
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_20
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_21
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_22
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_23
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_24
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_25
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_26
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_27
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_28
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_29
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_30
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_31
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_32
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_33
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_34
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_35
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_36
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_37
+        weight: 1
+      - path: cloth_homeworker_part_00
+        weight: 1
+      - path: cloth_homeworker_part_01
+        weight: 1
+      - path: cloth_homeworker_part_02
+        weight: 1
+      - path: cloth_homeworker_part_03
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_09
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_10
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_11
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_12
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_13
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_14
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_15
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_16
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_17
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_18
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_19
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_20
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_21
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_22
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_23
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_24
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_25
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_26
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_27
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_28
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_29
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_30
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_31
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_32
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_33
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_34
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_35
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_36
+        weight: 1
+      - path: cloth_homeworker_part_37
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_04
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_05
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_06
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_07
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_08
+        weight: 1
+      - path: korzina_mover_transfer
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_bt
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_left
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_rt
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_top
+        weight: 1
+      - path: LLegPrint 0
+        weight: 1
+      - path: LLegPrint 1
+        weight: 1
+      - path: LLegPrint 2
+        weight: 1
+      - path: LLegPrint 3
+        weight: 1
+      - path: LLegPrint 4
+        weight: 1
+      - path: LLegPrint 5
+        weight: 1
+      - path: LLegPrint 6
+        weight: 1
+      - path: LLegPrint 7
+        weight: 1
+      - path: LLegPrint 8
+        weight: 1
+      - path: LLegPrint 9
+        weight: 1
+      - path: LLegPrint10
+        weight: 1
+      - path: LLegPrint11
+        weight: 1
+      - path: LLegPrint12
+        weight: 1
+      - path: LLegPrint13
+        weight: 1
+      - path: LLegPrint14
+        weight: 1
+      - path: LLegPrint15
+        weight: 1
+      - path: LLegPrint16
+        weight: 1
+      - path: LLegPrint17
+        weight: 1
+      - path: LLegPrint18
+        weight: 1
+      - path: LLegPrint19
+        weight: 1
+      - path: LLegPrint20
+        weight: 1
+      - path: LLegPrint21
+        weight: 1
+      - path: LLegPrint22
+        weight: 1
+      - path: LLegPrint23
+        weight: 1
+      - path: LLegPrint24
+        weight: 1
+      - path: LLegPrint25
+        weight: 1
+      - path: LLegPrint26
+        weight: 1
+      - path: LLegPrint27
+        weight: 1
+      - path: LLegPrint28
+        weight: 1
+      - path: LLegPrint29
+        weight: 1
+      - path: LLegPrint30
+        weight: 1
+      - path: LLegPrint31
+        weight: 1
+      - path: LLegPrint32
+        weight: 1
+      - path: LLegPrint33
+        weight: 1
+      - path: LLegPrint34
+        weight: 1
+      - path: Mouth_1
+        weight: 1
+      - path: position_control
+        weight: 1
+      - path: RLegPrint 1
+        weight: 1
+      - path: RLegPrint 2
+        weight: 1
+      - path: RLegPrint 3
+        weight: 1
+      - path: RLegPrint 4
+        weight: 1
+      - path: RLegPrint 5
+        weight: 1
+      - path: RLegPrint 6
+        weight: 1
+      - path: RLegPrint 7
+        weight: 1
+      - path: RLegPrint 8
+        weight: 1
+      - path: RLegPrint 9
+        weight: 1
+      - path: RLegPrint10
+        weight: 1
+      - path: RLegPrint11
+        weight: 1
+      - path: RLegPrint12
+        weight: 1
+      - path: RLegPrint13
+        weight: 1
+      - path: RLegPrint14
+        weight: 1
+      - path: RLegPrint15
+        weight: 1
+      - path: RLegPrint16
+        weight: 1
+      - path: RLegPrint17
+        weight: 1
+      - path: RLegPrint18
+        weight: 1
+      - path: RLegPrint19
+        weight: 1
+      - path: RLegPrint20
+        weight: 1
+      - path: RLegPrint21
+        weight: 1
+      - path: RLegPrint22
+        weight: 1
+      - path: RLegPrint23
+        weight: 1
+      - path: RLegPrint24
+        weight: 1
+      - path: RLegPrint25
+        weight: 1
+      - path: RLegPrint26
+        weight: 1
+      - path: RLegPrint27
+        weight: 1
+      - path: RLegPrint28
+        weight: 1
+      - path: RLegPrint29
+        weight: 1
+      - path: RLegPrint30
+        weight: 1
+      - path: RLegPrint31
+        weight: 1
+      - path: RLegPrint32
+        weight: 1
+      - path: RLegPrint33
+        weight: 1
+      - path: RLegPrint34
+        weight: 1
+      - path: run_control_dummy
+        weight: 1
+      - path: run_path
+        weight: 1
+      - path: Tongue_2
+        weight: 1
+      - path: veki
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: idle3
+      takeName: Take 001
+      firstFrame: 654
+      lastFrame: 771
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: banana
+        weight: 1
+      - path: Body_base
+        weight: 1
+      - path: CATRigHub001_torso
+        weight: 1
+      - path: CATRigHub001_torso/CATRig_yazik
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_LT
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_niz
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_RT
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_rot_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigBone_zubi_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone001_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone002_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLArmCollarbone_base/CATRigLArm1/CATRigLArm2/CATRigLArmPalm/CATRigPalmBone003_r
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1/CATRigLLeg2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigLLeg1/CATRigLLeg2/CATRigLLegAnkle
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone001
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone002
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRArmCollarbone_base/CATRigRArm1/CATRigRArm2/CATRigRArmPalm/CATRigPalmBone003
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1/CATRigRLeg2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigRLeg1/CATRigRLeg2/CATRigRLegAnkle
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/CATRig_Veki_niz
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/CATRigVeki_verh
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/ExposeTransform001
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/CATRigHub_veki/ExposeTransform001/eye_drilled
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_deer_nose
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_deer_nose2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/cloth_reed_head
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_deer_helper/deer_roga
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_00
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01/cloth_hawaii_12
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_01/cloth_hawaii_24
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02/cloth_hawaii_13
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_02/cloth_hawaii_25
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03/cloth_hawaii_14
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_03/cloth_hawaii_26
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04/cloth_hawaii_15
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_04/cloth_hawaii_27
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05/cloth_hawaii_16
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_05/cloth_hawaii_28
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06/cloth_hawaii_17
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_06/cloth_hawaii_29
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07/cloth_hawaii_18
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_07/cloth_hawaii_30
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08/cloth_hawaii_19
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_08/cloth_hawaii_31
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09/cloth_hawaii_20
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_09/cloth_hawaii_32
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10/cloth_hawaii_21
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_10/cloth_hawaii_33
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_42
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_42/cloth_hawaii_37
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_43
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_43/cloth_hawaii_35
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_44
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_44/cloth_hawaii_36
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_45
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_45/cloth_hawaii_34
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_46
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_46/cloth_hawaii_38
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_47
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_47/cloth_hawaii_39
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_48
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_48/cloth_hawaii_40
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_49
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/cloth_hawaii_50/cloth_hawaii_22/cloth_hawaii_49/cloth_hawaii_41
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/eye_bg
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/kepka101
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/kepka201
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/sombrero_part_00
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/sombrero_part_02
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/elastic_1
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/elastic_2
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/top/lens
+        weight: 1
+      - path: CATRigHub001_torso/CATRigSpine1/CATRigSpine2/CATRigHub002_head/volosiki
+        weight: 1
+      - path: CATRigHub001_torso/cloth_gadya_04
+        weight: 1
+      - path: CATRigHub001_torso/cloth_hawaii_23
+        weight: 1
+      - path: CATRigHub001_torso/sombrero_part_01
+        weight: 1
+      - path: cloth_base_jeans
+        weight: 1
+      - path: cloth_gadya_06
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_02
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_07
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_08
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_00/cloth_gadya_11
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_03
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_09
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_10
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_01/cloth_gadya_12
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_13
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_13/cloth_gadya_05
+        weight: 1
+      - path: cloth_gadya_06/cloth_gadya_head_shadow
+        weight: 1
+      - path: cloth_hawaii_11
+        weight: 1
+      - path: cloth_homeworker_import_zbr_00
+        weight: 1
+      - path: cloth_homeworker_import_zbr_01
+        weight: 1
+      - path: cloth_homeworker_import_zbr_38
+        weight: 1
+      - path: cloth_homeworker_import_zbr_39
+        weight: 1
+      - path: cloth_homeworker_import_zbr_40
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_02
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_03
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_04
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_05
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_06
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_07
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_08
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_09
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_10
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_11
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_12
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_13
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_14
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_15
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_16
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_17
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_18
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_19
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_20
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_21
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_22
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_23
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_24
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_25
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_26
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_27
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_28
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_29
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_30
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_31
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_32
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_33
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_34
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_35
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_36
+        weight: 1
+      - path: cloth_homeworker_import_zbr_41/cloth_homeworker_import_zbr_37
+        weight: 1
+      - path: cloth_homeworker_part_00
+        weight: 1
+      - path: cloth_homeworker_part_01
+        weight: 1
+      - path: cloth_homeworker_part_02
+        weight: 1
+      - path: cloth_homeworker_part_03
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_09
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_10
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_11
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_12
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_13
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_14
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_15
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_16
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_17
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_18
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_19
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_20
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_21
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_22
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_23
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_24
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_25
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_26
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_27
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_28
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_29
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_30
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_31
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_32
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_33
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_34
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_35
+        weight: 1
+      - path: cloth_homeworker_part_03/cloth_homeworker_part_36
+        weight: 1
+      - path: cloth_homeworker_part_37
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_04
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_05
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_06
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_07
+        weight: 1
+      - path: cloth_homeworker_part_37/cloth_homeworker_part_08
+        weight: 1
+      - path: korzina_mover_transfer
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_bt
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_left
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_rt
+        weight: 1
+      - path: korzina_mover_transfer/korzina_control/korzina_top
+        weight: 1
+      - path: LLegPrint 0
+        weight: 1
+      - path: LLegPrint 1
+        weight: 1
+      - path: LLegPrint 2
+        weight: 1
+      - path: LLegPrint 3
+        weight: 1
+      - path: LLegPrint 4
+        weight: 1
+      - path: LLegPrint 5
+        weight: 1
+      - path: LLegPrint 6
+        weight: 1
+      - path: LLegPrint 7
+        weight: 1
+      - path: LLegPrint 8
+        weight: 1
+      - path: LLegPrint 9
+        weight: 1
+      - path: LLegPrint10
+        weight: 1
+      - path: LLegPrint11
+        weight: 1
+      - path: LLegPrint12
+        weight: 1
+      - path: LLegPrint13
+        weight: 1
+      - path: LLegPrint14
+        weight: 1
+      - path: LLegPrint15
+        weight: 1
+      - path: LLegPrint16
+        weight: 1
+      - path: LLegPrint17
+        weight: 1
+      - path: LLegPrint18
+        weight: 1
+      - path: LLegPrint19
+        weight: 1
+      - path: LLegPrint20
+        weight: 1
+      - path: LLegPrint21
+        weight: 1
+      - path: LLegPrint22
+        weight: 1
+      - path: LLegPrint23
+        weight: 1
+      - path: LLegPrint24
+        weight: 1
+      - path: LLegPrint25
+        weight: 1
+      - path: LLegPrint26
+        weight: 1
+      - path: LLegPrint27
+        weight: 1
+      - path: LLegPrint28
+        weight: 1
+      - path: LLegPrint29
+        weight: 1
+      - path: LLegPrint30
+        weight: 1
+      - path: LLegPrint31
+        weight: 1
+      - path: LLegPrint32
+        weight: 1
+      - path: LLegPrint33
+        weight: 1
+      - path: LLegPrint34
+        weight: 1
+      - path: Mouth_1
+        weight: 1
+      - path: position_control
+        weight: 1
+      - path: RLegPrint 1
+        weight: 1
+      - path: RLegPrint 2
+        weight: 1
+      - path: RLegPrint 3
+        weight: 1
+      - path: RLegPrint 4
+        weight: 1
+      - path: RLegPrint 5
+        weight: 1
+      - path: RLegPrint 6
+        weight: 1
+      - path: RLegPrint 7
+        weight: 1
+      - path: RLegPrint 8
+        weight: 1
+      - path: RLegPrint 9
+        weight: 1
+      - path: RLegPrint10
+        weight: 1
+      - path: RLegPrint11
+        weight: 1
+      - path: RLegPrint12
+        weight: 1
+      - path: RLegPrint13
+        weight: 1
+      - path: RLegPrint14
+        weight: 1
+      - path: RLegPrint15
+        weight: 1
+      - path: RLegPrint16
+        weight: 1
+      - path: RLegPrint17
+        weight: 1
+      - path: RLegPrint18
+        weight: 1
+      - path: RLegPrint19
+        weight: 1
+      - path: RLegPrint20
+        weight: 1
+      - path: RLegPrint21
+        weight: 1
+      - path: RLegPrint22
+        weight: 1
+      - path: RLegPrint23
+        weight: 1
+      - path: RLegPrint24
+        weight: 1
+      - path: RLegPrint25
+        weight: 1
+      - path: RLegPrint26
+        weight: 1
+      - path: RLegPrint27
+        weight: 1
+      - path: RLegPrint28
+        weight: 1
+      - path: RLegPrint29
+        weight: 1
+      - path: RLegPrint30
+        weight: 1
+      - path: RLegPrint31
+        weight: 1
+      - path: RLegPrint32
+        weight: 1
+      - path: RLegPrint33
+        weight: 1
+      - path: RLegPrint34
+        weight: 1
+      - path: run_control_dummy
+        weight: 1
+      - path: run_path
         weight: 1
       - path: Tongue_2
         weight: 1

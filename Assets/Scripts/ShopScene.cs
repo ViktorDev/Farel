@@ -4,7 +4,7 @@ using UnityEngine.UI;
 public class ShopScene : MonoBehaviour 
 {
     public static ShopScene instance;
-
+    Animator minion;
 
     //public GameObject lotPanel;
     //   public GameObject lotInfo;
@@ -21,6 +21,7 @@ public class ShopScene : MonoBehaviour
         {
             instance = this;
         }
+        minion = GameObject.Find("minion_full").GetComponent<Animator>();
     }
 
     void OnEnable() {
@@ -30,6 +31,7 @@ public class ShopScene : MonoBehaviour
 
     void OnDisable() {
         shopPanel.GetComponent<UIShopPanel>().HideButtons();
+        minion.SetTrigger("Idle1Stop");
     }
 
 

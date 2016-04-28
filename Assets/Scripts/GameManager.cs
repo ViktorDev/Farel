@@ -21,9 +21,12 @@ public class GameManager : MonoBehaviour
     public bool isFinishGame;
     public float timeToFinish;
     public GameObject ball;
+
+    Animator minion;
     // Use this for initialization
     void Start () {
         scoretext = score.GetComponentInChildren<Text>();
+        minion = GameObject.Find("minion_full").GetComponent<Animator>();
     }
 
     void OnEnable() {
@@ -83,7 +86,8 @@ public class GameManager : MonoBehaviour
         foreach (GameObject obj in objs)
         {
             Destroy(obj);
-
         }
+        minion.SetTrigger("GameStop");
+
     }
 }
