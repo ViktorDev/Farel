@@ -5,7 +5,7 @@ using UnityEngine.UI;
 public class UIShopPanel : MonoBehaviour {
 
     public GameObject[] modeButtons;
-
+    public MinionStateChanger minion;
     GameObject currButton;
     //public Sprite glassEnable;
     //public Sprite glassDisable;
@@ -44,6 +44,7 @@ public class UIShopPanel : MonoBehaviour {
         currButton.GetComponent<Button>().interactable = true;
         modeButtons[1].GetComponent<Button>().interactable = false;
         currButton = modeButtons[1];
+        minion.currentShopState = MinionStateChanger.ClothesState.Hat;
     }
 
     public void MoustacheSelect() {
@@ -56,6 +57,7 @@ public class UIShopPanel : MonoBehaviour {
         currButton.GetComponent<Button>().interactable = true;
         modeButtons[3].GetComponent<Button>().interactable = false;
         currButton = modeButtons[3];
+        minion.currentShopState = MinionStateChanger.ClothesState.Clothes;
     }
 
     IEnumerator Show() {

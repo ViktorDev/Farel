@@ -4,6 +4,7 @@ using UnityEngine.UI;
 
 public class UInewManager : MonoBehaviour {
 
+    public MinionStateChanger minion;
 
     public GameObject [] buttons;
     public GameObject buttonsPanel;
@@ -29,16 +30,19 @@ public class UInewManager : MonoBehaviour {
 
     public void OpenInfoScene() {
         SceneStateManager.instance.ChangeState(1);
+        minion.SetDefaultClothes();
         CloseButtons();
     }
 
     public void OpenGameScene() {
         SceneStateManager.instance.ChangeState(2);
+        minion.SetGameClothes();
         CloseButtons();
     }
 
     public void OpenShopScene() {
         SceneStateManager.instance.ChangeState(3);
+        minion.SetShopState();
         CloseButtons();
     }
 

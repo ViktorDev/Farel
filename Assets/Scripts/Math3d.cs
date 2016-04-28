@@ -784,7 +784,7 @@ public class Math3d : MonoBehaviour
         }
 
         //Average the values
-        float addDet = 1f / (float)addAmount;
+ //       float addDet = 1f / (float)addAmount;
         cumulative.w += newRotation.w;
  //       w = cumulative.w * addDet;
         cumulative.x += newRotation.x;

@@ -10,6 +10,7 @@ public class SceneStateManager : MonoBehaviour
 	public List<GameObject> managers;
 	public GameObject curentManager;
 
+    
     public bool isSelfieMode;
 
 

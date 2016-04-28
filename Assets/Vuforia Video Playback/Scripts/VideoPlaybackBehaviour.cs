@@ -68,7 +68,7 @@ public class VideoPlaybackBehaviour : MonoBehaviour
     private VideoPlayerHelper.MediaState mCurrentState =
             VideoPlayerHelper.MediaState.NOT_READY;
 
-    private float mSeekPosition = 0.0f;
+//    private float mSeekPosition = 0.0f;
 
     private bool isPlayableOnTexture;
 
@@ -307,7 +307,7 @@ public class VideoPlaybackBehaviour : MonoBehaviour
             mVideoPlayer.OnPause();
 
             // Store the playback position for later
-            mSeekPosition = mVideoPlayer.GetCurrentPosition();
+//            mSeekPosition = mVideoPlayer.GetCurrentPosition();
 
             // Deinit the video
             mVideoPlayer.Deinit();
