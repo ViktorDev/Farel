@@ -5,6 +5,7 @@ public class TV : MonoBehaviour {
 
     //
     EducationView manager;
+    public string link;
 //    VideoPlaybackBehaviour video;
 //    public GameObject infoPanel;
 // Use this for initialization
@@ -21,7 +22,7 @@ public class TV : MonoBehaviour {
     public void ShowTv() {
 
         // fullscreen
-        Handheld.PlayFullScreenMovie("Unity 5 Launch Trailer.mp4", Color.black, FullScreenMovieControlMode.CancelOnInput);
+        Handheld.PlayFullScreenMovie(link, Color.black, FullScreenMovieControlMode.CancelOnInput);
         manager.infoPanels.SetActive(true);
         // TV
         //       gameObject.SetActive(true);

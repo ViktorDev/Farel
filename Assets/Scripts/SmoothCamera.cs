@@ -5,7 +5,8 @@ using Vuforia;
 [RequireComponent(typeof (VuforiaBehaviour))]
 public class SmoothCamera : MonoBehaviour {
  
-    public int smoothingFrames = 10;
+    public int smoothingFrames;
+
     private VuforiaBehaviour qcarBehavior;
  
     private Quaternion smoothedRotation;

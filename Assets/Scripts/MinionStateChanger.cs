@@ -7,7 +7,6 @@ public class MinionStateChanger : MonoBehaviour {
 
     public GameObject[] defaultClothes;
     public GameObject[] gameClothes;
-
     
     public GameObject[] girlClothes;
     public GameObject[] havaiClothes;    
@@ -22,6 +21,7 @@ public class MinionStateChanger : MonoBehaviour {
     public GameObject[] hatHavai;
     public GameObject[] hatGadya;
 
+    public GameObject banana;
     public ClothesState currentShopState = ClothesState.Nothing;
     GameObject[] curr;
     GameObject[] currHat;
@@ -30,12 +30,19 @@ public class MinionStateChanger : MonoBehaviour {
     int currHatIndex = 0;
     int currClothIndex = 0;
     Animator anim;
+    AudioSource source;
+    public AudioClip bananaSound;
+    public AudioClip belloSound;
+
+    bool isGameState;
     // Use this for initialization
     void Start () {
         curr = defaultClothes;
         anim = GetComponent<Animator>();
+        source = GetComponent<AudioSource>();
         currHat = girlHat;
         currCloth = girlClothes;
+        InvokeRepeating("PlayRandomAnimation", 1, 15);
     }
 	
 	// Update is called once per frame
@@ -44,21 +51,68 @@ public class MinionStateChanger : MonoBehaviour {
     }
 
     public void SetDefaultClothes() {
+        isGameState = false;
         anim.SetTrigger("Null");
         anim.SetTrigger("Idle2");
         StartCoroutine(DefaultClothe());
     }
 
     public void SetGameClothes() {
+        isGameState = true;
         anim.SetTrigger("Null");
         anim.SetTrigger("GameStart");
         StartCoroutine(GameState());
     }
 
     public void SetShopState() {
+        isGameState = false;
         anim.SetTrigger("Null");
         anim.SetTrigger("Idle1Start");
         StartCoroutine(ShopState());
+    }
+
+    void PlayRandomAnimation(){
+        if (!isGameState) PlayExtraAnim();    
+    }
+
+    void PlayExtraAnim(){
+        string currTrigger = "";
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle1"))
+        {
+            currTrigger = "Idle1Start";
+            anim.SetTrigger("Idle1Stop");
+            anim.SetTrigger("Null");
+        }
+        if (anim.GetCurrentAnimatorStateInfo(0).IsName("Idle2"))
+        {
+            currTrigger = "Idle2";
+            anim.SetTrigger("Null");
+        }
+
+        if (Random.value > 0.5f) StartCoroutine(Banana(currTrigger));
+        else StartCoroutine(Bello(currTrigger));
+    }
+
+    IEnumerator Banana(string currTrigger)
+    {
+        anim.SetTrigger("Banana");
+        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("Banana"));
+        banana.SetActive(true);
+        yield return new WaitForSeconds(1.133f);
+        source.PlayOneShot(bananaSound);
+        anim.SetTrigger("Null");
+        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("Null"));
+        banana.SetActive(false);
+        anim.SetTrigger(currTrigger);
+    }
+
+    IEnumerator Bello(string currTrigger) {
+        anim.SetTrigger("Bello");
+        yield return new WaitUntil(() => anim.GetCurrentAnimatorStateInfo(0).IsName("Bello"));
+        yield return new WaitForSeconds(1.133f);
+        source.PlayOneShot(belloSound);
+        anim.SetTrigger("Null");
+        anim.SetTrigger(currTrigger);
     }
 
     IEnumerator ShopState() {

@@ -22,20 +22,22 @@ public class Ball : MonoBehaviour {
         if (isStay ) shotListener();       
     }
 
-    void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.gameObject.tag == "winDetector")
-        {
-            manager.addPoints();
-        }
+    //void OnCollisionEnter(Collision collision)
+    //{
+    //    if (collision.collider.gameObject.tag == "winDetector")
+    //    {
+    //        manager.addPoints();
+    //        Destroy(gameObject);
+    //    }
 
-    }
+    //}
 
     void OnTriggerEnter(Collider otherCollider)
     {
         if (otherCollider.gameObject.tag == "winDetector")
         {
             manager.addPoints();
+            Destroy(gameObject);
         }
     }
     void shotListener()
