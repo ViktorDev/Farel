@@ -4,7 +4,7 @@ using System.Collections.Generic;
 public class RotationInfo : MonoBehaviour 
 {
 	
-	public List<GameObject> text;
+	public List<GameObject> iPanels;
 	public List<LineRenderer> lines;
     public Vector3 [] beginPoints;
 	public Transform moon;
@@ -18,7 +18,7 @@ public class RotationInfo : MonoBehaviour
 		arCam = GameObject.Find("ARCamera");
         if (SceneStateManager.instance.curentManager.name == "InfoManager")
         {
-            foreach (var item in text)
+            foreach (var item in iPanels)
             {
                 line = item.gameObject.AddComponent<LineRenderer>();
                 line.SetWidth(0.02f, 0.02f);
@@ -39,7 +39,7 @@ public class RotationInfo : MonoBehaviour
 	{
         if (SceneStateManager.instance.curentManager.name == "InfoManager") {
             int count = 0;
-            foreach (var item in text)
+            foreach (var item in iPanels)
             {
                 item.transform.rotation = Quaternion.LookRotation(transform.position - arCam.transform.position);
                 line = item.gameObject.GetComponent<LineRenderer>();
@@ -49,6 +49,6 @@ public class RotationInfo : MonoBehaviour
                 count++;
             }
         }
-		transform.rotation = moon.transform.rotation;
+//		transform.rotation = moon.transform.rotation;
 	}
 }

@@ -23,7 +23,8 @@ public class TV : MonoBehaviour {
 
         // fullscreen
         Handheld.PlayFullScreenMovie(link, Color.black, FullScreenMovieControlMode.CancelOnInput);
-        manager.infoPanels.SetActive(true);
+//        manager.infoPanels.SetActive(true);
+        manager.Ipanels[4].SetActive(false);
         // TV
         //       gameObject.SetActive(true);
         //        StartCoroutine(moveDown());

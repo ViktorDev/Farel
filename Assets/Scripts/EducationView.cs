@@ -8,20 +8,11 @@ public class EducationView : MonoBehaviour
 {
 	public static EducationView instance;
 
-    public GameObject Ipanel;
-	public Text info;
+    public GameObject [] Ipanels;
+//	public Text info;
     public GameObject tv;
     public GameObject infoPanels;
-	string info1 = "jdfnvkjdnflvjbslbvrfkbvfjsbvjk" +
-		"jvnsdfkjvbndfkjvbndfkjbvnkjdnfv" +
-		"fdvkljdfsbnkdgfjbnkjdgfbnkjdgnfbkj" +
-		"dfnkjsbvdbnfsvkjdfbnkbjdgfkjbvjdfsb" +
-		"nkidfjbvkdfjbvnkdfjbvnkdfjbvnkdfjbnkjsbdf" +
-		"dnbfjdgfbnkjdgfnbkjdgfnbkjdgnfbkjndgfkjbngfnb" +
-		"kbjdsfbkdgfbkjdkjbskjndfkjbkjdgfbjdgfkjbnldkjsnfb" +
-		"sdfkjbndgfkjbkdjsnbkjsdbnkjnkdfjbnldfksnb" +
-		"dfkljbvkdfjsbnkjdfbvkjdfsbkjdfkjbvdfkjsbv";
-
+	
 	void Awake()
 	{
 		if (instance == null) {
@@ -47,22 +38,38 @@ public class EducationView : MonoBehaviour
             if (Physics.Raycast (ray, out hit, 100)) {
 				if (hit.transform.gameObject.tag == "Information"&& !UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject()) {
 					Debug.Log (hit.transform.name);
-					if (hit.transform.name == "Info_footnote") 
-					{
-						info.text = "" + info1;
-					}
-						
-					OpenLotInfo ();
+
+                    switch (hit.transform.name)
+                    {
+                        case "Info1":
+                            OpenLotInfo(0);
+                            break;
+                        case "Info2":
+                            OpenLotInfo(1);
+                            break;
+                        case "Info3":
+                            OpenLotInfo(2);
+                            break;
+                        case "Info4":
+                            OpenLotInfo(3);
+                            break;
+                        case "Video":
+                            OpenLotInfo(4);
+                            break;
+
+                    }
+					
 
 				}
 			}
 		}
 	}
 
-	public void OpenLotInfo()
+	public void OpenLotInfo(int index)
 	{
-		Ipanel.SetActive(true);
-		Ipanel.GetComponent<InfoPanel>().OpenPanel();
+        Ipanels[index].SetActive(true);
+        //Ipanel.SetActive(true);
+        Ipanels[index].GetComponent<InfoPanel>().OpenPanel();
         infoPanels.SetActive(false);
 
     }
